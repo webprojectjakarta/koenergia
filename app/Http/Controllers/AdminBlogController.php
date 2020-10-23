@@ -33,7 +33,6 @@ class AdminBlogController extends Controller
      */
     public function store(Request $request)
     {
-
         $this->validate($request, [
             'title' => 'required|string|max:255',
             'content' => 'required|string|max:255',
@@ -50,7 +49,7 @@ class AdminBlogController extends Controller
         }
         Blog::create([
             'title' => $request->input('title'),
-            'content' => $request->input('content'),
+            'content' => strip_tags($request->input('content')),
             'image' => $image,
         ]);
 
@@ -118,7 +117,7 @@ class AdminBlogController extends Controller
         }
 
         $user_data->name = $request->input('title');
-        $user_data->email = $request->input('content');
+        $user_data->content = strip_tags($request->input('content'));
 
         $user_data->update();
 
