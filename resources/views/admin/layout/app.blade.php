@@ -42,34 +42,25 @@
           <ul class="navbar-nav navbar-nav-right">
            
             <li class="nav-item dropdown d-xl-inline-block">
-              <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-                <span class="profile-text">Hello, {{Auth::user()->name}} </span>
-                @if(Auth::user()->gambar == '')
-                <img class="img-xs rounded-circle"  src="{{asset('images/user/default.png')}}" alt="profile image">
-                @else
-                <img class="img-xs rounded-circle"  src="{{asset('images/user/'.Auth::user()->gambar)}}" alt="profile image">
-                @endif
-              </a>
-              <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
-                <a class="dropdown-item p-0">
-                  <div class="d-flex border-bottom">
-                   
-                  </div>
-                </a>
-                <a class="dropdown-item" style="margin-top: 20px;" href="#">
-                 Edit Profile
-               </a>
-               <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-               document.getElementById('logout-form').submit();">
-               Keluar
-
-               <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                {{ csrf_field() }}
-              </form>
-            </a>
-          </div>
-        </li>
-      </ul>
+                  <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                    <span class="profile-text">Hello, {{Auth::user()->name}} </span>
+                    @if(Auth::user()->gambar == '')
+                    <img class="img-xs rounded-circle"  src="{{asset('images/user/default.png')}}" alt="profile image">
+                    @else
+                    <img class="img-xs rounded-circle"  src="{{asset('images/user/'.Auth::user()->gambar)}}" alt="profile image">
+                    @endif
+                  </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+                  <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                      document.getElementById('logout-form').submit();">
+                      Keluar
+                      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        {{ csrf_field() }}
+                      </form>
+                  </a>
+                </div>
+              </li>
+           </ul>
       
     </div>
   </nav>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Blog;
+use App\User;
 use DB;
 use Carbon\Carbon;
 use Session;
@@ -35,7 +36,7 @@ class AdminBlogController extends Controller
     {
         $this->validate($request, [
             'title' => 'required|string|max:255',
-            'content' => 'required|string|max:255',
+            'content' => 'required|string',
         ]);
         if($request->file('image') == '') {
             $image = NULL;
@@ -47,6 +48,8 @@ class AdminBlogController extends Controller
             $request->file('image')->move("images/user", $fileName);
             $image = $fileName;
         }
+
+
         Blog::create([
             'title' => $request->input('title'),
             'content' => strip_tags($request->input('content')),
@@ -55,7 +58,7 @@ class AdminBlogController extends Controller
 
         Session::flash('message', 'Berhasil ditambahkan!');
         Session::flash('message_type', 'success');
-        return redirect()->route('blog.index');
+        return redirect()->route('adminBlog.index');
 
     }
 
@@ -104,7 +107,7 @@ class AdminBlogController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $user_data = User::findOrFail($id);
+        $user_data = Blog::findOrFail($id);
 
         if($request->file('image')) 
         {
@@ -113,17 +116,17 @@ class AdminBlogController extends Controller
             $acak  = $file->getClientOriginalExtension();
             $fileName = rand(11111,99999).'-'.$dt->format('Y-m-d-H-i-s').'.'.$acak; 
             $request->file('image')->move("images/user", $fileName);
-            $user_data->gambar = $fileName;
+            $user_data->image = $fileName;
         }
 
-        $user_data->name = $request->input('title');
+        $user_data->title = $request->input('title');
         $user_data->content = strip_tags($request->input('content'));
 
         $user_data->update();
 
         Session::flash('message', 'Berhasil diubah!');
         Session::flash('message_type', 'success');
-        return redirect()->to('user');
+        return redirect()->to('adminBlog');
     }
 
     /**
@@ -145,6 +148,6 @@ class AdminBlogController extends Controller
             Session::flash('message', 'Akun anda sendiri tidak bisa dihapus!');
             Session::flash('message_type', 'danger');
         }
-        return redirect()->to('blog');
+        return redirect()->to('adminBlog');
     }
 }

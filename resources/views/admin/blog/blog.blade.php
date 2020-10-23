@@ -14,7 +14,7 @@
   <div class="row">
 
     <div class="col-lg-2">
-      <a href="{{ route('blog.create') }}" class="btn btn-primary btn-rounded btn-fw"><i class="fa fa-plus"></i>Add Blog</a>
+      <a href="{{ route('adminBlog.create') }}" class="btn btn-primary btn-rounded btn-fw"><i class="fa fa-plus"></i>Add Blog</a>
     </div>
       <div class="col-lg-12">
                     @if (Session::has('message'))
@@ -54,7 +54,7 @@
                               {{$data->title}}
                             </td>
                             <td>
-                            <a href="{{route('blog.show', $data->id)}}"> 
+                            <a href="{{route('adminBlog.show', $data->id)}}"> 
                             {{$data->content}}
                             </a>
                             </td>
@@ -67,8 +67,8 @@
                             @endif
                             </td>
                             <td>
-                              <button><a href="{{route('blog.edit', $data->id)}}"><i class="fa fa-edit btn btn-primary"></i></a></button>
-                                <form action="{{ route('blog.destroy', $data->id) }}" class="pull-left"  method="post">
+                              <button><a href="{{route('adminBlog.edit', $data->id)}}"><i class="fa fa-edit btn btn-primary"></i></a></button>
+                                <form action="{{ route('adminBlog.destroy', $data->id) }}" class="pull-left"  method="post">
                               {{ csrf_field() }}
                               {{ method_field('delete') }}
                               <button onclick="return confirm('Anda yakin ingin menghapus data ini?')"> <i class="fa fa-trash btn btn-danger" ></i>

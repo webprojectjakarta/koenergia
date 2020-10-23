@@ -58,7 +58,7 @@
 
     @section('content')
 
-    <form method="POST" action="{{ route('blog.store') }}" enctype="multipart/form-data">
+    <form method="POST" action="{{ route('adminBlog.store') }}" enctype="multipart/form-data">
         {{ csrf_field() }}
     <div class="row">
                 <div class="col-md-12 d-flex align-items-stretch grid-margin">
@@ -101,7 +101,7 @@
                             <button type="reset" class="btn btn-danger">
                                         Reset
                             </button>
-                            <a href="{{route('blog.index')}}" class="btn btn-light pull-right">Back</a>
+                            <a href="{{route('adminBlog.index')}}" class="btn btn-light pull-right">Back</a>
                         </div>
                       </div>
                     </div>

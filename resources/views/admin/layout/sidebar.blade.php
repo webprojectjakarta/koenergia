@@ -41,7 +41,7 @@
     </ul>
   </div>
   <li class="nav-item"> 
-    <a class="nav-link" href="{{route('blog.index')}}">
+    <a class="nav-link" href="{{route('adminBlog.index')}}">
       <i class="menu-icon mdi mdi-blogger"></i>
       <span class="menu-title">Blog</span>
     </a>

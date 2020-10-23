@@ -21,4 +21,4 @@ Route::get('/blog', 'BlogController@index');
 Route::get('/project', 'ProjectController@index');
 Route::get('/admin', 'AdminController@index');
 Route::resource('user', 'UserController');
-Route::resource('blog', 'AdminBlogController');
+Route::resource('adminBlog', 'AdminBlogController');
