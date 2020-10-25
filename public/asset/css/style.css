@@ -920,6 +920,10 @@ input:-webkit-autofill:focus {
 .subscribe-form form {
     position: relative;
 }
+.responsive {
+    max-width: 100%;
+    height: auto;
+  }
 
 .subscribe-form form .control {
     width: 100%;

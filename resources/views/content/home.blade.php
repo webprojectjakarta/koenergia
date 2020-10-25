@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 hidden-sm col-md-5">
-                <div class="subscribe-form text-center">
+                <div class="subscribe-form text-center responsive"  style="position: relative;">
                         <!-- My Calculator -->
                         <img src="{{'asset/images/logo.png'}}" alt="Logo">
                         <div class="space-40"></div>
@@ -31,6 +31,7 @@
                             With 20 years product lifetime and flat energy price, do you think solar is still expensive investment?</p>
                     </div>
                    
+                <a href="#" class="bttn-white wow fadeInUp" data-wow-delay="0.8s"><i class="lnr lnr-download"></i>Download App</a>
                 </div>
                 <div class = "space-30"> </div>
 

@@ -37,9 +37,6 @@
                               Title
                             </th>
                             <th>
-                              Content
-                            </th>
-                            <th>
                               Image
                             </th>
                             <th>
@@ -54,16 +51,10 @@
                               {{$data->title}}
                             </td>
                             <td>
-                            <a href="{{route('adminBlog.show', $data->id)}}"> 
-                            {{$data->content}}
-                            </a>
-                            </td>
-                            <td>
                              @if($data->image)
                               <img src="{{url('images/user', $data->image)}}" alt="image" />
                             @else
                               <img src="{{url('images/user/default.png')}}" alt="image" />
-
                             @endif
                             </td>
                             <td>

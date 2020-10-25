@@ -14,8 +14,8 @@
          @foreach($datas as $data)
             <div class="col-xs-12">
                 <article class="post-single sticky">
-                    <figure class="post-media">
-                            <img src="{{asset('asset/images/sticky-image.jpg')}}" alt="">
+                    <figure class="post-media"  style="height:100px; widht:60px;" >
+                            <img src="{{url('images/user', $data->image)}}" alt="">
                     </figure>
                     <div class="post-body">
                         <div class="post-meta">
