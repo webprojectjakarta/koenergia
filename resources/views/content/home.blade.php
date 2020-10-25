@@ -30,8 +30,9 @@
                         <p>When the tariff electricity price is unpredictable, while you have to pay more bills due to increasing energy consumption, solar is perfect solution for your building.
                             With 20 years product lifetime and flat energy price, do you think solar is still expensive investment?</p>
                     </div>
-                   
-                <a href="#" class="bttn-white wow fadeInUp" data-wow-delay="0.8s"><i class="lnr lnr-download"></i>Download App</a>
+                <div class="space-20"></div>
+                <h5>Download Our Company Profile</h5>
+                <a href="{{'asset/images/KoenergiA.pdf'}}" download class="bttn-white wow fadeInUp" data-wow-delay="0.8s"><i class="lnr lnr-download"></i>Download Here</a>
                 </div>
                 <div class = "space-30"> </div>
 
