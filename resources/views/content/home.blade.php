@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 hidden-sm col-md-5">
-                <div class="subscribe-form text-center responsive"  style="position: relative;">
+                <div class="subscribe-form text-center">
                         <!-- My Calculator -->
                         <img src="{{'asset/images/logo.png'}}" alt="Logo">
                         <div class="space-40"></div>
