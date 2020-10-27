@@ -46,4 +46,10 @@
       <span class="menu-title">Blog</span>
     </a>
   </li>
+  <li class="nav-item"> 
+    <a class="nav-link" href="{{route('adminProject.index')}}">
+      <i class="menu-icon mdi mdi-briefcase"></i>
+      <span class="menu-title">Project</span>
+    </a>
+  </li>
 </li>

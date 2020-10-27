@@ -54,8 +54,8 @@
                     <li><a href="{{url('/')}}">Home</a></li>
                     <li><a href="{{url('/')}}#about_page">About</a></li>
                     <li><a href="{{url('/')}}#solution_page">Solution</a></li>
-                    <li><a href="{{url('blog')}}">Blog</a></li>
-                    <li class="active"><a href="{{url('project')}}">Project</a></li>
+                    <li class="active"><a href="{{url('blog')}}">Blog</a></li>
+                    <li><a href="{{url('project')}}">Project</a></li>
                     <li><a href="{{url('/')}}#contact_page">Contacts</a></li>
                 </ul>
                 <div class="right-button hidden-xs">
@@ -70,23 +70,35 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 text-center">
-                    <h1 class="white-color">Project</h1>
-                    <ul class="breadcrumb">
-                        <li><a href="{{'/'}}">Home</a></li>
-                        <li>Project</li>
-                    </ul>
+                    <h1 class="white-color">Blog</h1>
+                        <ul class="breadcrumb">
+                        </ul>
                 </div>
             </div>
         </div>
     </header>
-    @include('project.project')
-    <!-- End Home Area -->
-    
-    @yield('content')
-
-    @section('footer')
-    @include('blog.footer')
-    @show
+    <div class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <article class="post-single">
+                        <figure class="post-media">
+                            <img src="{{url('images/user', $data->image)}}" alt="">
+                        </figure>
+                            <div class="post-body">
+                                <ul class="breadcrumb">
+                                    <li><a href="#"></a></li>
+                                    <li>{{$data->created_at}}</li>
+                                </ul>
+                                    <h2 class="dark-color">{{$data->title}}</h2>
+                                        <div class="space-20"></div>
+                                    <p style="text-align:justify; text-indent: 50px; text-color: #00000;">{{$data->content}}</p>
+                            </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Footer-Area-End -->
     <!--Vendor-JS-->
     <script src="{{ asset('asset/js/vendor/jquery-1.12.4.min.js') }}"></script>

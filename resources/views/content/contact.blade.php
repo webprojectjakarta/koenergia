@@ -62,15 +62,15 @@
 
                     <div class="col-md-6">
                         <div class="comment-respond">
-                            <form action="#" class="comment-form">
-                                        <input type="text" class="form-control" placeholder="Name">
+                            <form action="{{ url('/email') }}" class="comment-form">
+                            @csrf
+                                        <input type="text" name="nama" class="form-control" placeholder="Name">
                                         <div class = "space-30"></div>
-                                        <input type="text" class="form-control" placeholder="Email">
+                                        <input type="email" name="penerima" class="form-control" placeholder="Email">
                                         <div class="space-30"></div>
-                                        <textarea name="comment" id="comment" rows="5" class="form-control" placeholder="Type Your Mesage..."></textarea>
-                                        <div class="space-30"></div>
-                                        
-                            <button type="submit" class="bttn-default">Send</button>
+                                        <textarea name="pesan" id="comment" rows="5" class="form-control" placeholder="Type Your Mesage..."></textarea>
+                                        <div class="space-30"></div>  
+                            <button type="submit" value="Kirim" class="bttn-default">Send</button>
                             </form>
                         </div>
                     </div>

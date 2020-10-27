@@ -11,7 +11,7 @@
     <title>Koenergia</title>
     <!-- Place favicon.ico in the root directory -->
     <link rel="apple-touch-icon" href="{{ asset('asset/images/apple-touch-icon.png') }}">
-    <link rel="shortcut icon" type="image/ico" href="{{ asset('asset/images/favicon.ico') }}">
+    <link rel="shortcut icon" type="image/ico" href="{{ asset('asset/images/icon.png') }}">
     <!-- Plugin-CSS -->
     <link rel="stylesheet" href="{{ asset('asset/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('asset/css/owl.carousel.min.css') }}">

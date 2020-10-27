@@ -59,7 +59,7 @@
 
         @section('content')
 
-        <form method="post" action="{{ route('adminBlog.update', $data->id) }}" enctype="multipart/form-data">
+        <form method="post" action="{{ route('adminProject.update', $data->id) }}" enctype="multipart/form-data">
             {{ csrf_field() }}
             {{ method_field('put') }}
         <div class="row">
@@ -91,12 +91,12 @@
                                 </div>
 
                                     <button type="submit" class="btn btn-primary" id="submit">
-                                        Update
+                                                Update
                                     </button>
                                     <button type="reset" class="btn btn-danger">
                                                 Reset
                                     </button>
-                                    <a href="{{route('adminBlog.index')}}" class="btn btn-light pull-right">Back</a>
+                                    <a href="{{route('adminProject.index')}}" class="btn btn-light pull-right">Back</a>
                             </div>
                           </div>
                         </div>
