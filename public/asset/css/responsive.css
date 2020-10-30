@@ -143,7 +143,11 @@
         padding: 8px 30px;
     }
     .section-padding {
-        padding-top: 60px;
+        padding-top: 30px;
+        padding-bottom: 30;
+    }
+    .section-home {
+        padding-top: 30px;
         padding-bottom: 60px;
     }
     .angle:after {
