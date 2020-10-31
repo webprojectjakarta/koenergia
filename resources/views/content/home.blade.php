@@ -115,22 +115,65 @@ function showresult(hitung){
                         </div>
                 </div>
             </div>
+
+            <div class="space-60"></div>
+            <div class="page-title text-center">
+                <h3 class="title">Our Partner</h3>
+            </div>
+            <div class="space-30"></div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="team-slide">
+                    <div class="team-box">
+                            <div class="team-image">
+                                <img src="images/team-1.png" alt="">
+                            </div>
+                            <h4>Ashekur Rahman</h4>
+                            <h6 class="position">Art Dirrector</h6>
+                            <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.</p>
+                        </div>
+                        <div class="team-box">
+                            <div class="team-image">
+                                <img src="asset/images/image4-ts1595237259.jpg" alt="">
+                            </div>
+                            <h4>Ashekur Rahman</h4>
+                            <h6 class="position">Art Dirrector</h6>
+                            <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.</p>
+                        </div>
+                        <div class="team-box">
+                            <div class="team-image">
+                                <img src="images/team-3.jpg" alt="">
+                            </div>
+                            <h4>Ashekur Rahman</h4>
+                            <h6 class="position">Art Dirrector</h6>
+                            <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.</p>
+                        </div>
+                        <div class="team-box">
+                            <div class="team-image">
+                                <img src="images/team-1.png" alt="">
+                            </div>
+                            <h4>Ashekur Rahman</h4>
+                            <h6 class="position">Art Dirrector</h6>
+                            <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 </section>
 
 <section id="questions_page" class="questions-area section-padding">
 
     <a href="{{url('project')}}">
-                    <div class="page-title text-center">
-                        <h3 class="title">Our Project</h3>
-                    </div>
-            <div class=malasngoding-slider>
-                <div class=isi-slider>
-                    <img src="asset/images/header-bg.jpeg" alt="Gambar 1">
-                    <img src="asset/images/sticky-image.jpg" alt="Gambar 2">
-                    <img src="asset/images/blog-3.jpg" alt="Gambar 3">
-                </div>
-            </div>
+        <div class="page-title text-center">
+            <h3 class="title">Our Project</h3>
+    </div>
+    <div class="w3-content w3-section">
+            <img class="mySlides w3-animate-fading" src="asset/images/header-bg.jpeg" style="width:1000px; height:450px;">
+            <img class="mySlides w3-animate-fading" src="asset/images/blog-3.jpg" style="width:1000px; height:450px;">
+            <img class="mySlides w3-animate-fading" src="asset/images/blog-2.jpg" style="width:1000px; height:450px;">
+            <img class="mySlides w3-animate-fading" src="asset/images/blog-1.jpg" style="width:1000px; height:450px;">
+    </div>
     </a>
 </section>
     <!-- Home-Area-End -->

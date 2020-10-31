@@ -22,9 +22,10 @@ class KoenergiaEmailController extends Controller
         // Kirim Email
         Mail::send('content.email', $data, function($mail) use($email) {
 
-            $mail->to("rizkydeveloper06@gmail.com", 'no-reply')
+            $mail->to("info@koenergia.com", 'no-reply')
                     ->subject("Koenergia");
-            $mail->from("rizkydeveloper06@gmail.com", 'Koenergia');
+            $mail->from("kolegaenergiabadi@gmail.com", 'Koenergia');
+            $mail->setContentType('text/plain');
         });
 
         // Cek kegagalan
