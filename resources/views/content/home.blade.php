@@ -82,7 +82,7 @@ function showresult(hitung){
                 <div class="col-sm-6">
                     <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
                         <div class="box-icon">
-                            <i class="lnr lnr-rocket"></i>
+                            <i><img src="asset/images/solarpower-inverter-on-512-128.png" alt=""></i>
                         </div>
                         <h4>On-Grid PV System</h4>
                         <p>No batteries needed, connected directly to the utility grid, reduce monthly bills</p>
@@ -90,7 +90,7 @@ function showresult(hitung){
                     <div class="space-60"></div>
                     <div class="service-box wow fadeInUp" data-wow-delay="0.4s">
                         <div class="box-icon">
-                            <i class="lnr lnr-paperclip"></i>
+                        <i><img src="asset/images/solarpower-inverter-off-512-128.png" alt=""></i>
                         </div>
                         <h4>Off-Grid PV System</h4>
                         <p>No more darkness, 24/7 energy provided, zero CO2 emissions</p>
@@ -110,53 +110,9 @@ function showresult(hitung){
                             <div class="box-icon">
                                 <i class="lnr lnr-cloud-download"></i>
                             </div>
-                            <h4>On-Grid PV System</h4>
+                            <h4>Solar Water Pump</h4>
                             <p>No more drought, pump the water from the source and deliver to the peoples</p>
                         </div>
-                </div>
-            </div>
-
-            <div class="space-60"></div>
-            <div class="page-title text-center">
-                <h3 class="title">Our Partner</h3>
-            </div>
-            <div class="space-30"></div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="team-slide">
-                    <div class="team-box">
-                            <div class="team-image">
-                                <img src="images/team-1.png" alt="">
-                            </div>
-                            <h4>Ashekur Rahman</h4>
-                            <h6 class="position">Art Dirrector</h6>
-                            <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.</p>
-                        </div>
-                        <div class="team-box">
-                            <div class="team-image">
-                                <img src="asset/images/image4-ts1595237259.jpg" alt="">
-                            </div>
-                            <h4>Ashekur Rahman</h4>
-                            <h6 class="position">Art Dirrector</h6>
-                            <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.</p>
-                        </div>
-                        <div class="team-box">
-                            <div class="team-image">
-                                <img src="images/team-3.jpg" alt="">
-                            </div>
-                            <h4>Ashekur Rahman</h4>
-                            <h6 class="position">Art Dirrector</h6>
-                            <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.</p>
-                        </div>
-                        <div class="team-box">
-                            <div class="team-image">
-                                <img src="images/team-1.png" alt="">
-                            </div>
-                            <h4>Ashekur Rahman</h4>
-                            <h6 class="position">Art Dirrector</h6>
-                            <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

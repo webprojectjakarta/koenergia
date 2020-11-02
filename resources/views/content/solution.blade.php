@@ -64,3 +64,56 @@
             </div>
         </div>
 </section>
+
+<section id="questions_page" class="questions-area section-padding">
+    <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+                <div class="page-title text-center">
+                    <img src="{{'asset/images/icon.png'}}" alt="About Logo">
+                        <div class="space-20"></div>
+                        <h5 class="title">Our Services</h5>
+                </div>
+                    
+                </div>
+            </div>
+            <div class="space-60"></div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="box-icon">
+                            <span class = "fa fa-cogs"></span>
+                        </div>
+                        <h4>ENGINEERING</h4>
+                        <p>We provide all design related to solar and other energy source, such us feasibility study, energy yield simulation, drawing design and engineering calculation</p>
+                    </div>
+                    <br>
+                    <div class="space-60"></div>
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="box-icon">
+                        <i class ="fa fa-database"></i>
+                        </div>
+                        <h4>O & M</h4>
+                        <p>We understand the maintaining the performance of the installed system is very important for the investment. We will help you to achieve your System KPI and collect all the data into proper report, so you don’t have to worry with your system performance</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                        <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="box-icon">
+                                <i class="fa fa-wrench"></i>
+                            </div>
+                            <h4>INSTALLATION</h4>
+                            <p>We support the local or foreigner solar developer to install the system of their project. They provide all major components and we will take care the rest. More reliable project with high return of investment</p>
+                        </div>
+                        <div class="space-60"></div>
+                        <div class="service-box wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="box-icon">
+                                <i class="fa fa-users"></i>
+                            </div>
+                            <h4>TRAINING</h4>
+                            <p>We understand that putting resources on your project organization with solar energy knowledge is difficult one. We can help you to give a proper training so you don’t have to worry with the engineering side and focus with your sales</p>
+                        </div>
+                </div>
+            </div>
+    </div>
+</section>

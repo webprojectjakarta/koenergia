@@ -258,10 +258,10 @@ input:-webkit-autofill:focus {
     width: 100%;
     height: 100%;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#482cbf+0,6ac6f0+100 */
-    background: #0650cb;
-    background: -webkit-linear-gradient(45deg,#0650cb 0%, #40bad5 100%);
-    background: -o-linear-gradient(45deg, #0650cb 0%, #40bad5 100%);
-    background: linear-gradient(45deg, #0650cb 0%, #40bad5 100%);
+    background: #4085fa;
+    background: -webkit-linear-gradient(45deg,#4085fa 0%, #40bad5 100%);
+    background: -o-linear-gradient(45deg, #4085fa 0%, #40bad5 100%);
+    background: linear-gradient(45deg,#4085fa 0%, #40bad5 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#482cbf', endColorstr='#6ac6f0', GradientType=1);
     opacity: 0.8;
@@ -325,10 +325,10 @@ input:-webkit-autofill:focus {
     top: 0;
     width: 100%;
     height: 100%;
-    background: #0650cb;
-    background: -webkit-linear-gradient(45deg,#0650cb 0%, #40bad5 100%);
-    background: -o-linear-gradient(45deg, #0650cb 0%, #40bad5 100%);
-    background: linear-gradient(45deg, #0650cb 0%, #40bad5 100%);
+    background: #4085fa;
+    background: -webkit-linear-gradient(45deg,#4085fa 0%, #40bad5 100%);
+    background: -o-linear-gradient(45deg, #4085fa 0%, #40bad5 100%);
+    background: linear-gradient(45deg, #4085fa 0%, #40bad5 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#482cbf', endColorstr='#6ac6f0', GradientType=1);
     z-index: -1;
     opacity: 0;

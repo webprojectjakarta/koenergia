@@ -43,7 +43,7 @@
                         <div class="footer-box">
                         <a href="#" target="_blank">
                             <div class="box-icon">
-                                <span class="lnr lnr-map-marker"></span>
+                                <span class="fa fa-list-alt"></span>
                             </div>
                         </a>
                             <p><b>DATA COLLECTION</b></p>
@@ -55,7 +55,7 @@
                         <div class="footer-box">
                         <a href="#">
                             <div class="box-icon">
-                                <span class="lnr lnr-phone-handset"></span>
+                                <span class="fa fa-line-chart"></span>
                             </div>
                         </a>
                         <p><b>SYSTEM DESIGN</b></p>
@@ -67,7 +67,7 @@
                         <div class="footer-box">
                         <a href="#" target="_blank">
                             <div class="box-icon">
-                                <span class="lnr lnr-envelope"></span>
+                                <span class="fa fa-paper-plane-o"></span>
                             </div>
                         </a>
                         <p><b>DELIVER</b></p>
@@ -78,7 +78,7 @@
                         <div class="footer-box">
                         <a href="#" target="_blank">
                             <div class="box-icon">
-                            <span class="fa fa-whatsapp"></span>
+                            <span class="fa fa-handshake-o"></span>
                             </div>
                         </a>
                         <p><b>AFTER-SALES SERVICE</b></p>

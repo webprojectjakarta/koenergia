@@ -33,7 +33,7 @@
     </div>
 </div>
 
-<section id="questions_page" class="questions-area section-padding
+<section id="questions_page" class="questions-area section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
@@ -45,11 +45,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-sm-6">
+                <div class="col-xs-12 col-sm-12">
                     <div class="toggole-boxs">
                         <h3>Apa itu Sistem PLTS Atap?</h3>
                         <div>
-                        <p>Adalah proses pembangkitan tenaga listrik menggunakan modul fotovoltaik yang dipasang dan diletakkan diatap, dinding atau bagian lain dari bangunan milik konsumen PT. PLN (Persero) serta menyalurkan energi listrik melalui sistem sambungan listrik konsumen PT. PLN (Permen ESDM No. 49, 2018)</p>
+                        <p>Adalah proses pembangkitan tenaga listrik menggunakan modul fotovoltaik yang dipasang dan diletakkan diatap, dinding atau bagian lain dari bangunan milik konsumen PT. PLN (Persero) serta menyalurkan energi listrik melalui sistem sambungan listrik konsumen PT. PLN (Permen ESDM No. 49, 2018)
+                            </p>
                         </div>
                         <h3>Bagaimana cara kerja Sistem PLTS Atap? </h3>
                         <div>
@@ -71,11 +72,6 @@
                             <li>Selisih yang diperhitungkan akan diakumulasikan paling lama 3 bulan untuk periode tagihan listrik bulan Januari-Maret, April-Juni, Juli-September atau Oktober-Desember.</li>
                             <li>Apabila akumulasi selisih tersisa dipengujung periode, selisih akan dinihilkan dan perhitungan selisih dimulai pada periode berikutnya.</li>
                         </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                    <div class="space-20 hidden visible-xs"></div>
-                    <div class="toggole-boxs">
                         <h3>Berapa area atap yang dibutuhkan untuk memasang Sistem PLTS Atap? </h3>
                         <div>
                             <p>Untuk 1kWp (1000Wp) sistem, dibutuhkan 6m2 dengan berat 12kg/m2 tergantung ukuran modul fotovoltaik yang digunakan</p>

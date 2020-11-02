@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-3">
+                    <div class="col-xs-12 col-sm-4">
                         <div class="footer-box">
                         <a href="https://goo.gl/maps/ZwzjJQV68pHeX7kFA" target="_blank">
                             <div class="box-icon">
@@ -46,7 +46,7 @@
                         </div>
                         <div class="space-30 hidden visible-xs"></div>
                     </div>
-                    <div class="col-xs-12 col-sm-3">
+                    <div class="col-xs-12 col-sm-4">
                         <div class="footer-box">
                         <a href="tel:+62 813 1120 0711">
                             <div class="box-icon">
@@ -57,7 +57,7 @@
                         </div>
                         <div class="space-30 hidden visible-xs"></div>
                     </div>
-                    <div class="col-xs-12 col-sm-3">
+                    <div class="col-xs-12 col-sm-4">
                         <div class="footer-box">
                         <a href="mailto:info@koenergia.com" target="_blank">
                             <div class="box-icon">
@@ -67,17 +67,7 @@
                             <p>info@koenergia.com</p>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-3">
-                        <div class="footer-box">
-                        <a href="https://web.whatsapp.com/send?phone=6282389123898&text=Hello Koenergia" target="_blank">
-                            <div class="box-icon">
-                            <span class="fa fa-whatsapp"></span>
-                            </div>
-                        </a>
-                        <p>+6282389123898</p>
-                        </div>
-                    </div>
-                    <div class="space-30"></div>
+                    <div class="space-60"></div>
                     <div class="col-md-6">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15865.284100823312!2d106.782111!3d-6.221331999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x177e810eec32a7f4!2sInfiniti%20Office%20%7C%20Bellezza%20BSA%20%7C%20Virtual%20Office%20%26%20Event%20Space!5e0!3m2!1sid!2sid!4v1603186007377!5m2!1sid!2sid"
                                     width="500" height="300"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
