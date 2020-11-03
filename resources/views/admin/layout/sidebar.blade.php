@@ -22,24 +22,17 @@
     </div>
   </li>
   <li class="nav-item"> 
-    <a class="nav-link" href="{{url('/')}}">
+    <a class="nav-link" href="{{url('/admin')}}">
       <i class="menu-icon mdi mdi-television"></i>
       <span class="menu-title">Home</span>
     </a>
   </li>
-  <li class="nav-item ">
-    <a class="nav-link " data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-      <i class="menu-icon mdi mdi-content-copy"></i>
-      <span class="menu-title">Master Data</span>
-      <i class="menu-arrow"></i>
+  <li class="nav-item"> 
+    <a class="nav-link" href="{{route('user.index')}}">
+    <i class="menu-icon mdi mdi-content-copy"></i>
+      <span class="menu-title">Data User</span>
     </a>
-    <div class="collapse " id="ui-basic">
-      <ul class="nav flex-column sub-menu">
-       <li class="nav-item">
-        <a class="nav-link " href="{{route('user.index')}}">Data User</a>
-      </li>
-    </ul>
-  </div>
+  </li>
   <li class="nav-item"> 
     <a class="nav-link" href="{{route('adminBlog.index')}}">
       <i class="menu-icon mdi mdi-blogger"></i>
@@ -48,8 +41,14 @@
   </li>
   <li class="nav-item"> 
     <a class="nav-link" href="{{route('adminProject.index')}}">
-      <i class="menu-icon mdi mdi-briefcase"></i>
+      <i class="menu-icon mdi mdi-chart-areaspline"></i>
       <span class="menu-title">Project</span>
+    </a>
+  </li>
+  <li class="nav-item"> 
+    <a class="nav-link" href="{{route('adminPartner.index')}}">
+      <i class="menu-icon mdi mdi-briefcase"></i>
+      <span class="menu-title">Partnership</span>
     </a>
   </li>
 </li>

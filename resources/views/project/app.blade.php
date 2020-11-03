@@ -56,6 +56,7 @@
                     <li><a href="{{url('/')}}#solution_page">Solution</a></li>
                     <li><a href="{{url('blog')}}">Blog</a></li>
                     <li class="active"><a href="{{url('project')}}">Project</a></li>
+                    <li><a href="{{url('partner')}}">Partnership</a></li>
                     <li><a href="{{url('/')}}#contact_page">Contacts</a></li>
                 </ul>
                 <div class="right-button hidden-xs">

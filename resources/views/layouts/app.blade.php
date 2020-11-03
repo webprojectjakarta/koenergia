@@ -70,6 +70,7 @@
     @show
     <!-- Feature-Area-End -->
 
+
     <!-- Footer-Area -->
     @section('contact')
     @include('content.contact')

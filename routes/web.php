@@ -26,3 +26,5 @@ Route::resource('user', 'UserController');
 Route::resource('adminBlog', 'AdminBlogController');
 Route::resource('adminProject', 'AdminProjectController');
 Route::get('/email','KoenergiaEmailController@send');
+Route::get('/partner', 'PartnerShipController@index');
+Route::resource('adminPartner', 'AdminPartnerShipController');

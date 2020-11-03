@@ -243,7 +243,6 @@
         margin-right: 0;
         float: none;
         width: 100%;
-        height: 100%;
     }
 
     .form-double .box {
@@ -251,7 +250,7 @@
         float: none;
     }
     .post-single {
-        padding: 20px;
+        padding: 1px;
     }
     .post-single h2 {
         font-size: 26px;

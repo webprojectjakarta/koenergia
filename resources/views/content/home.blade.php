@@ -121,8 +121,10 @@ function showresult(hitung){
 <section id="questions_page" class="questions-area section-padding">
 
     <a href="{{url('project')}}">
-        <div class="page-title text-center">
-            <h3 class="title">Our Project</h3>
+    <div class="page-title text-center">
+                    <img src="{{'asset/images/icon.png'}}" alt="About Logo">
+                        <div class="space-20"></div>
+                        <h5 class="title">Our Project</h5>
     </div>
     <div class="w3-content w3-section">
             <img class="mySlides w3-animate-fading" src="asset/images/header-bg.jpeg" style="width:1000px; height:450px;">
@@ -130,6 +132,18 @@ function showresult(hitung){
             <img class="mySlides w3-animate-fading" src="asset/images/blog-2.jpg" style="width:1000px; height:450px;">
             <img class="mySlides w3-animate-fading" src="asset/images/blog-1.jpg" style="width:1000px; height:450px;">
     </div>
+   
+    <!-- <div class="air-slider">
+			<div class="slide">
+				<img src="asset/images/header-bg.jpeg" alt="slide1"/>
+			</div>
+			<div class="slide">
+				<img src="asset/images/blog-3.jpg" alt="slide2"/>
+			</div>
+			<div class="slide">
+				<img src="asset/images/blog-1.jpg" alt="slide3"/>
+			</div>
+        </div> -->
     </a>
 </section>
     <!-- Home-Area-End -->

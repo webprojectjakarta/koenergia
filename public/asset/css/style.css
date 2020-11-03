@@ -70,6 +70,15 @@ img {
     height: auto;
 }
 
+.img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 2px;
+    margin-bottom:15px;
+    width: 150px;
+    height:150px;
+  }
+
 h1,
 h2,
 h3,
@@ -1117,10 +1126,10 @@ input:-webkit-autofill:focus {
 /*-- 20. Blog-Post --*/
 
 .site-header {
-    background: rgb(72, 44, 191);
-    background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
-    background: -o-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
-    background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+     background: #4085fa;
+    background: -webkit-linear-gradient(45deg,#4085fa 0%, #40bad5 100%);
+    background: -o-linear-gradient(45deg, #4085fa 0%, #40bad5 100%);
+    background: linear-gradient(45deg,#4085fa 0%, #40bad5 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#482cbf', endColorstr='#6ac6f0', GradientType=1);
     color: #ffffff;
     padding: 180px 0 120px;
@@ -1165,9 +1174,9 @@ input:-webkit-autofill:focus {
 }
 
 .post-single.sticky .post-media {
-    width: 55%;
+    width: 20%;
     float: left;
-    margin-right: 60px;
+    margin-right: 20px;
 }
 
 .post-single .post-media {
