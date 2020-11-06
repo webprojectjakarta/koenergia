@@ -55,8 +55,8 @@
                     <li><a href="{{url('/')}}#about_page">About</a></li>
                     <li><a href="{{url('/')}}#solution_page">Solution</a></li>
                     <li><a href="{{url('blog')}}">Blog</a></li>
-                    <li class="active"><a href="{{url('project')}}">Project</a></li>
-                    <li><a href="{{url('partner')}}">Partnership</a></li>
+                    <li ><a href="{{url('project')}}">Project</a></li>
+                    <li class="active"><a href="{{url('partner')}}">Partnership</a></li>
                     <li><a href="{{url('/')}}#contact_page">Contacts</a></li>
                 </ul>
                 <div class="right-button hidden-xs">
@@ -71,16 +71,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 text-center">
-                    <h1 class="white-color">Project</h1>
+                    <h1 class="white-color">Partner</h1>
                     <ul class="breadcrumb">
                         <li><a href="{{'/'}}">Home</a></li>
-                        <li>Project</li>
+                        <li>Partner</li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
-    @include('project.project')
+    @include('partner.partner')
     <!-- End Home Area -->
     
     @yield('content')

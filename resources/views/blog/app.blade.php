@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
+
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Sumon Rahman">
@@ -36,7 +37,7 @@
     <!-- Preloader-content -->
     <div class="preloader">
         <span><i class="lnr lnr-sun"></i></span>
-        
+
     </div>
     <!-- Menu Area -->
     <nav class="mainmenu-area" data-spy="affix" data-offset-top="200">
@@ -82,7 +83,7 @@
     </header>
     @include('blog.blog')
     <!-- End Home Area -->
-    
+
     @yield('content')
 
     @section('footer')
@@ -102,6 +103,7 @@
     <script src="{{ asset('asset/js/wow.min.js') }}"></script>
     <!--Main-active-JS-->
     <script src="{{ asset('asset/js/main.js') }}"></script>
+    @include('layouts.js')
     @section('js')
     @show
 </body>

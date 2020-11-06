@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
+
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Sumon Rahman">
@@ -36,7 +37,7 @@
     <!-- Preloader-content -->
     <div class="preloader">
         <span><i class="lnr lnr-sun"></i></span>
-        
+
     </div>
     <!-- Menu Area -->
     <nav class="mainmenu-area" data-spy="affix" data-offset-top="200">
@@ -72,8 +73,8 @@
             <div class="row">
                 <div class="col-xs-12 text-center">
                     <h1 class="white-color">Blog</h1>
-                        <ul class="breadcrumb">
-                        </ul>
+                    <ul class="breadcrumb">
+                    </ul>
                 </div>
             </div>
         </div>
@@ -86,15 +87,15 @@
                         <figure class="post-media">
                             <img src="{{url('images/user', $data->image)}}" alt="">
                         </figure>
-                            <div class="post-body">
-                                <ul class="breadcrumb">
-                                    <li><a href="#"></a></li>
-                                    <li>{{$data->created_at}}</li>
-                                </ul>
-                                    <h2 class="dark-color">{{$data->title}}</h2>
-                                        <div class="space-20"></div>
-                                    <p style="text-align:justify; text-indent: 50px; text-color: #00000;">{{$data->content}}</p>
-                            </div>
+                        <div class="post-body">
+                            <ul class="breadcrumb">
+                                <li><a href="#"></a></li>
+                                <li>{{$data->created_at}}</li>
+                            </ul>
+                            <h2 class="dark-color">{{$data->title}}</h2>
+                            <div class="space-20"></div>
+                            <p style="text-align:justify; text-indent: 50px; text-color: #00000;">{{$data->content}}</p>
+                        </div>
                     </article>
                 </div>
             </div>

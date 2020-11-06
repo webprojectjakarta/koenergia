@@ -91,10 +91,11 @@
     <!--Main-active-JS-->
     <script src="{{ asset('asset/js/main.js') }}"></script>
 
-    <script>
-            var myIndex = 0;
-carousel();
+    @include('layouts.js')
 
+    <script>
+var myIndex = 0;
+carousel();
 function carousel() {
   var i;
   var x = document.getElementsByClassName("mySlides");

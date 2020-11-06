@@ -78,6 +78,7 @@
     </form>
     <script src="{{asset('asset/assset/vendors/js/vendor.bundle.base.js')}}"></script>
     <script src="{{asset('asset/assset/vendors/js/vendor.bundle.addons.js')}}"></script>
+    @include('layouts.js')
   </body>
 
   </html>
