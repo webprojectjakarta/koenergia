@@ -102,7 +102,7 @@
     <script src="{{ asset('asset/js/wow.min.js') }}"></script>
     <!--Main-active-JS-->
     <script src="{{ asset('asset/js/main.js') }}"></script>
-    @include('layouts.js')
+    {{-- @include('layouts.js') --}}
     @section('js')
     @show
 </body>

@@ -91,7 +91,7 @@
     <!--Main-active-JS-->
     <script src="{{ asset('asset/js/main.js') }}"></script>
 
-    @include('layouts.js')
+    {{-- @include('layouts.js') --}}
 
     <script>
 var myIndex = 0;

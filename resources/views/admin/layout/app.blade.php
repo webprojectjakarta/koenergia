@@ -98,7 +98,7 @@
 <script src="{{asset('asset/assset/js/sweetalert2.all.js')}}"></script>
 <script src="{{asset('asset/assset/js/select2.min.js')}}"></script>
 <script src="{{asset('asset/assset/vendors/tinymce/js/tinymce/tinymce.min.js')}}"></script>
-@include('layouts.js')
+{{-- @include('layouts.js') --}}
 @section('js')
 @show
 </body>
