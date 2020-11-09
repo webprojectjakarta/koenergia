@@ -75,14 +75,14 @@ function showresult(hitung){
             </div>
             <div class="space-60"></div>
             <div class="page-title text-center">
-                <h3 class="title">Our Solutions</h3>
+                <h5 class="title">Our Solutions</h5>
             </div>
             <div class="space-30"></div>
             <div class="row">
                 <div class="col-sm-6">
                     <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
                         <div class="box-icon">
-                            <i><img src="asset/images/solarpower-inverter-on-512-128.png" alt=""></i>
+                            <i><img src="asset/images/on-grid.png" alt=""></i>
                         </div>
                         <h4>On-Grid PV System</h4>
                         <p>No batteries needed, connected directly to the utility grid, reduce monthly bills</p>
@@ -90,7 +90,7 @@ function showresult(hitung){
                     <div class="space-60"></div>
                     <div class="service-box wow fadeInUp" data-wow-delay="0.4s">
                         <div class="box-icon">
-                        <i><img src="asset/images/solarpower-inverter-off-512-128.png" alt=""></i>
+                        <i><img src="asset/images/off-grid.png" alt=""></i>
                         </div>
                         <h4>Off-Grid PV System</h4>
                         <p>No more darkness, 24/7 energy provided, zero CO2 emissions</p>
@@ -100,7 +100,7 @@ function showresult(hitung){
                 <div class="col-sm-6">
                         <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
                             <div class="box-icon">
-                                <i class="lnr lnr-clock"></i>
+                                <i><img src="asset/images/hybrid.png" alt=""></i>
                             </div>
                             <h4>Hybrid PV System</h4>
                             <p>Combination of solar with other energy source, 24/7 energy provided</p>
@@ -108,7 +108,7 @@ function showresult(hitung){
                         <div class="space-60"></div>
                         <div class="service-box wow fadeInUp" data-wow-delay="0.6s">
                             <div class="box-icon">
-                                <i class="lnr lnr-cloud-download"></i>
+                                <i><img src="asset/images/pump.png" alt=""></i>
                             </div>
                             <h4>Solar Water Pump</h4>
                             <p>No more drought, pump the water from the source and deliver to the peoples</p>
