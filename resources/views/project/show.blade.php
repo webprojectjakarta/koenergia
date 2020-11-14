@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="{{ asset('asset/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('asset/css/responsive.css') }}">
     <script src="{{ asset('asset/js/vendor/modernizr-2.8.3.min.js') }}"></script>
+    <script src="https://kit.fontawesome.com/9d10450ac7.js" crossorigin="anonymous"></script>
     @section('css')
 
     @show
@@ -100,6 +101,8 @@
             </div>
         </div>
     </div>
+
+    @include('footer.blog')
     <!-- Footer-Area-End -->
     <!--Vendor-JS-->
     <script src="{{ asset('asset/js/vendor/jquery-1.12.4.min.js') }}"></script>

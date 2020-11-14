@@ -76,6 +76,8 @@
     @include('content.contact')
     @show
     @yield('content')
+    
+</body>
     <!-- Footer-Area-End -->
     <!--Vendor-JS-->
     <script src="{{ asset('asset/js/vendor/jquery-1.12.4.min.js') }}"></script>
@@ -111,6 +113,5 @@ function carousel() {
 
     @section('js')
     @show
-</body>
 
 </html>

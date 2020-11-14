@@ -27,11 +27,13 @@
     <div class="section-padding">
         <div class="container">
             <div class="row">
+                <div class="space-60"></div>
                 <div class="col-xs-12">
                     <div class="page-title text-center">
-                        <h5 class="title">Contact US</h5>
-                        <h3 class="dark-color">Find Us By Bellow Details</h3>
-                        <div class="space-60"></div>
+                        <img src="{{'asset/images/icon.png'}}" alt="About Logo">
+                            <div class="space-20"></div>
+                            <h5 class="title">Contact US</h5>
+                            <h3 class="dark-color">Find Us By Bellow Details</h3>
                     </div>
                 </div>
             </div>

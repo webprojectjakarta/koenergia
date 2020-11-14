@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="{{ asset('asset/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('asset/css/responsive.css') }}">
     <script src="{{ asset('asset/js/vendor/modernizr-2.8.3.min.js') }}"></script>
+    <script src="https://kit.fontawesome.com/9d10450ac7.js" crossorigin="anonymous"></script>
     @section('css')
 
     @show
@@ -67,15 +68,15 @@
     </nav>
     @show
     <!-- Home Area -->
-    <header class="site-header">
+    <header class="site-area overlay">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 text-center">
                     <h1 class="white-color">Project</h1>
-                    <ul class="breadcrumb">
+                    {{-- <ul class="breadcrumb">
                         <li><a href="{{'/'}}">Home</a></li>
                         <li>Project</li>
-                    </ul>
+                    </ul> --}}
                 </div>
             </div>
         </div>

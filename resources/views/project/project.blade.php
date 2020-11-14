@@ -1,30 +1,76 @@
 @section('js')
-<script type="text/javascript">
+{{-- <script type="text/javascript">
     $(document).ready(function() {
       $('#table').DataTable({
         "iDisplayLength": 10
       });
 
   } );
-  </script>
-<div class="section-padding">
+  </script> --}}
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .flip-box {
+      background-color: transparent;
+      width: 100%;
+      height: 200px;
+      border: 1px solid #f1f1f1;
+      perspective: 1000px;
+    }
+    
+    .flip-box-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+    
+    .flip-box:hover .flip-box-inner {
+      transform: rotateY(180deg);
+    }
+    
+    .flip-box-front, .flip-box-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      
+    }
+    
+    .flip-box-front {
+      background-color: #fff;
+      color: black;
+    }
+    
+    .flip-box-back {
+      background-color: white;
+      color: black;
+      transform: rotateY(180deg);
+    }
+    </style>
+<div class="section-home">
     <div class="container">
         <div class="row">        
             @foreach($datas as $data)
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <article class="post-single">
-                    <figure class="post-media">
-                        <img src="{{url('images/user', $data->image)}}" alt=""
-                         style="haight : 500px; width : 500px;">
-                    </figure>
-                    <div class="post-body">
-                        <div class="post-meta">
-                            <div class="post-tags"><a href="#"></a></div>
-                                <div class="post-date">{{$data->created_at}}</div>
-                            </div>
-                        <h4 class="dark-color"><a href="{{ url('/detail', $data->id) }}">{{$data->title}}</a></h4>
-                        <a href="{{ url('/detail', $data->id) }}" class="read-more">View Article</a>
-                    </div>
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                          <div class="flip-box-front">
+                          <img src="{{url('images/user', $data->image)}}" alt="Paris" style="width:300px;height:200px">
+                          </div>
+                          <div class="flip-box-back">
+                              <div class="space-10"></div>
+                            <h5>{{$data->title}}</h5>
+                            <p>{{$data->content}}</p>
+                          </div>
+                        </div>
+                      </div>
                 </article>
             </div>
         @endforeach

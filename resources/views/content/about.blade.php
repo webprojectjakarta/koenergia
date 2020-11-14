@@ -33,7 +33,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                     <div class="page-title text-center">
-                        <h5 class="title">Our 4-step Process</h5>
+                        <h6 class="title">Our 4-step Process</h6>
                         <div class="space-60"></div>
                     </div>
                 </div>

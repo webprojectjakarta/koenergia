@@ -24,5 +24,5 @@
                 </div>
             </div>
         </div>
-    </nav>
+</nav>
     <!-- MainMenu-Area-End -->
