@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
+
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Sumon Rahman">
@@ -37,7 +38,7 @@
     <!-- Preloader-content -->
     <div class="preloader">
         <span><i class="lnr lnr-sun"></i></span>
-        
+
     </div>
     <!-- Menu Area -->
     <nav class="mainmenu-area" data-spy="affix" data-offset-top="200">
@@ -57,7 +58,8 @@
                     <li><a href="{{url('/')}}#solution_page">Solution</a></li>
                     <li><a href="{{url('blog')}}">Blog</a></li>
                     <li class="active"><a href="{{url('project')}}">Project</a></li>
-                    <li><a href="{{url('partner')}}">Partnership</a></li>
+                    <li><a href="{{url('carier')}}">Carier</a></li>
+                    {{-- <li><a href="{{url('partner')}}">Partnership</a></li> --}}
                     <li><a href="{{url('/')}}#contact_page">Contacts</a></li>
                 </ul>
                 <div class="right-button hidden-xs">
@@ -73,17 +75,13 @@
             <div class="row">
                 <div class="col-xs-12 text-center">
                     <h1 class="white-color">Project</h1>
-                    {{-- <ul class="breadcrumb">
-                        <li><a href="{{'/'}}">Home</a></li>
-                        <li>Project</li>
-                    </ul> --}}
                 </div>
             </div>
         </div>
     </header>
     @include('project.project')
     <!-- End Home Area -->
-    
+
     @yield('content')
 
     @section('footer')

@@ -11,7 +11,7 @@ use Session;
 use Auth;
 use RealRashid\SweetAlert\Facades\Alert;
 use Illuminate\Support\Facades\Redirect;
-
+use PDF;
 
 class BlogController extends Controller
 {
@@ -22,6 +22,8 @@ class BlogController extends Controller
     }
     public function detail ($id){
         $data = Blog::findOrFail($id);
+        // $pdf = PDF::loadview('blog.test',['data'=>$data]);
+	    // return $pdf->stream('laporan-pegawai-pdf');
 
         return view('blog.show', compact('data'));
     }

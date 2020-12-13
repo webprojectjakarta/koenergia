@@ -4,7 +4,7 @@
         width: 60px;
         height: 60px;
         bottom: 7px;
-        left: 20px;
+        left: 10px;
         background-color: #25d366;
         color: #FFF;
         border-radius: 50px;
@@ -20,47 +20,42 @@
 
 </style>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<a href="https://api.whatsapp.com/send?phone=6282389123898&text=Hello Koenergia" class="float" target="_blank">
+<a href="https://api.whatsapp.com/send?phone=6281282528654&text=Hello Koenergia" class="float" target="_blank">
     <i class="fa fa-whatsapp my-float"></i>
 </a>
 <footer class="footer-area" id="contact_page">
     <div class="section-padding">
         <div class="container">
             <div class="row">
-                <div class="space-60"></div>
+                <div class="space-20"></div>
                 <div class="col-xs-12">
                     <div class="page-title text-center">
                         <img src="{{'asset/images/icon.png'}}" alt="About Logo">
-                            <div class="space-20"></div>
-                            <h5 class="title">Contact US</h5>
-                            <h3 class="dark-color">Find Us By Bellow Details</h3>
+                        <div class="space-20"></div>
+                        <h5 class="title">Contact US</h5>
+                        {{-- <h3 class="dark-color">Find Us By Bellow Details</h3> --}}
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-sm-4">
+                {{-- <div class="col-xs-12 col-sm-4">
                     <div class="footer-box">
-                        <a href="https://goo.gl/maps/ZwzjJQV68pHeX7kFA" target="_blank">
-                            <div class="box-icon">
-                                <span class="lnr lnr-map-marker"></span>
-                            </div>
-                        </a>
-                        <p>Jalan Letjen Soepeno, Permata Hijau, Jakarta</p>
+
                     </div>
                     <div class="space-30 hidden visible-xs"></div>
-                </div>
-                <div class="col-xs-12 col-sm-4">
+                </div> --}}
+                <div class="col-xs-12 col-sm-6">
                     <div class="footer-box">
                         <a href="tel:+62 813 1120 0711">
                             <div class="box-icon">
                                 <span class="lnr lnr-phone-handset"></span>
                             </div>
                         </a>
-                        <p>+62 813 1120 0711</p>
+                        <p>+62 812-8252-8654</p>
                     </div>
                     <div class="space-30 hidden visible-xs"></div>
                 </div>
-                <div class="col-xs-12 col-sm-4">
+                <div class="col-xs-12 col-sm-6">
                     <div class="footer-box">
                         <a href="mailto:info@koenergia.com" target="_blank">
                             <div class="box-icon">
@@ -97,11 +92,52 @@
                         </form>
                     </div>
                 </div>
+                <div class="col-sm-6">
+                    <h3 style="color: black">Sosial Media</h3>
+                    <div class="col-xs-4">
+                        <a href="https://www.linkedin.com/company/koenergia" target="_blank"><i
+                                class="fa fa-linkedin-square fa-2x"></i></a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="https://www.facebook.com/koenergiacom" target="_blank"><span
+                                class="fa fa-facebook-square fa-2x"></span></a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="https://instagram.com/koenergiacom?igshid=dge5aux1yz6t" target="_blank"><span
+                                class="fab fa-instagram fa-2x"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="space-60"></div>
+        <div class="row">
+            <div class="container">
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+{{-- <footer class="footer-area" id="contact_page">
+    <div class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="sosmed">
+                    <a href="https://www.linkedin.com/company/koenergia" target="_blank"><i
+                            class="fa fa-linkedin-square fa-2x"></i></a>
+                    <a href="https://www.facebook.com/koenergiacom" target="_blank"><span
+                            class="fa fa-facebook-square fa-2x"></span></a>
+                    <a href="https://instagram.com/koenergiacom?igshid=dge5aux1yz6t" target="_blank"><span
+                            class="fab fa-instagram fa-2x"></span></a>
+                </div>
             </div>
         </div>
     </div>
     </div>
     <!-- Footer-Bootom -->
-    @include('blog.footer')
     <!-- Footer-Bootom-End -->
-</footer>
+</footer> --}}
+
+@include('blog.footer')

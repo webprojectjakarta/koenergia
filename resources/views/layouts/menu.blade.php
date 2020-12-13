@@ -16,7 +16,8 @@
                     <li><a href="#solution_page">Solution</a></li>
                     <li><a href="{{url('blog')}}">Blog</a></li>
                     <li><a href="{{url('project')}}">Project</a></li>
-                    <li><a href="{{url('partner')}}">Partnership</a></li>
+                    <li><a href="{{url('carier')}}">Carier</a></li>
+                    {{-- <li><a href="{{url('partner')}}">Partnership</a></li> --}}
                     <li><a href="#contact_page">Contacts</a></li>
                 </ul>
                 <div class="right-button hidden-xs">

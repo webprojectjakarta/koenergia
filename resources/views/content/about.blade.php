@@ -3,7 +3,7 @@
             <div class="row">
                 <div class="col-xs-12 col-md-10 col-md-offset-1">
                 <div class="page-title text-center">
-                    <div class="space-60"></div>
+                    <div class="space-10"></div>
                     <img src="{{'asset/images/icon.png'}}" alt="About Logo">
                         <div class="space-20"></div>
                         <h5 class="title">About</h5>
@@ -34,7 +34,7 @@
                 <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                     <div class="page-title text-center">
                         <h6 class="title">Our 4-step Process</h6>
-                        <div class="space-60"></div>
+                        <div class="space-20"></div>
                     </div>
                 </div>
             </div>

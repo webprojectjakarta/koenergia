@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
+
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Sumon Rahman">
@@ -37,7 +38,7 @@
     <!-- Preloader-content -->
     <div class="preloader">
         <span><i class="lnr lnr-sun"></i></span>
-        
+
     </div>
     <!-- Menu Area -->
     <nav class="mainmenu-area" data-spy="affix" data-offset-top="200">
@@ -55,10 +56,10 @@
                     <li><a href="{{url('/')}}">Home</a></li>
                     <li><a href="{{url('/')}}#about_page">About</a></li>
                     <li><a href="{{url('/')}}#solution_page">Solution</a></li>
-                    <li><a href="{{url('blog')}}">Blog</a></li>
-                    <li ><a href="{{url('project')}}">Project</a></li>
-                    <li><a href="{{url('carier')}}">Carier</a></li>
-                    {{-- <li class="active"><a href="{{url('partner')}}">Partnership</a></li> --}}
+                    <li ><a href="{{url('blog')}}">Blog</a></li>
+                    <li><a href="{{url('project')}}">Project</a></li>
+                    <li class="active"><a href="{{url('carier')}}">Carier</a></li>
+                    {{-- <li><a href="{{url('partner')}}">Partnership</a></li> --}}
                     <li><a href="{{url('/')}}#contact_page">Contacts</a></li>
                 </ul>
                 <div class="right-button hidden-xs">
@@ -73,18 +74,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 text-center">
-                    <h1 class="white-color">Partnership</h1>
+                    <h1 class="white-color">Carier</h1>
                     {{-- <ul class="breadcrumb">
-                        <li><a href="{{'/'}}">Home</a></li>
-                        <li>Partner</li>
+                        <li><a href="{{'/'}}"></a></li>
+                        <li>Blog</li>
                     </ul> --}}
                 </div>
             </div>
         </div>
     </header>
-    @include('partner.partner')
+    @include('carier.carier')
     <!-- End Home Area -->
-    
+
     @yield('content')
 
     @section('footer')

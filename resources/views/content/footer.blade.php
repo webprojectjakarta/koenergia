@@ -5,7 +5,7 @@
                     <div class="col-xs-12">
                         <div class="page-title text-center">
                             <h5 class="title">Contact US</h5>
-                            <h3 class="dark-color">Find Us By Bellow Details</h3>
+                            {{-- <h3 class="dark-color">Find Us By Bellow Details</h3> --}}
                             <div class="space-60"></div>
                         </div>
                     </div>
