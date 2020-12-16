@@ -61,50 +61,69 @@
         </div>
         <div class="space-30"></div>
         <div class="row">
-            <div class="col-md-12">
-                <div class="col-sm-3">
-                    <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="box-icon">
-                            <i><img src="asset/images/on-grid.png" alt=""></i>
-                        </div>
-                        <h4>17000</h4>
-                        <p>Pohon</p>
-                        <h5>Tertanam</h5>
+            @foreach ($data as $datas)
+            <div class="col-md-2">
+                <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="box-icon">
+                        <span class="fa fa-cogs"></span>
                     </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="box-icon">
-                            <i><img src="asset/images/on-grid.png" alt=""></i>
-                        </div>
-                        <h4>17000</h4>
-                        <p>Kg</p>
-                        <h5>CO<sub>2</sub>Terhindar</h5>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="box-icon">
-                            <i><img src="asset/images/on-grid.png" alt=""></i>
-                        </div>
-                        <h4>17000</h4>
-                        <p>kWh</p>
-                        <h5>Energi Hijau</h5>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="box-icon">
-                            <i><img src="asset/images/on-grid.png" alt=""></i>
-                        </div>
-                        <h4>17000</h4>
-                        <p>Rumah</p>
-                        <h5>Diterangi</h5>
-                    </div>
+                    <h4>{{$datas->pohon}}</h4>
+                    <p>Pohon</p>
+                    <p>Tertanam</p>
                 </div>
             </div>
+            <div class="col-md-2">
+                <div class="service-box wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="box-icon">
+                        <i class="fa fa-database"></i>
+                    </div>
+                    <h4>{{$datas->kg}}</h4>
+                    <p>Kg</p>
+                    <p>Co<sub>2</sub>Terhindar</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="box-icon">
+                        <i class="fa fa-wrench"></i>
+                    </div>
+                    <h4>{{$datas->kwh}}</h4>
+                    <p>kWh</p>
+                    <p>Energi Hijau</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="service-box wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="box-icon">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <h4>{{$datas->rumah}}</h4>
+                    <p>Rumah</p>
+                    <p>Diterangi</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="service-box wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="box-icon">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <h4>{{$datas->ltr}}</h4>
+                    <p>ltr</p>
+                    <p>BBM</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="service-box wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="box-icon">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <h4>{{$datas->ltr}}</h4>
+                    <p>ltr</p>
+                    <p>BBM</p>
+                </div>
+            </div>
+            @endforeach
         </div>
-
     </div>
 </section>
 <section class="section-home">
@@ -172,18 +191,17 @@
 {{-- <section id="questions_page" class="questions-area section-padding">
 
     <a href="{{url('project')}}">
-        <div class="page-title text-center">
-            <img src="{{'asset/images/icon.png'}}" alt="About Logo">
-            <div class="space-20"></div>
-            <h5 class="title">Our Project</h5>
-        </div>
-        <div class="w3-content w3-section">
-            <img class="mySlides w3-animate-fading" src="asset/images/header-bg.jpeg"
-                style="width:1000px; height:450px;">
-            <img class="mySlides w3-animate-fading" src="asset/images/blog-3.jpg" style="width:1000px; height:450px;">
-            <img class="mySlides w3-animate-fading" src="asset/images/blog-2.jpg" style="width:1000px; height:450px;">
-            <img class="mySlides w3-animate-fading" src="asset/images/blog-1.jpg" style="width:1000px; height:450px;">
-        </div>
-    </a>
+<div class="page-title text-center">
+    <img src="{{'asset/images/icon.png'}}" alt="About Logo">
+    <div class="space-20"></div>
+    <h5 class="title">Our Project</h5>
+</div>
+<div class="w3-content w3-section">
+    <img class="mySlides w3-animate-fading" src="asset/images/header-bg.jpeg" style="width:1000px; height:450px;">
+    <img class="mySlides w3-animate-fading" src="asset/images/blog-3.jpg" style="width:1000px; height:450px;">
+    <img class="mySlides w3-animate-fading" src="asset/images/blog-2.jpg" style="width:1000px; height:450px;">
+    <img class="mySlides w3-animate-fading" src="asset/images/blog-1.jpg" style="width:1000px; height:450px;">
+</div>
+</a>
 </section> --}}
 <!-- Home-Area-End -->

@@ -1,16 +1,19 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use PDF;
+use App\Contribution;
 
 class HomeController extends Controller
 {
     public function index(Request $request)
     {
-        $id = $request->header('User-Agent');
-        return view('layouts.app');
+        $data = DB::table('contribution')
+        ->select(DB::raw("SUM(pohon) as pohon, SUM(kg) as kg,SUM(kwh) as kwh, SUM(rumah) as rumah, SUM(ltr) as ltr"))->get();
+        
+        return view('layouts.app',compact('data'));
         
     }
     public function store(Request $request)
