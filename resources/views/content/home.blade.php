@@ -47,6 +47,69 @@
     </div>
     </div>
 </header>
+
+<section class="section-home">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-10 col-md-offset-1">
+                <div class="page-title text-center">
+                    <h2 class="blue-color" data-wow-delay="0.4s">Save Up to 60% of Monthly Electricity Bills with Solar
+                    </h2>
+                    <div class="space-10"></div>
+                    <p>When the tariff electricity price is unpredictable,
+                        while you have to pay more bills due to increasing
+                        energy consumption, solar is perfect solution for your
+                        building.With 20 years product lifetime and flat energy
+                        price, do you think solar is still expensive investment?</p>
+                </div>
+            </div>
+        </div>
+        <div class="space-60"></div>
+        <div class="page-title text-center">
+            <h5 class="title">Our Solutions</h5>
+        </div>
+        <div class="space-30"></div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="box-icon">
+                        <i><img src="asset/images/on-grid.png" alt=""></i>
+                    </div>
+                    <h4>On-Grid PV System</h4>
+                    <p>No batteries needed, connected directly to the utility grid, reduce monthly bills</p>
+                </div>
+                <div class="space-60"></div>
+                <div class="service-box wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="box-icon">
+                        <i><img src="asset/images/off-grid.png" alt=""></i>
+                    </div>
+                    <h4>Off-Grid PV System</h4>
+                    <p>No more darkness, 24/7 energy provided, zero CO2 emissions</p>
+                </div>
+                <div class="space-60"></div>
+            </div>
+            <div class="col-sm-6">
+                <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="box-icon">
+                        <i><img src="asset/images/hybrid.png" alt=""></i>
+                    </div>
+                    <h4>Hybrid PV System</h4>
+                    <p>Combination of solar with other energy source, 24/7 energy provided</p>
+                </div>
+                <div class="space-60"></div>
+                <div class="service-box wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="box-icon">
+                        <i><img src="asset/images/pump.png" alt=""></i>
+                    </div>
+                    <h4>Solar Water Pump</h4>
+                    <p>No more drought, pump the water from the source and deliver to the peoples</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
 <section id="questions_page" class="questions-area section-padding">
     <div class="container">
         <div class="row">
@@ -124,67 +187,6 @@
             </div>
             @endforeach
         </div>
-    </div>
-</section>
-<section class="section-home">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-md-10 col-md-offset-1">
-                <div class="page-title text-center">
-                    <h2 class="blue-color" data-wow-delay="0.4s">Save Up to 60% of Monthly Electricity Bills with Solar
-                    </h2>
-                    <div class="space-10"></div>
-                    <p>When the tariff electricity price is unpredictable,
-                        while you have to pay more bills due to increasing
-                        energy consumption, solar is perfect solution for your
-                        building.With 20 years product lifetime and flat energy
-                        price, do you think solar is still expensive investment?</p>
-                </div>
-            </div>
-        </div>
-        <div class="space-60"></div>
-        <div class="page-title text-center">
-            <h5 class="title">Our Solutions</h5>
-        </div>
-        <div class="space-30"></div>
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="box-icon">
-                        <i><img src="asset/images/on-grid.png" alt=""></i>
-                    </div>
-                    <h4>On-Grid PV System</h4>
-                    <p>No batteries needed, connected directly to the utility grid, reduce monthly bills</p>
-                </div>
-                <div class="space-60"></div>
-                <div class="service-box wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="box-icon">
-                        <i><img src="asset/images/off-grid.png" alt=""></i>
-                    </div>
-                    <h4>Off-Grid PV System</h4>
-                    <p>No more darkness, 24/7 energy provided, zero CO2 emissions</p>
-                </div>
-                <div class="space-60"></div>
-            </div>
-            <div class="col-sm-6">
-                <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="box-icon">
-                        <i><img src="asset/images/hybrid.png" alt=""></i>
-                    </div>
-                    <h4>Hybrid PV System</h4>
-                    <p>Combination of solar with other energy source, 24/7 energy provided</p>
-                </div>
-                <div class="space-60"></div>
-                <div class="service-box wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="box-icon">
-                        <i><img src="asset/images/pump.png" alt=""></i>
-                    </div>
-                    <h4>Solar Water Pump</h4>
-                    <p>No more drought, pump the water from the source and deliver to the peoples</p>
-                </div>
-            </div>
-        </div>
-    </div>
     </div>
 </section>
 
