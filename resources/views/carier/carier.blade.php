@@ -32,6 +32,7 @@
                 <div class="col-md-4 lineVertical">
                     <h5 class="h5">Needed Urgently</h5>
                     <h4 class="h3">Sales dan Marketing</h4>
+                    <div class="space-20"></div>
                     <li class="justify">Pria/Wanita</li>
                     <li class="justify">Pendidikan D3/S1</li>
                     <li class="justify">Memiliki kemampuan interpesonal & negosiasi skill, keterampilan

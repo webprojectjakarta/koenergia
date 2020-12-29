@@ -3,10 +3,7 @@
         <div class="row">
             <div class="col-xs-12 col-md-10 col-md-offset-1">
                 <div class="page-title text-center">
-                    <div class="space-20"></div>
-                    <img src="{{'asset/images/icon.png'}}" alt="About Logo">
-                    <div class="space-20"></div>
-                    <h5 class="title">Solutions</h5>
+                    <h5 class="title">Solusi</h5>
                 </div>
 
             </div>
@@ -18,20 +15,17 @@
 
                 <div class="col-md-6">
                     <h3>On-Grid PV System</h3>
-                    <p><b>HOW DOES IT WORK?</b></p>
-                    <p>- <b>PV Panel: </b>Converting sunlight into DC electricity</p>
-                    <p>- <b>Solar Inverter: </b>Generate AC Power from DC input</p>
-                    <p>- <b>Distribution Board: </b>AC power produced by Inverter will be connected to existing
-                        distribution board and then cover the load</p>
-                    <p>- When the solar energy generation bigger than electricity consumption, excess energy will be
-                        delivered to the utility grid and then counted as export energy that will be deducted on the
-                        monthly bills</p>
+                    <p><b>BAGAIMANA CARA KERJANYA?</b></p>
+                    <p>- <b>PV Panel: </b>Mengkonversi cahaya matahari menjadi listrik DC</p>
+                    <p>- <b>Solar Inverter: </b>Membangkitkan listrik AC dari masukan sumber DC</p>
+                    <p>- <b>Panel Distribusi: </b>Listrik AC yang dihasilkan dari Inverter akan dikoneksikan dengan panel distribusi yang telah ada pada bangunan dan akan menyerap energi yang dibutuhkan oleh beban</p>
+                    <p>- Pada saat energi yang dihasilkan dari tenaga surya lebih besar dibandingkan konsumsi energi, maka kelebihan dari energi akan langsung dikirimkan ke jaringan PLN dan terhitung sebagai ekspor energi yang akan mengurangi tagihan listrik bulanan</p>
                 </div>
 
                 <div class="col-md-6">
                     <img src="asset/images/ongrid.jpg" alt="">
                 </div>
-                <div class="space-60"></div>
+                <div class="space-100"></div>
 
                 <!-- offgrid -->
                 <div class="col-md-6">
@@ -40,30 +34,24 @@
 
                 <div class="col-md-6">
                     <h3>Off-Grid & Hybrid PV System</h3>
-                    <p><b>HOW DOES IT WORK?</b></p>
-                    <p>- <b>PV Panel: </b>Converting sunlight into DC electricity</p>
-                    <p>- <b>Solar Inverter: </b>Generate AC Power from DC input</p>
-                    <p>- <b>Distribution Board: </b>AC power produced by Inverter will be connected to existing
-                        distribution board and then cover the load</p>
-                    <p>- <b>Battery Storage: </b>Excess energy from Inverter power will be stored to the battery and can
-                        be used during the night</p>
-                    <p>- <b>Additional Energy Source: </b>will be operated when the solar is unavailable and the battery
-                        storage state of charge is low</p>
+                    <p><b>BAGAIMANA CARA KERJANYA?</b></p>
+                    <p>- <b>PV Panel: </b>Mengkonversi cahaya matahari menjadi listrik DC</p>
+                    <p>- <b>Solar Inverter: </b>Membangkitkan listrik AC dari masukan sumber DC</p>
+                    <p>- <b>Panel Distribusi: </b>: Listrik AC yang dihasilkan dari Inverter akan dikoneksikan dengan panel distribusi yang telah ada pada bangunan dan akan menyerap energi yang dibutuhkan oleh beban</p>
+                    <p>- <b>Baterai Penyimpanan: </b>Kelebihan energi dari Inverter akan disimpan ke baterai dan dapat digunakan pada saat malam hari</p>
+                    <p>- <b>Sumber Energi Lainnya: </b>Akan dioperasikan ketika tenaga surya tidak tersedia dan kondisi baterai sedang rendah</p>
                 </div>
-                <div class="space-60"></div>
+                <div class="space-100"></div>
 
 
                 <!-- solarpump -->
                 <div class="col-md-6">
-                    <h3>Solar Water Pump</h3>
-                    <p><b>HOW DOES IT WORK?</b></p>
-                    <p>- <b>PV Panel: </b>Converting sunlight into DC electricity</p>
-                    <p>- <b>Pump Controller: </b>Maintain the solar energy from the sun to optimize the operation of the
-                        pump</p>
-                    <p>- <b>Distribution Board: </b>moves water from the source e.g well, or lake to the point of
-                        delivery</p>
-                    <p>- <b>Battery Storage: </b>keep the water when the production bigger than consumption and can be
-                        used during the night or when the sun is unavailable</p>
+                    <h3>Pompa Surya</h3>
+                    <p><b>BAGAIMANA CARA KERJANYA?</b></p>
+                    <p>- <b>PV Panel: </b>Mengkonversi cahaya matahari menjadi listrik DC</p>
+                    <p>- <b>Kontroler Pompa: </b>Membangkitkan listrik AC dari masukan sumber DC</p>
+                    <p>- <b>Pompa: </b>Memindahkan air dari sumbernya seperti sumur atau air permukaan ke titik pengiriman</p>
+                    <p>- <b>Tangki Penyimpanan: </b>Menyimpan air ketika produksi air lebih besar dari konsumsi air dan dapat digunakan ketika malam hari atau pada saat tidak ada cahaya matahari</p>
                 </div>
 
                 <div class="col-md-6">
@@ -80,9 +68,8 @@
         <div class="row">
             <div class="col-xs-12 col-md-10 col-md-offset-1">
                 <div class="page-title text-center">
-                    <img src="{{'asset/images/icon.png'}}" alt="About Logo">
                     <div class="space-20"></div>
-                    <h5 class="title">Our Services</h5>
+                    <h5 class="title">Pelayanan Kami</h5>
                 </div>
 
             </div>
@@ -94,9 +81,8 @@
                     <div class="box-icon">
                         <span class="fa fa-cogs"></span>
                     </div>
-                    <h4>ENGINEERING</h4>
-                    <p>We provide all design related to solar and other energy source, such us feasibility study, energy
-                        yield simulation, drawing design and engineering calculation</p>
+                    <h4>ENJINERING</h4>
+                    <p>Kami akan menyediakan semua desain terkait surya dan sumber energi lainnya seperti studi kelayakan, simulasi energi, dan gambar desain beserta kalkulasi enjinering</p>
                 </div>
                 <br>
                 <div class="space-60"></div>
@@ -104,10 +90,8 @@
                     <div class="box-icon">
                         <i class="fa fa-database"></i>
                     </div>
-                    <h4>O & M</h4>
-                    <p>We understand the maintaining the performance of the installed system is very important for the
-                        investment. We will help you to achieve your System KPI and collect all the data into proper
-                        report, so you don’t have to worry with your system performance</p>
+                    <h4>OPERASI dan PEMELIHARAAN</h4>
+                    <p>Kami mengerti menjaga performa dari sistem yang telah terpasang sangat penting untuk investasi. Kami akan membantu kamu dalam mencapai sistem KPI dan mengumpulkan data kedalam laporan yang layak, jadi Anda tidak perlu khawatir dengan performa dari sistem Anda</p>
                 </div>
             </div>
             <div class="col-sm-6">
@@ -115,20 +99,16 @@
                     <div class="box-icon">
                         <i class="fa fa-wrench"></i>
                     </div>
-                    <h4>INSTALLATION</h4>
-                    <p>We support the local or foreigner solar developer to install the system of their project. They
-                        provide all major components and we will take care the rest. More reliable project with high
-                        return of investment</p>
+                    <h4>INSTALASI</h4>
+                    <p>Kami akan membantu pengembang lokal atau luar negeri untuk memasang sistem dari proyek mereka. Mereka akan menyediakan semua komponen-komponen dan kita akan mengerjakan selebihnya. Proyek jadi lebih andal dengan pengembalian investasi yang tinggi</p>
                 </div>
-                <div class="space-60"></div>
+                <div class="space-30"></div>
                 <div class="service-box wow fadeInUp" data-wow-delay="0.6s">
                     <div class="box-icon">
                         <i class="fa fa-users"></i>
                     </div>
-                    <h4>TRAINING</h4>
-                    <p>We understand that putting resources on your project organization with solar energy knowledge is
-                        difficult one. We can help you to give a proper training so you don’t have to worry with the
-                        engineering side and focus with your sales</p>
+                    <h4>PELATIHAN</h4>
+                    <p>Kami memahami bahwa menempatkan sumber daya pada organisasi proyek Anda dengan pengetahuan energi surya itu sulit. Kami dapat membantu Anda memberikan pelatihan yang tepat sehingga Anda tidak perlu khawatir dengan sisi teknik dan fokus dengan penjualan Anda</p>
                 </div>
             </div>
         </div>

@@ -55,10 +55,10 @@
                 <ul class="nav navbar-nav mainmenu">
                     <li><a href="{{url('/')}}">Home</a></li>
                     <li><a href="{{url('/')}}#about_page">About</a></li>
-                    <li><a href="{{url('/')}}#solution_page">Solution</a></li>
-                    <li class="active"><a href="{{url('blog')}}">Blog</a></li>
-                    <li><a href="{{url('project')}}">Project</a></li>
-                    <li><a href="{{url('carier')}}">Carier</a></li>
+                    <li><a href="{{url('/')}}#solution_page">Solutions</a></li>
+                    <li class="active"><a href="{{url('blog')}}">Blogs</a></li>
+                    <li><a href="{{url('project')}}">Projects</a></li>
+                    <li><a href="{{url('carier')}}">Careers</a></li>
                     {{-- <li><a href="{{url('partner')}}">Partnership</a></li> --}}
                     <li><a href="{{url('/')}}#contact_page">Contacts</a></li>
                 </ul>
@@ -74,7 +74,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 text-center">
-                    <h1 class="white-color">Blog</h1>
+                    <h1 class="white-color">Blogs</h1>
                     {{-- <ul class="breadcrumb">
                         <li><a href="{{'/'}}"></a></li>
                         <li>Blog</li>
