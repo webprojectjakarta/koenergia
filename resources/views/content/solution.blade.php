@@ -11,54 +11,55 @@
 
         <!-- ongrid -->
         <div class="row">
-            <div class="col-md-12 col-sm-6">
-                <div class="space-30"></div>
-                    <div class="col-md-6">
-                        <h3>On-Grid PV System</h3>
-                        <p><b>BAGAIMANA CARA KERJANYA?</b></p>
-                        <p>- <b>PV Panel: </b>Mengkonversi cahaya matahari menjadi listrik DC</p>
-                        <p>- <b>Solar Inverter: </b>Membangkitkan listrik AC dari masukan sumber DC</p>
-                        <p>- <b>Panel Distribusi: </b>Listrik AC yang dihasilkan dari Inverter akan dikoneksikan dengan panel distribusi yang telah ada pada bangunan dan akan menyerap energi yang dibutuhkan oleh beban</p>
-                        <p>- Pada saat energi yang dihasilkan dari tenaga surya lebih besar dibandingkan konsumsi energi, maka kelebihan dari energi akan langsung dikirimkan ke jaringan PLN dan terhitung sebagai ekspor energi yang akan mengurangi tagihan listrik bulanan</p>
-                    </div>
-
-                <div class="col-md-6">
-                    <img src="asset/images/ongrid.jpg" alt="">
-                </div>
-                <div class="space-100"></div>
-
-                <!-- offgrid -->
-                <div class="col-md-6">
-                    <img src="asset/images/offgrid.jpg" alt="">
-                </div>
-
-                <div class="col-md-6">
-                    <h3>Off-Grid & Hybrid PV System</h3>
-                    <p><b>BAGAIMANA CARA KERJANYA?</b></p>
-                    <p>- <b>PV Panel: </b>Mengkonversi cahaya matahari menjadi listrik DC</p>
-                    <p>- <b>Solar Inverter: </b>Membangkitkan listrik AC dari masukan sumber DC</p>
-                    <p>- <b>Panel Distribusi: </b>: Listrik AC yang dihasilkan dari Inverter akan dikoneksikan dengan panel distribusi yang telah ada pada bangunan dan akan menyerap energi yang dibutuhkan oleh beban</p>
-                    <p>- <b>Baterai Penyimpanan: </b>Kelebihan energi dari Inverter akan disimpan ke baterai dan dapat digunakan pada saat malam hari</p>
-                    <p>- <b>Sumber Energi Lainnya: </b>Akan dioperasikan ketika tenaga surya tidak tersedia dan kondisi baterai sedang rendah</p>
-                </div>
-                <div class="space-100"></div>
-
-
-                <!-- solarpump -->
-                <div class="col-md-6">
-                    <h3>Pompa Surya</h3>
-                    <p><b>BAGAIMANA CARA KERJANYA?</b></p>
-                    <p>- <b>PV Panel: </b>Mengkonversi cahaya matahari menjadi listrik DC</p>
-                    <p>- <b>Kontroler Pompa: </b>Membangkitkan listrik AC dari masukan sumber DC</p>
-                    <p>- <b>Pompa: </b>Memindahkan air dari sumbernya seperti sumur atau air permukaan ke titik pengiriman</p>
-                    <p>- <b>Tangki Penyimpanan: </b>Menyimpan air ketika produksi air lebih besar dari konsumsi air dan dapat digunakan ketika malam hari atau pada saat tidak ada cahaya matahari</p>
-                </div>
-
-                <div class="col-md-6">
-                    <img src="asset/images/solarpump.jpg" alt="">
-                </div>
-                <div class="space-30"></div>
+            <div class="col-md-6">
+                <h3>On-Grid PV System</h3>
+                <p><b>BAGAIMANA CARA KERJANYA?</b></p>
+                <p>- <b>PV Panel: </b>Mengkonversi cahaya matahari menjadi listrik DC</p>
+                <p>- <b>Solar Inverter: </b>Membangkitkan listrik AC dari masukan sumber DC</p>
+                <p>- <b>Panel Distribusi: </b>Listrik AC yang dihasilkan dari Inverter akan dikoneksikan dengan panel distribusi yang telah ada pada bangunan dan akan menyerap energi yang dibutuhkan oleh beban</p>
+                <p>- Pada saat energi yang dihasilkan dari tenaga surya lebih besar dibandingkan konsumsi energi, maka kelebihan dari energi akan langsung dikirimkan ke jaringan PLN dan terhitung sebagai ekspor energi yang akan mengurangi tagihan listrik bulanan</p>
             </div>
+
+            <div class="col-md-6">
+                <div class="space-60"></div>
+                <img src="asset/images/ongrid.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- offgrid -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="space-60"></div>
+                <img src="asset/images/offgrid.jpg" alt="">
+            </div>
+
+            <div class="col-md-6">
+                <h3>Off-Grid & Hybrid PV System</h3>
+                <p><b>BAGAIMANA CARA KERJANYA?</b></p>
+                <p>- <b>PV Panel: </b>Mengkonversi cahaya matahari menjadi listrik DC</p>
+                <p>- <b>Solar Inverter: </b>Membangkitkan listrik AC dari masukan sumber DC</p>
+                <p>- <b>Panel Distribusi: </b>: Listrik AC yang dihasilkan dari Inverter akan dikoneksikan dengan panel distribusi yang telah ada pada bangunan dan akan menyerap energi yang dibutuhkan oleh beban</p>
+                <p>- <b>Baterai Penyimpanan: </b>Kelebihan energi dari Inverter akan disimpan ke baterai dan dapat digunakan pada saat malam hari</p>
+                <p>- <b>Sumber Energi Lainnya: </b>Akan dioperasikan ketika tenaga surya tidak tersedia dan kondisi baterai sedang rendah</p>
+            </div>
+        </div>
+
+        <!-- solarpump -->
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Pompa Surya</h3>
+                <p><b>BAGAIMANA CARA KERJANYA?</b></p>
+                <p>- <b>PV Panel: </b>Mengkonversi cahaya matahari menjadi listrik DC</p>
+                <p>- <b>Kontroler Pompa: </b>Membangkitkan listrik AC dari masukan sumber DC</p>
+                <p>- <b>Pompa: </b>Memindahkan air dari sumbernya seperti sumur atau air permukaan ke titik pengiriman</p>
+                <p>- <b>Tangki Penyimpanan: </b>Menyimpan air ketika produksi air lebih besar dari konsumsi air dan dapat digunakan ketika malam hari atau pada saat tidak ada cahaya matahari</p>
+            </div>
+
+            <div class="col-md-6">
+                <div class="space-60"></div>
+                <img src="asset/images/solarpump.jpg" alt="">
+            </div>
+            <div class="space-30"></div>
         </div>
     </div>
 </section>
