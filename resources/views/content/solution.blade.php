@@ -1,26 +1,26 @@
-<section class="section-padding" id="solution_page">
+<section class="section-padding-2" id="solution_page">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-10 col-md-offset-1">
                 <div class="page-title text-center">
-                    <h5 class="title">Solusi</h5>
+                    <div class="space-60"></div>
+                    <h5 class="title">Solutions</h5>
                 </div>
-
             </div>
         </div>
 
+        <!-- ongrid -->
         <div class="row">
             <div class="col-md-12 col-sm-6">
                 <div class="space-30"></div>
-
-                <div class="col-md-6">
-                    <h3>On-Grid PV System</h3>
-                    <p><b>BAGAIMANA CARA KERJANYA?</b></p>
-                    <p>- <b>PV Panel: </b>Mengkonversi cahaya matahari menjadi listrik DC</p>
-                    <p>- <b>Solar Inverter: </b>Membangkitkan listrik AC dari masukan sumber DC</p>
-                    <p>- <b>Panel Distribusi: </b>Listrik AC yang dihasilkan dari Inverter akan dikoneksikan dengan panel distribusi yang telah ada pada bangunan dan akan menyerap energi yang dibutuhkan oleh beban</p>
-                    <p>- Pada saat energi yang dihasilkan dari tenaga surya lebih besar dibandingkan konsumsi energi, maka kelebihan dari energi akan langsung dikirimkan ke jaringan PLN dan terhitung sebagai ekspor energi yang akan mengurangi tagihan listrik bulanan</p>
-                </div>
+                    <div class="col-md-6">
+                        <h3>On-Grid PV System</h3>
+                        <p><b>BAGAIMANA CARA KERJANYA?</b></p>
+                        <p>- <b>PV Panel: </b>Mengkonversi cahaya matahari menjadi listrik DC</p>
+                        <p>- <b>Solar Inverter: </b>Membangkitkan listrik AC dari masukan sumber DC</p>
+                        <p>- <b>Panel Distribusi: </b>Listrik AC yang dihasilkan dari Inverter akan dikoneksikan dengan panel distribusi yang telah ada pada bangunan dan akan menyerap energi yang dibutuhkan oleh beban</p>
+                        <p>- Pada saat energi yang dihasilkan dari tenaga surya lebih besar dibandingkan konsumsi energi, maka kelebihan dari energi akan langsung dikirimkan ke jaringan PLN dan terhitung sebagai ekspor energi yang akan mengurangi tagihan listrik bulanan</p>
+                    </div>
 
                 <div class="col-md-6">
                     <img src="asset/images/ongrid.jpg" alt="">
@@ -68,10 +68,8 @@
         <div class="row">
             <div class="col-xs-12 col-md-10 col-md-offset-1">
                 <div class="page-title text-center">
-                    <div class="space-20"></div>
-                    <h5 class="title">Pelayanan Kami</h5>
+                    <h5 class="title">Our Services</h5>
                 </div>
-
             </div>
         </div>
         <div class="space-20"></div>
@@ -79,35 +77,41 @@
             <div class="col-sm-6">
                 <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
                     <div class="box-icon">
-                        <span class="fa fa-cogs"></span>
+                        <i><img src="asset/images/engineering.png" width="40px" height="40px"></i>
                     </div>
-                    <h4>ENJINERING</h4>
+                    <h4 style="color: #8790af">ENGINEERING</h4>
                     <p>Kami akan menyediakan semua desain terkait surya dan sumber energi lainnya seperti studi kelayakan, simulasi energi, dan gambar desain beserta kalkulasi enjinering</p>
-                </div>
-                <br>
-                <div class="space-60"></div>
-                <div class="service-box wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="box-icon">
-                        <i class="fa fa-database"></i>
-                    </div>
-                    <h4>OPERASI dan PEMELIHARAAN</h4>
-                    <p>Kami mengerti menjaga performa dari sistem yang telah terpasang sangat penting untuk investasi. Kami akan membantu kamu dalam mencapai sistem KPI dan mengumpulkan data kedalam laporan yang layak, jadi Anda tidak perlu khawatir dengan performa dari sistem Anda</p>
                 </div>
             </div>
             <div class="col-sm-6">
+                <div class="service-box wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="box-icon">
+                        <i><img src="asset/images/o&m.png" width="40px" height="40px"></i>
+                    </div>
+                    <h4 style="color: #8790af">O & M</h4>
+                    <p>Kami mengerti menjaga performa dari sistem yang telah terpasang sangat penting untuk investasi. Kami akan membantu kamu dalam mencapai sistem KPI dan mengumpulkan data kedalam laporan yang layak, jadi Anda tidak perlu khawatir dengan performa dari sistem Anda</p>
+                </div>
+            </div>
+        </div>
+    
+
+    
+        <div class="row">
+            <div class="col-sm-6">
                 <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
                     <div class="box-icon">
-                        <i class="fa fa-wrench"></i>
+                        <i><img src="asset/images/installation.png" width="40px" height="40px"></i>
                     </div>
-                    <h4>INSTALASI</h4>
+                    <h4 style="color: #8790af">INSTALLATION</h4>
                     <p>Kami akan membantu pengembang lokal atau luar negeri untuk memasang sistem dari proyek mereka. Mereka akan menyediakan semua komponen-komponen dan kita akan mengerjakan selebihnya. Proyek jadi lebih andal dengan pengembalian investasi yang tinggi</p>
                 </div>
-                <div class="space-30"></div>
+            </div>
+            <div class="col-sm-6">
                 <div class="service-box wow fadeInUp" data-wow-delay="0.6s">
                     <div class="box-icon">
-                        <i class="fa fa-users"></i>
+                        <i><img src="asset/images/training.png" width="40px" height="40px"></i>
                     </div>
-                    <h4>PELATIHAN</h4>
+                    <h4 style="color: #8790af">TRAINING</h4>
                     <p>Kami memahami bahwa menempatkan sumber daya pada organisasi proyek Anda dengan pengetahuan energi surya itu sulit. Kami dapat membantu Anda memberikan pelatihan yang tepat sehingga Anda tidak perlu khawatir dengan sisi teknik dan fokus dengan penjualan Anda</p>
                 </div>
             </div>
