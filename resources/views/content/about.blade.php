@@ -36,11 +36,9 @@
             <div class="row">
                     <div class="col-xs-12 col-sm-3">
                         <div class="footer-box">
-                        <a href="#">
                             <div class="box-icon">
                                 <span class="fa fa-list-alt"></span>
                             </div>
-                        </a>
                             <p><b>DATA COLLECTION</b></p>
                             <p>Dengan tujuan untuk menjaga standar kualitas, kami akan mengumpulkan semua data yang dibutuhkan dari Anda selama masa konsultasi atau kunjungan ke lapangan</p>
                         </div>
@@ -48,11 +46,9 @@
                     </div>
                     <div class="col-xs-12 col-sm-3">
                         <div class="footer-box">
-                        <a href="#">
                             <div class="box-icon">
                                 <span class="fa fa-line-chart"></span>
                             </div>
-                        </a>
                         <p><b>SYSTEM DESIGN</b></p>
                             <p>Kami akan menyediakan solusi untuk memaksimalkan produksi energi yang sesuai dengan kebutuhan dan keuangan Anda, dengan menjaga kualitas terbaik dari produk kami</p>
                         </div>
@@ -60,11 +56,9 @@
                     </div>
                     <div class="col-xs-12 col-sm-3">
                         <div class="footer-box">
-                        <a href="#" target="_blank">
                             <div class="box-icon">
                                 <span class="fa fa-paper-plane-o"></span>
                             </div>
-                        </a>
                         <p><b>DELIVER</b></p>
                             <p>Kami akan membeli semua material-material dan memasang sistem ke properti milik Anda dan akan membantu Anda dalam pengurusan aplikasi interkoneksi kepada PLN dan sertifikasi lainnya</p>
                         </div>
@@ -72,11 +66,9 @@
                     </div>
                     <div class="col-xs-12 col-sm-3">
                         <div class="footer-box">
-                        <a href="#" target="_blank">
                             <div class="box-icon">
                             <span class="fa fa-handshake-o"></span>
                             </div>
-                        </a>
                         <p><b>AFTER-SALES SERVICE</b></p>
                             <p>Kami akan memastikan Anda sebagai pelanggan yang berharga puas dengan hasil yang diberikan dan kami akan menjaga performa melalui pemantauan sistem</p>
                         </div>

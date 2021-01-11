@@ -1,5 +1,4 @@
 @section('js')
-<div class="section-padding">
     <div class="container">
         <div class="row">
             @foreach($datas as $data)
@@ -24,7 +23,6 @@
         </div>
         {{ $datas->links() }}
     </div>
-</div>
 
 <section id="questions_page" class="questions-area section-padding">
     <div class="container">

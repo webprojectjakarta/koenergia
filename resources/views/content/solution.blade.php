@@ -76,6 +76,7 @@
         <div class="space-20"></div>
         <div class="row">
             <div class="col-sm-6">
+                <div class="space-20"></div>
                 <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
                     <div class="box-icon">
                         <i><img src="asset/images/engineering.png" width="40px" height="40px"></i>
@@ -85,6 +86,7 @@
                 </div>
             </div>
             <div class="col-sm-6">
+                <div class="space-20"></div>
                 <div class="service-box wow fadeInUp" data-wow-delay="0.4s">
                     <div class="box-icon">
                         <i><img src="asset/images/o&m.png" width="40px" height="40px"></i>
@@ -99,7 +101,8 @@
     
         <div class="row">
             <div class="col-sm-6">
-                <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
+                <div class="space-20"></div>
+                <div class="service-box wow fadeInUp" data-wow-delay="0.6s">
                     <div class="box-icon">
                         <i><img src="asset/images/installation.png" width="40px" height="40px"></i>
                     </div>
@@ -108,7 +111,8 @@
                 </div>
             </div>
             <div class="col-sm-6">
-                <div class="service-box wow fadeInUp" data-wow-delay="0.6s">
+                <div class="space-20"></div>
+                <div class="service-box wow fadeInUp" data-wow-delay="0.8s">
                     <div class="box-icon">
                         <i><img src="asset/images/training.png" width="40px" height="40px"></i>
                     </div>

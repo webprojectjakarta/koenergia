@@ -35,9 +35,9 @@
                     <p class="p">Koenergia membantu rumah-rumah residensial, bisnis skala besar pada gedung komersial dan industrial untuk menghemat biaya energi dan jejak karbon yang dikeluarkan dengan menyediakan energi bersih dari sistem pembangkit listrik dari energi terbarukan</p>
                 </div>
                 <div class="space-20"></div>
-                <h5>Download Our Company Profile</h5>
+                <h5 class="wow fadeInUp" data-wow-delay="0.8s">Download Our Company Profile</h5>
                 <a href="{{'asset/images/KoenergiA.pdf'}}" download class="bttn-white wow fadeInUp"
-                    data-wow-delay="0.8s"><i class="lnr lnr-download"></i>Download Here</a>
+                    data-wow-delay="0.9s"><i class="lnr lnr-download"></i>Download Here</a>
             </div>
             <div class="space-30"> </div>
         </div>
@@ -60,11 +60,11 @@
             <div class="row" style="margin-left: 150px">
                 @foreach ($data as $datas)
                 <div class="col-md-2">
-                    <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.1s">
                         <div class="box-icon">
                             <i><img src="asset/images/sprout.png" width="35px" height="35px"></i>
                         </div>
-                        <h4>{{$datas->pohon}}</h4>
+                        <h4 style="color: #000">{{$datas->pohon}}</h4>
                         <p><b>Pohon</b></p>
                         <p>Tertanam</p>
                     </div>
@@ -74,37 +74,37 @@
                         <div class="box-icon">
                             <i><img src="asset/images/no.png" width="35px" height="35px"></i>
                         </div>
-                        <h4>{{$datas->kg}}</h4>
+                        <h4 style="color: #000">{{$datas->kg}}</h4>
                         <p><b>Kg</b></p>
                         <p>Co<sub>2</sub> Terhindar</p>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <div class="service-box wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.5s">
                         <div class="box-icon">
                             <i><img src="asset/images/eco-battery.png" width="35px" height="35px"></i>
                         </div>
-                        <h4>{{$datas->kwh}}</h4>
+                        <h4 style="color: #000">{{$datas->kwh}}</h4>
                         <p><b>kWh</b></p>
                         <p>Energi Hijau</p>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <div class="service-box wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.7s">
                         <div class="box-icon">
                             <i><img src="asset/images/solar-house.png" width="35px" height="35px"></i>
                         </div>
-                        <h4>{{$datas->rumah}}</h4>
+                        <h4 style="color: #000">{{$datas->rumah}}</h4>
                         <p><b>Rumah</b></p>
                         <p>Diterangi</p>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <div class="service-box wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.9s">
                         <div class="box-icon">
                             <i><img src="asset/images/gas-station.png" width="35px" height="35px"></i>
                         </div>
-                        <h4>{{$datas->ltr}}</h4>
+                        <h4 style="color: #000">{{$datas->ltr}}</h4>
                         <p><b>ltr</b></p>
                         <p>BBM</p>
                     </div>
@@ -140,7 +140,7 @@
                     <p>Tidak ada baterai yang diperlukan, terhubung langsung dengan jaringan listrik PLN, hemat tagihan listrik tiap bulannya</p>
                 </div>
                 <div class="space-80"></div>
-                <div class="solutions-box wow fadeInUp" data-wow-delay="0.3s">
+                <div class="solutions-box wow fadeInUp" data-wow-delay="0.6s">
                         <i><img src="asset/images/off-grid.png" width="150px" height="150px" style="float:left"/></i>
                     <h4>Off-Grid PV System</h4>
                     <p>Tidak ada lagi kegelapan, 24/7 energi listrik tersedia, tidak ada emisi CO2</p>
@@ -154,7 +154,7 @@
                     <p>Kombinasi tenaga surya dengan sumber lainnya, 24/7 energi listrik tersedia</p>
                 </div>
                 <div class="space-80"></div>
-                <div class="solutions-box wow fadeInUp" data-wow-delay="0.5s">
+                <div class="solutions-box wow fadeInUp" data-wow-delay="0.8s">
                         <i><img src="asset/images/pump.png" width="150px" height="150px" style="float:left"/></i>
                     <h4>Solar Water Pump</h4>
                     <p>Tidak ada lagi kekeringan, menghisap air dari sumbernya dan salurkan kepada masyarakat</p>
