@@ -3,12 +3,7 @@
         <div class="row">
             <div class="col-xs-12 col-md-10 col-md-offset-1">
                 <div class="page-title text-center">
-<<<<<<< HEAD
-                    <img src="{{'asset/images/icon.png'}}" alt="About Logo">
-                    <div class="space-20"></div>
-=======
                     <div class="space-60"></div>
->>>>>>> 75509a596dd059f512d02118c07cc7c094452308
                     <h5 class="title">Solutions</h5>
                 </div>
             </div>

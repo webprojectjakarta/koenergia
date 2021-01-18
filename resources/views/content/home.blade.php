@@ -7,23 +7,53 @@
                     <!-- My Calculator -->
                     <img src="{{'asset/images/logo.png'}}" alt="Logo">
                     <div class="space-40"></div>
-                    <form action="{{ url('/store') }}" method="post" target="_blank">
-                        @csrf
+                    <form name="form" >
                         <div class="form-double">
-                            <input name="number1" type="number" class="form-control" id='num1'
-                                placeholder="Tagihan Listrik (Rp)" required
-                                oninvalid="this.setCustomValidity('Silahkan isi bos')">
+                            
+                            <select class="form-control" name="angka1" required="">
+                                <option class="form-control">Daya Listrik PLN Terpasang (VA)</option>
+                            <?php
+                                $kwh = ["1300","2200","3500","4400","5500","6600","1600",
+                                "11000","13200","16500","23000","33000","41500","53000",
+                                "66000","82500","105000","131000","147000","164000","187000","197000"];
+                            ?>
+                            @foreach ($kwh as $kwh)
+                                <option class="form-control" id="num1" value="{{$kwh}}">{{$kwh}}</option>
+                            @endforeach
+                            </select>
                             <div class="space-30"></div>
-                            <input name="number2" type="number" class="form-control" id='num2'
+                            <input type=number name="angka2" class="form-control uang" id='num2'
                                 placeholder="Daya Listrik (Watt)" required
                                 oninvalid="this.setCustomValidity('Silahkan isi bos')">
                             <div class="space-30"></div>
                         </div>
-                        <input type="number" class="form-control" readonly placeholder="Result" id='result'>
+                        <input type="text" value=""  name="total" class="form-control uang" readonly placeholder="Result" id='demo'>
+                        <input type="text" value="" name="hasil" class="form-control" readonly placeholder="Hasil" id='demo'>
+                        
+                            <div class="col-md-3 text-left">
+                                <p style="font-size: 11px;">Ac</p>
+                                <p style="font-size: 11px;">Kulkas</p>
+                                <p style="font-size: 11px;">LED</p>
+                            </div>
+                            <div class="col-md-3 text-left">
+                                <p style="font-size: 11px;" id="ac">:</p>
+                                <p style="font-size: 11px;" id="kulkas">:</p>
+                                <p style="font-size: 11px;" id="led">:</p>
+                            </div>
+                            <div class="col-md-3 text-left">
+                                <p style="font-size: 11px;">Karbon</p>
+                                <p style="font-size: 11px;">Pohon</p>
+                            </div>
+                            <div class="col-md-3 text-left">
+                                <p style="font-size: 11px;" id="karbon">:</p>
+                                <p style="font-size: 11px;" id="pohon">:</p>
+                            </div>
                         <div class="space-30"></div>
-
-                        <button type="submit" class="bttn-default">COUNT</button>
-                        <button type="reset" class="bttn-default">RESET</button>
+                        <button type=button name=submit onclick="tambah()" class="bttn-default">COUNT</button>
+                        <a href="{{url('/')}}" class="bttn-default">RESET</a>
+                        <div class="space-20"></div>
+                        <a href="#contact_page" class="bttn-default">Quotation</a>
+                
                     </form>
                 </div>
             </div>
@@ -165,20 +195,44 @@
     </div>
 </section>
 
-{{-- <section id="questions_page" class="questions-area section-padding">
+<script>
+    function tambah() {
+        var psh=4;
+        var eff=0.8;
+        var listrik=1444.7;
+        var ac=3.36;
+        var led=0.06;
+        var kulkas=6.72;
+        var toco2=0.68;
+        var pohon=0.0009;
+        var pday=14.08;
 
-    <a href="{{url('project')}}">
-<div class="page-title text-center">
-    <img src="{{'asset/images/icon.png'}}" alt="About Logo">
-    <div class="space-20"></div>
-    <h5 class="title">Our Project</h5>
-</div>
-<div class="w3-content w3-section">
-    <img class="mySlides w3-animate-fading" src="asset/images/header-bg.jpeg" style="width:1000px; height:450px;">
-    <img class="mySlides w3-animate-fading" src="asset/images/blog-3.jpg" style="width:1000px; height:450px;">
-    <img class="mySlides w3-animate-fading" src="asset/images/blog-2.jpg" style="width:1000px; height:450px;">
-    <img class="mySlides w3-animate-fading" src="asset/images/blog-1.jpg" style="width:1000px; height:450px;">
-</div>
-</a>
-</section> --}}
+        a=eval(form.angka1.value);
+        b=eval(form.angka2.value); 
+        var c=(((a*psh*eff/1000)*30)*listrik);
+        // c=a+b;
+        d=Math.round(c/1000)*1000+1000;
+        form.total.value = d; 
+        form.hasil.value = Math.round((d/b)*100) +'%';
+        var ac = Math.ceil(pday/ac*0.3) +' Unit';
+        document.getElementById("ac").innerHTML=ac;
+        var kulkas = Math.ceil(pday/kulkas*0.65)+' Unit';
+        document.getElementById("kulkas").innerHTML=kulkas;
+        var led = Math.ceil(pday/led*0.05)+' Unit';
+        document.getElementById("led").innerHTML=led;
+        var karbon= Math.round(d/listrik*toco2*12)+' Co2 /thn';
+        document.getElementById("karbon").innerHTML=karbon;
+        var pohon = Math.round(d/listrik*pohon*12)+' Pohon /thn';
+        document.getElementById("pohon").innerHTML=pohon;
+ }
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        // Format mata uang.
+        $( '.uang' ).mask('000.000.000', {reverse: true});
+
+    })
+</script>
 <!-- Home-Area-End -->
