@@ -1,5 +1,4 @@
 @section('js')
-<div class="section-padding">
     <div class="container">
         <div class="row">
             @foreach($datas as $data)
@@ -24,7 +23,6 @@
         </div>
         {{ $datas->links() }}
     </div>
-</div>
 
 <section id="questions_page" class="questions-area section-padding">
     <div class="container">
@@ -77,16 +75,16 @@
                     </div>
                     <h3>Bagaimana cara perhitungan ekspor impor energi listrik dari Sistem PLTS Atap?</h3>
                     <div>
-                        <li>Energi listrik yang diekspor ke jaringan PLN yang tercatat di kWh meter ekspor impor akan
-                            dikalikan 65%.</li>
-                        <li>Perhitungan energi listrik pelanggan PLTS Atap akan dilakukan setiap bulan berdasarkan
-                            selisih antara kWh impor dengan nilah ekspor</li>
-                        <li>Apabila nilai kWh ekspor lebih besar dari impor, maka selisih akan diakumulasikan sebagai
-                            pengurangan sebelumnya.</li>
-                        <li>Selisih yang diperhitungkan akan diakumulasikan paling lama 3 bulan untuk periode tagihan
-                            listrik bulan Januari-Maret, April-Juni, Juli-September atau Oktober-Desember.</li>
-                        <li>Apabila akumulasi selisih tersisa dipengujung periode, selisih akan dinihilkan dan
-                            perhitungan selisih dimulai pada periode berikutnya.</li>
+                        <p style="text-align:justify;">- Energi listrik yang diekspor ke jaringan PLN yang tercatat di kWh meter ekspor impor akan
+                            dikalikan 65%.</p>
+                        <p style="text-align:justify;">- Perhitungan energi listrik pelanggan PLTS Atap akan dilakukan setiap bulan berdasarkan
+                            selisih antara kWh impor dengan nilah ekspor</p>
+                        <p style="text-align:justify;">- Apabila nilai kWh ekspor lebih besar dari impor, maka selisih akan diakumulasikan sebagai
+                            pengurangan sebelumnya.</p>
+                        <p style="text-align:justify;">- Selisih yang diperhitungkan akan diakumulasikan paling lama 3 bulan untuk periode tagihan
+                            listrik bulan Januari-Maret, April-Juni, Juli-September atau Oktober-Desember.</p>
+                        <p style="text-align:justify;">- Apabila akumulasi selisih tersisa dipengujung periode, selisih akan dinihilkan dan
+                            perhitungan selisih dimulai pada periode berikutnya.</p>
                     </div>
                     <h3>Berapa area atap yang dibutuhkan untuk memasang Sistem PLTS Atap? </h3>
                     <div>

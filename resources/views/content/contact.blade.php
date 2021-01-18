@@ -10,7 +10,6 @@
         border-radius: 50px;
         text-align: center;
         font-size: 30px;
-        box-shadow: 2px 2px 3px #999;
         z-index: 100;
     }
 
@@ -27,12 +26,9 @@
     <div class="section-padding">
         <div class="container">
             <div class="row">
-                <div class="space-20"></div>
                 <div class="col-xs-12">
                     <div class="page-title text-center">
-                        <img src="{{'asset/images/icon.png'}}" alt="About Logo">
-                        <div class="space-20"></div>
-                        <h5 class="title">Contact US</h5>
+                        <h5 class="title">Contacts</h5>
                         {{-- <h3 class="dark-color">Find Us By Bellow Details</h3> --}}
                     </div>
                 </div>
@@ -92,34 +88,29 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-sm-6">
-                    <h3 style="color: black">Sosial Media</h3>
-                    <div class="col-xs-4">
-                        <a href="https://www.linkedin.com/company/koenergia" target="_blank"><i
-                                class="fa fa-linkedin-square fa-2x"></i></a>
-                    </div>
-                    <div class="col-xs-4">
-                        <a href="https://www.facebook.com/koenergiacom" target="_blank"><span
-                                class="fa fa-facebook-square fa-2x"></span></a>
-                    </div>
-                    <div class="col-xs-4">
-                        <a href="https://instagram.com/koenergiacom?igshid=dge5aux1yz6t" target="_blank"><span
-                                class="fab fa-instagram fa-2x"></span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="space-60"></div>
-        <div class="row">
-            <div class="container">
-                <div class="row">
-
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
 </footer>
+{{-- <section id="questions_page" class="questions-area section-padding-1">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-md-10 col-md-offset-1">
+                        <div class="space-100"></div>
+                        <h3 style="color: black">Sosial Media</h3>
+                        
+                            <a href="https://www.linkedin.com/company/koenergia" target="_blank"><i
+                                    class="fa fa-linkedin-square fa-2x"></i></a>
+                            
+                            <a href="https://www.facebook.com/koenergiacom" target="_blank"><span
+                                    class="fa fa-facebook-square fa-2x"></span></a>
+                            
+                            <a href="https://instagram.com/koenergiacom?igshid=dge5aux1yz6t" target="_blank"><span
+                                    class="fab fa-instagram fa-2x"></span></a>
+                            
+                            <a href="https://www.youtube.com/" target="_blank"><span
+                                    class="fab fa-youtube fa-2x"></span></a>
+            </div>
+        </div>
+    </div>
+</section>  --}}
 {{-- <footer class="footer-area" id="contact_page">
     <div class="section-padding">
         <div class="container">

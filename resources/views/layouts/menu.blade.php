@@ -13,10 +13,10 @@
                 <ul class="nav navbar-nav mainmenu">
                     <li class="active"><a href="#home_page">Home</a></li>
                     <li><a href="#about_page">About</a></li>
-                    <li><a href="#solution_page">Solution</a></li>
-                    <li><a href="{{url('blog')}}">Blog</a></li>
-                    <li><a href="{{url('project')}}">Project</a></li>
-                    <li><a href="{{url('carier')}}">Carier</a></li>
+                    <li><a href="#solution_page">Solutions</a></li>
+                    <li><a href="{{url('blog')}}">Blogs</a></li>
+                    <li><a href="{{url('project')}}">Projects</a></li>
+                    <li><a href="{{url('carier')}}">Careers</a></li>
                     {{-- <li><a href="{{url('partner')}}">Partnership</a></li> --}}
                     <li><a href="#contact_page">Contacts</a></li>
                 </ul>
