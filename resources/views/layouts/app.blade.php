@@ -95,7 +95,7 @@
 
     {{-- @include('layouts.js') --}}
 
-    <script>
+    {{-- <script>
 var myIndex = 0;
 carousel();
 function carousel() {
@@ -109,7 +109,7 @@ function carousel() {
   x[myIndex-1].style.display = "block";  
   setTimeout(carousel, 9000);    
 }
-    </script>
+    </script> --}}
 
     @section('js')
     @show
