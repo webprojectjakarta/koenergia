@@ -203,49 +203,61 @@
                       overflow: hidden;
                       transition: max-height 0.2s ease-out;
                     }
+                    .li{
+                        text-indent: 1.8em;
+                        color: #000;
+                    }
                     </style>
-
-                    <button class="accordion">Section 1</button>
+                    @foreach($datas as $data)
+                    <button class="accordion">{{$data->title}}</button>
                     <div class="panel">
-                      <p>Job Description:
-
-                    Oversee the lead generation (inbound and outbound) team’s processes, results and operations
-                    Equip inbound and outbound team with the right lead generation processes, workflows, and analytics
-                    Streamlining and optimizing the inbound and outbound processes, implementing the best case practices by adapting them to the PVcase target audience
-                    Selecting, implementing, and managing outreach and inbound automation tools
-                    Manage contact lists, ensure that PVcase CRM data is up to date, audit data for consistency, setup automations, and manage custom fields and data
-                    Monitor and report sales analytics to steer the sales force towards the highest value opportunities and increase conversion and retention rates
-                    Lead the forecasting process, maintain accurate sales pipeline and account plans
-                    Work with sales leadership to develop organizational goals
-                    Requirements:
-
-                    +3 years of experience in Sales Operations and Salesforce administration
-                    Extension knowledge of and experience working with data verification solutions
-                    Excellent written and spoken English communication skills
-                    Tech-curious: problem-solver who seeks out creative solutions using process + technology
-                    Ability to understand and contribute to strategic direction and goals of Sales Department and support appropriate processes to facilitate achievement of business objectives
-                    Experience utilizing CRM tools to enforce a robust and consistent sales process and generate reports
-                    A keen understanding and demonstrated experience in navigating rapidly growing organizations
-                    A result and success-oriented mentality, conveying a sense of urgency and driving issues to closure
-                    A self-starter who can multitask and manage his/her time effectively
-                    Demonstrated ability to analyze and resolve problems
-                    About us:
-
-                    Dynamic & results-driven team
-                    Focused on empowering solar design engineers by providing state of the art software solutions
-                    Uniquely positioned to be able to shape the optimal solar design methodology of utility scale projects
-                    Flexible work hours & remote work friendly
-                    Extensive training and support for career advancement
-                    Working with market leading innovative software and with customers that are the top solar EPC, Developer and utilities globally
-                    Perks and benefits
-                    Let’s go:
-
-                    Send your job applications with the title
-                    “Sales Development Team Manager” to
-                    toma@pvcase.com</p>
+                      <p>
+                          <b>
+                            Requirements:
+                          </b>
+                      </p>
+                      <p>
+                          <li class="li">{{$data->requirement1}}</li>
+                      </p>
+                      <p>
+                        <li class="li">{{$data->requirement2}}</li>
+                      </p>
+                      <p>
+                        <li class="li">{{$data->requirement3}}</li>
+                    </p>
+                    <p>
+                        <li class="li">{{$data->requirement4}}</li>
+                    </p>
+                    <p>
+                        <li class="li">{{$data->requirement5}}</li>
+                    </p>
+                    <p>
+                        <li class="li">{{$data->requirement6}}</li>
+                    </p>
+                    <p>
+                        @if (!$data->requirement7 == NULL || !$data->requirement7 == '')
+                        <li class="li">{{$data->requirement7}}</li>
+                        @endif
+                    </p>
+                    <p>
+                        @if (!$data->requirement8 == NULL || !$data->requirement8 == '')
+                        <li class="li">{{$data->requirement8}}</li>
+                        @endif
+                    </p>
+                    <p>
+                        @if (!$data->requirement9 == NULL || !$data->requirement9 == '')
+                        <li class="li">{{$data->requirement9}}</li>
+                        @endif
+                    </p>
+                    <p>
+                        @if (!$data->requirement10 == NULL || !$data->requirement10 == '')
+                        <li class="li">{{$data->requirement10}}</li>
+                        @endif
+                    </p>
                     </div>
+                    @endforeach
 
-                    <button class="accordion">Section 2</button>
+                    {{-- <button class="accordion">Section 2</button>
                     <div class="panel">
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
@@ -253,7 +265,7 @@
                     <button class="accordion">Section 3</button>
                     <div class="panel">
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
+                    </div> --}}
 
                     <script>
                     var acc = document.getElementsByClassName("accordion");
