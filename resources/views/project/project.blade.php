@@ -1,13 +1,14 @@
-@section('js')
-{{-- <script type="text/javascript">
+<!-- @section('js')
+<script type="text/javascript">
     $(document).ready(function() {
       $('#table').DataTable({
         "iDisplayLength": 10
       });
 
   } );
-  </script> --}}
-  <style>
+  </script> -->
+
+<style>
     body {
       font-family: Arial, Helvetica, sans-serif;
     }
@@ -39,7 +40,6 @@
       height: 100%;
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
-      
     }
     
     .flip-box-front {
@@ -52,11 +52,12 @@
       color: black;
       transform: rotateY(180deg);
     }
-    </style>
-<div class="section-home">
+</style>
+
+
     <div class="container">
         <div class="row">        
-            @foreach($datas as $data)
+          @foreach($datas as $data)
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <article class="post-single">
                     <div class="flip-box">
@@ -73,8 +74,8 @@
                       </div>
                 </article>
             </div>
-        @endforeach
+          @endforeach
         </div>
          {{ $datas->links() }}
     </div>
-</div>
+

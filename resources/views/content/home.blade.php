@@ -136,13 +136,13 @@
             <div class="col-sm-6">
                 <div class="solutions-box wow fadeInUp" data-wow-delay="0.2s">
                         <i><img src="asset/images/on-grid.png" width="150px" height="150px" style="float:left"/></i>
-                    <h4>On-Grid PV System</h4>
+                    <h4 class="dark-color">On-Grid PV System</h4>
                     <p>Tidak ada baterai yang diperlukan, terhubung langsung dengan jaringan listrik PLN, hemat tagihan listrik tiap bulannya</p>
                 </div>
                 <div class="space-80"></div>
                 <div class="solutions-box wow fadeInUp" data-wow-delay="0.6s">
                         <i><img src="asset/images/off-grid.png" width="150px" height="150px" style="float:left"/></i>
-                    <h4>Off-Grid PV System</h4>
+                    <h4 class="dark-color">Off-Grid PV System</h4>
                     <p>Tidak ada lagi kegelapan, 24/7 energi listrik tersedia, tidak ada emisi CO2</p>
                 </div>
                 <div class="space-80"></div>
@@ -150,22 +150,21 @@
             <div class="col-sm-6">
                 <div class="solutions-box wow fadeInUp" data-wow-delay="0.4s">
                         <i><img src="asset/images/hybrid.png" width="150px" height="150px" style="float:left"/></i>
-                    <h4>Hybrid PV System</h4>
+                    <h4 class="dark-color">Hybrid PV System</h4>
                     <p>Kombinasi tenaga surya dengan sumber lainnya, 24/7 energi listrik tersedia</p>
                 </div>
                 <div class="space-80"></div>
                 <div class="solutions-box wow fadeInUp" data-wow-delay="0.8s">
                         <i><img src="asset/images/pump.png" width="150px" height="150px" style="float:left"/></i>
-                    <h4>Solar Water Pump</h4>
+                    <h4 class="dark-color">Solar Water Pump</h4>
                     <p>Tidak ada lagi kekeringan, menghisap air dari sumbernya dan salurkan kepada masyarakat</p>
                 </div>
             </div>
         </div>
     </div>
-    </div>
 </section>
 
-{{-- <section id="questions_page" class="questions-area section-padding">
+<!-- <section id="questions_page" class="questions-area section-padding">
 
     <a href="{{url('project')}}">
 <div class="page-title text-center">
@@ -180,5 +179,5 @@
     <img class="mySlides w3-animate-fading" src="asset/images/blog-1.jpg" style="width:1000px; height:450px;">
 </div>
 </a>
-</section> --}}
+</section> -->
 <!-- Home-Area-End -->

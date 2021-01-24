@@ -3,17 +3,17 @@
         <div class="row">
             <div class="col-xs-12 col-md-10 col-md-offset-1">
                 <div class="page-title text-center">
-                    <div class="space-60"></div>
+                    <div class="space-70"></div>
                     <h5 class="title">Solutions</h5>
                 </div>
             </div>
         </div>
-
+        <div class="space-60"></div>
         <!-- ongrid -->
         <div class="row">
             <div class="col-md-6">
-                <h3>On-Grid PV System</h3>
-                <p><b>BAGAIMANA CARA KERJANYA?</b></p>
+                <h3 style="color: #000"><b>ON-GRID PV SYSTEM</b></h3>
+                <p><b>Bagaimana Cara Kerjanya?</b></p>
                 <p>- <b>PV Panel: </b>Mengkonversi cahaya matahari menjadi listrik DC</p>
                 <p>- <b>Solar Inverter: </b>Membangkitkan listrik AC dari masukan sumber DC</p>
                 <p>- <b>Panel Distribusi: </b>Listrik AC yang dihasilkan dari Inverter akan dikoneksikan dengan panel distribusi yang telah ada pada bangunan dan akan menyerap energi yang dibutuhkan oleh beban</p>
@@ -21,21 +21,20 @@
             </div>
 
             <div class="col-md-6">
-                <div class="space-60"></div>
-                <img src="asset/images/ongrid.jpg" alt="">
+                <img class="image" src="asset/images/ongrid.jpg" alt="">
             </div>
         </div>
 
         <!-- offgrid -->
+        <div class="space-60"></div>
         <div class="row">
             <div class="col-md-6">
-                <div class="space-60"></div>
-                <img src="asset/images/offgrid.jpg" alt="">
+                <img class="image" src="asset/images/offgrid.jpg" alt="" style="padding-bottom: 40px">
             </div>
 
             <div class="col-md-6">
-                <h3>Off-Grid & Hybrid PV System</h3>
-                <p><b>BAGAIMANA CARA KERJANYA?</b></p>
+                <h3 style="color: #000"><b>OFF-GRID & HYBRID PV SYSTEM</b></h3>
+                <p><b>Bagaimana Cara Kerjanya?</b></p>
                 <p>- <b>PV Panel: </b>Mengkonversi cahaya matahari menjadi listrik DC</p>
                 <p>- <b>Solar Inverter: </b>Membangkitkan listrik AC dari masukan sumber DC</p>
                 <p>- <b>Panel Distribusi: </b>: Listrik AC yang dihasilkan dari Inverter akan dikoneksikan dengan panel distribusi yang telah ada pada bangunan dan akan menyerap energi yang dibutuhkan oleh beban</p>
@@ -44,11 +43,13 @@
             </div>
         </div>
 
+
         <!-- solarpump -->
+        <div class="space-60"></div>
         <div class="row">
             <div class="col-md-6">
-                <h3>Pompa Surya</h3>
-                <p><b>BAGAIMANA CARA KERJANYA?</b></p>
+                <h3 style="color: #000"><b>SOLAR WATER PUMP</b></h3>
+                <p><b>Bagaimana Cara Kerjanya?</b></p>
                 <p>- <b>PV Panel: </b>Mengkonversi cahaya matahari menjadi listrik DC</p>
                 <p>- <b>Kontroler Pompa: </b>Membangkitkan listrik AC dari masukan sumber DC</p>
                 <p>- <b>Pompa: </b>Memindahkan air dari sumbernya seperti sumur atau air permukaan ke titik pengiriman</p>
@@ -56,8 +57,7 @@
             </div>
 
             <div class="col-md-6">
-                <div class="space-60"></div>
-                <img src="asset/images/solarpump.jpg" alt="">
+                <img class="image" src="asset/images/solarpump.jpg" alt="">
             </div>
             <div class="space-30"></div>
         </div>

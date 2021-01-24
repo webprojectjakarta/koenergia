@@ -37,7 +37,7 @@
 <body data-spy="scroll" data-target=".mainmenu-area">
     <!-- Preloader-content -->
     <div class="preloader">
-        <span><i class="lnr lnr-sun"></i></span>
+        <span><i><img src="asset/images/load.png" width="28px" height="28px"></i></span>
 
     </div>
     <!-- Menu Area -->

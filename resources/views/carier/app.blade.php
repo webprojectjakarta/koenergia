@@ -34,10 +34,10 @@
     <![endif]-->
 </head>
 
-<body data-spy="scroll" data-target=".mainmenu-area">
+<div class="project" data-spy="scroll" data-target=".mainmenu-area">
     <!-- Preloader-content -->
     <div class="preloader">
-        <span><i class="lnr lnr-sun"></i></span>
+        <span><i><img src="asset/images/load.png" width="28px" height="28px"></i></span>
 
     </div>
     <!-- Menu Area -->
@@ -108,6 +108,6 @@
     {{-- @include('layouts.js') --}}
     @section('js')
     @show
-</body>
+</div>
 
 </html>
