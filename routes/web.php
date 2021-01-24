@@ -31,6 +31,7 @@ Route::resource('adminPartner', 'AdminPartnerShipController');
 Route::post('/store', 'HomeController@store');
 Route::get('/carier', 'CarierController@index');
 Route::resource('adminCarier', 'AdminCarierController');
+Route::resource('adminContribusi', 'AdminContribusiController');
 
 //clear cache
 Route::get('/clear-cache', function() {

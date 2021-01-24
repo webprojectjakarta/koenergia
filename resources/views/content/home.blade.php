@@ -29,11 +29,11 @@
                         </div>
                         <input type="text" value=""  name="total" class="form-control uang" readonly placeholder="Result" id='demo'>
                         <input type="text" value="" name="hasil" class="form-control" readonly placeholder="Hasil" id='demo'>
-                        
+                        <div class="row">
                             <div class="col-md-3 text-left">
-                                <p style="font-size: 11px;">Ac</p>
-                                <p style="font-size: 11px;">Kulkas</p>
-                                <p style="font-size: 11px;">LED</p>
+                                <img src="{{'asset/images/ac.png'}}" alt="" width="40px" height="30px">
+                                <img src="{{'asset/images/kulkas.png'}}" alt="" width="50px" height="30px">
+                                <img src="{{'asset/images/led.png'}}" alt="" width="40px" height="25px">
                             </div>
                             <div class="col-md-3 text-left">
                                 <p style="font-size: 11px;" id="ac">:</p>
@@ -41,13 +41,14 @@
                                 <p style="font-size: 11px;" id="led">:</p>
                             </div>
                             <div class="col-md-3 text-left">
-                                <p style="font-size: 11px;">Karbon</p>
-                                <p style="font-size: 11px;">Pohon</p>
+                                <img src="{{'asset/images/sprout.png'}}" alt="" width="40px" height="25px">
+                                <img src="{{'asset/images/no.png'}}" alt="" width="40px" height="25px">
                             </div>
                             <div class="col-md-3 text-left">
                                 <p style="font-size: 11px;" id="karbon">:</p>
                                 <p style="font-size: 11px;" id="pohon">:</p>
                             </div>
+                        </div>
                         <div class="space-30"></div>
                         <button type=button name=submit onclick="tambah()" class="bttn-default">COUNT</button>
                         <a href="{{url('/')}}" class="bttn-default">RESET</a>
