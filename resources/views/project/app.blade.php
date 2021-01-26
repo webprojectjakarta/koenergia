@@ -9,7 +9,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
-    <title>Koenergia</title>
+    <title>Projects | Koenergia</title>
     <!-- Place favicon.ico in the root directory -->
     <link rel="apple-touch-icon" href="{{ asset('asset/images/apple-touch-icon.png') }}">
     <link rel="shortcut icon" type="image/ico" href="{{ asset('asset/images/icon.png') }}">
@@ -59,7 +59,7 @@
                     <li><a href="{{url('blog')}}">Blogs</a></li>
                     <li class="active"><a href="{{url('project')}}">Projects</a></li>
                     <li><a href="{{url('carier')}}">Careers</a></li>
-                    {{-- <li><a href="{{url('partner')}}">Partnership</a></li> --}}
+                    <!-- <li><a href="{{url('partner')}}">Partnership</a></li> -->
                     <li><a href="{{url('/')}}#contact_page">Contacts</a></li>
                 </ul>
                 <div class="right-button hidden-xs">

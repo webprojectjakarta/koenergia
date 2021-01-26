@@ -1384,7 +1384,7 @@ p {
 
 .form-control {
     border-radius: 2px;
-    padding: 15px 20px;
+    padding: 17px 20px;
     height: auto;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -1441,3 +1441,24 @@ p {
 .image{
     margin-top: 30px;
 }
+
+.kolom{
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+}
+
+.kolom1{
+    display: grid;
+    grid-template-columns: 30% auto 40%;
+}
+
+.kolom2{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.kolom3{
+    display: grid;
+    grid-template-columns: auto;
+}
+

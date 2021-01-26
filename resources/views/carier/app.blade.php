@@ -9,7 +9,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
-    <title>Koenergia</title>
+    <title>Careers | Koenergia</title>
     <!-- Place favicon.ico in the root directory -->
     <link rel="apple-touch-icon" href="{{ asset('asset/images/apple-touch-icon.png') }}">
     <link rel="shortcut icon" type="image/ico" href="{{ asset('asset/images/icon.png') }}">
