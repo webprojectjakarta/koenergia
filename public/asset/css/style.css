@@ -552,7 +552,7 @@ input:-webkit-autofill:focus {
 .feature-area {
     color: #ffffff;
     background-color: #4093f1;
-    
+
     background-position: bottom -120px center;
     background-repeat: no-repeat;
     background-size: auto 94%;
@@ -570,7 +570,7 @@ input:-webkit-autofill:focus {
 /*-- 11. Service-Box --*/
 
 .solutions-box {
-    position: relative; 
+    position: relative;
 }
 
 .service-box {
@@ -601,7 +601,7 @@ input:-webkit-autofill:focus {
 
 p {
     color: #000;
-    
+
 }
 
 .p {
@@ -829,7 +829,7 @@ p {
 
 .price-box .price-header:before {
     content: '';
-    margin: 0 ;
+    margin: 0;
     position: absolute;
     left: 0;
     top: 0;
@@ -1414,50 +1414,127 @@ p {
     text-align: justify
 }
 
-.lineVertical { 
+.lineVertical {
     border-right: 1px solid black;
-    height: 660px; 
-     
+    height: 660px;
+
 }
-.h3{
+
+.h3 {
     color: black;
     font-size: 30px;
 }
-.h5{
+
+.h5 {
     color: black;
 }
-.justify{
+
+.justify {
     text-align: justify;
     color: #000;
 }
 
 /*-- 24. Format Tulisan --*/
 
-.jarak-lh{
+.jarak-lh {
     line-height: 35px;
 }
 
-.image{
+.image {
     margin-top: 30px;
 }
 
-.kolom{
+.kolom {
     display: grid;
     grid-template-columns: repeat(8, auto);
 }
 
-.kolom1{
+.kolom1 {
     display: grid;
     grid-template-columns: 30% auto 40%;
 }
 
-.kolom2{
+.kolom2 {
     display: grid;
     grid-template-columns: repeat(2, auto);
 }
 
-.kolom3{
+.kolom3 {
     display: grid;
     grid-template-columns: auto;
 }
 
+.kolom4 {
+    max-width: 100%;
+}
+
+.hs {
+    display: grid;
+    grid-gap: calc(var(--gutter) / 2);
+    grid-template-columns: 10px;
+    grid-template-rows: minmax(150px, 1fr);
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    padding-bottom: calc(.75 * var(--gutter));
+    margin-bottom: calc(-.25 * var(--gutter));
+}
+
+.hs:before,
+.hs:after {
+    content: '';
+    width: 5px;
+}
+
+.hs>li,
+.item {
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-scrollbar {
+    scrollbar-width: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.button {
+    background-color: rgba(64, 133, 250, 9);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.buttonBtn {
+    background-color: rgba(64, 133, 250, 9);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    width: 100%;
+    cursor: pointer;
+}
+  .button2 {
+    background-color: rgba(64, 133, 250, 9);
+    color: white; 
+    border: 2px solid rgba(64, 133, 250, 9);
+  }
+  .button2:hover {
+    background-color: white;
+    color: black;
+  }

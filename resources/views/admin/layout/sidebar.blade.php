@@ -47,13 +47,13 @@
   </li>
   <li class="nav-item"> 
     <a class="nav-link" href="{{route('adminPartner.index')}}">
-      <i class="menu-icon mdi mdi-briefcase"></i>
+      <i class="menu-icon fa fa-handshake"></i>
       <span class="menu-title">Partnership</span>
     </a>
   </li>
   <li class="nav-item"> 
     <a class="nav-link" href="{{route('adminCarier.index')}}">
-      <i class="menu-icon mdi mdi-briefcase"></i>
+      <i class="menu-icon fa fa-hand-holding-heart"></i>
       <span class="menu-title">Kontribusi</span>
     </a>
   </li>

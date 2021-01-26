@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="{{asset('asset/assset/css/font-awesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('asset/assset/css/select2.css')}}">
     <link rel="stylesheet" href="{{asset('asset/assset/css/dataTables.bootstrap4.min.css')}}">
+    <script src="https://kit.fontawesome.com/9d10450ac7.js" crossorigin="anonymous"></script>
     @section('css')
 
     @show

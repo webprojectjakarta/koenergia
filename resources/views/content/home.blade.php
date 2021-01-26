@@ -33,7 +33,7 @@
                         </div>
                         <div class="space-10"></div>
                         <div class="kolom3">
-                            <button type=button name=submit onclick="tambah()" class="btn btn-info" id="myBtn">COUNT</button>
+                            <button type=button name=submit onclick="tambah()" class="button button2" id="myBtn">COUNT</button>
                         </div>
                         <div class="space-10"></div>
                         <div class="row kolom">
@@ -100,41 +100,6 @@
         </div>
         <div class="space-30"></div>
         <div>
-            <style>
-                    .hs {
-                        display: grid;
-                        grid-gap: calc(var(--gutter) / 2);
-                        grid-template-columns: 10px;
-                        grid-template-rows: minmax(150px, 1fr);
-                        grid-auto-flow: column;
-                        overflow-x: scroll;
-                        scroll-snap-type: x proximity;
-                        padding-bottom: calc(.75 * var(--gutter));
-                        margin-bottom: calc(-.25 * var(--gutter));
-                    }
-
-                    .hs:before,
-                    .hs:after {
-                    content: '';
-                    width: 5px;
-                    }
-
-                    .hs > li,
-                    .item {
-                    scroll-snap-align: center;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    }
-                    .no-scrollbar {
-                    scrollbar-width: none;
-                    margin-bottom: 0;
-                    padding-bottom: 0;
-                    }
-                    .no-scrollbar::-webkit-scrollbar {
-                    display: none;
-                    }
-            </style>
             <div class="row">
                 @foreach ($data as $datas)
                     <ul class="hs full no-scrollbar">

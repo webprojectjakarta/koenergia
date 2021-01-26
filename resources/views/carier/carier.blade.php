@@ -297,5 +297,9 @@
                     </script>
             </div>
         </div>
+        <div class="kolom4">
+            <div class="space-30"></div>
+            <a href="mailto:info@koenergia.com" class="buttonBtn button2">APPLY FOR INTERNSHIP</a>
+        </div>
     </div>
 </section>
