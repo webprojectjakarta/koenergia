@@ -76,6 +76,20 @@
                                     </div>
                                 </div>
 
+                                <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+                                    <label for="name" class="col-md-4 control-label">Capacity</label>
+                                    <div class="col-md-12">
+                                        <input id="title" type="text" class="form-control" name="subtitle" value="{{ $data->subtitle }}" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+                                    <label for="name" class="col-md-4 control-label">COD</label>
+                                    <div class="col-md-12">
+                                        <input id="title" type="text" class="form-control" name="content" value="{{ $data->content }}" required>
+                                    </div>
+                                </div>
+
                                 <div class="form-group">
                                     <label for="email" class="col-md-4 control-label">Image</label>
                                     <div class="col-md-6">
@@ -83,13 +97,6 @@
                                         <input type="file" class="uploads form-control" style="margin-top: 20px;" name="image">
                                     </div>
                                 </div>
-                                <div class="form-group{{ $errors->has('username') ? ' has-error' : '' }}">
-                                    <label for="username" class="col-md-4 control-label">content</label>
-                                    <div class="col-md-12">
-                                        <textarea type="content" name="content" value="{{ $data->content }}"  data-bv-notEmpty="true">{{ $data->content }}</textarea> 
-                                    </div>
-                                </div>
-
                                     <button type="submit" class="btn btn-primary" id="submit">
                                                 Update
                                     </button>

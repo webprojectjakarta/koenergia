@@ -70,13 +70,11 @@
     </nav>
     @show
     <!-- Home Area -->
-    <header class="site-header">
+    <header class="site-area overlay">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 text-center">
                     <h1 class="white-color">Blogs</h1>
-                    <ul class="breadcrumb">
-                    </ul>
                 </div>
             </div>
         </div>
@@ -85,20 +83,26 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <article class="post-single">
+                    <article class="">
                         <figure class="post-media">
-                            <img src="{{url('images/user', $data->image)}}" alt="">
+                            <center>
+                                <img src="{{url('images/user', $data->image)}}" alt=""
+                                    style="height: 200; width: 100%; max-width: 650px;">
+                            </center>
                         </figure>
+                    </article>
                         <div class="post-body">
                             <ul class="breadcrumb">
                                 <li><a href="#"></a></li>
-                                <li>{{$data->created_at}}</li>
+                                <p>By Koenergia Team</p>
+                                <p>{{ \Carbon\Carbon::parse($data->created_at)->format('d M Y')}}</p>
                             </ul>
-                            <h2 class="dark-color">{{$data->title}}</h2>
+                            <div class="text-center">
+                                <h2 class="dark-color">{{$data->title}}</h2>
+                            </div>
                             <div class="space-20"></div>
-                            <p style="text-align:justify; text-indent: 50px; text-color: #00000;">{{$data->content}}</p>
+                            <p style="text-align:justify; text-indent: 50px; text-color: #00000; margin: 0 60px 0 60px">{{$data->content}}</p>
                         </div>
-                    </article>
                 </div>
             </div>
         </div>

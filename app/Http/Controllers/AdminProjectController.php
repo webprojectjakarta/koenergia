@@ -37,6 +37,7 @@ class AdminProjectController extends Controller
     {
         $this->validate($request, [
             'title' => 'required|string|max:255',
+            'subtitle' => 'required|string|max:255',
             'content' => 'required|string',
         ]);
         if($request->file('image') == '') {
@@ -53,6 +54,7 @@ class AdminProjectController extends Controller
 
         Project::create([
             'title' => $request->input('title'),
+            'subtitle' => $request->input('subtitle'),
             'content' => strip_tags($request->input('content')),
             'image' => $image,
         ]);
@@ -110,6 +112,7 @@ class AdminProjectController extends Controller
         }
 
         $user_data->title = $request->input('title');
+        $user_data->subtitle = $request->input('subtitle');
         $user_data->content = strip_tags($request->input('content'));
 
         $user_data->update();

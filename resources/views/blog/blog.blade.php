@@ -9,13 +9,12 @@
                     </figure>
                     <div class="post-body">
                         <div class="post-meta">
-                            <div class="post-tags"><a href="#">People</a></div>
-                            <div class="post-date">{{$data->created_at}}</div>
+                            <div class="post-date"><p>{{ \Carbon\Carbon::parse($data->created_at)->format('d M Y')}}</p></div>
                         </div>
                         <h4 class="dark-color"><a href="{{ url('/detailBlog', $data->id) }}">{{$data->title}}</a></h4>
-                        <p>{{ str_limit($data->content, $limit = 200, $end = '...') }}</p>
-                        <a href="{{ url('/detailBlog', $data->id) }}" class="read-more">
-                            {{ strlen(strip_tags($data->content)) > 50 ? "View Article" : "" }}</a>
+                        {{-- <p>{{ str_limit($data->content, $limit = 200, $end = '...') }}</p> --}}
+                        {{-- <a href="{{ url('/detailBlog', $data->id) }}" class="read-more">
+                            {{ strlen(strip_tags($data->content)) > 50 ? "View Article" : "" }}</a> --}}
                     </div>
                 </article>
             </div>

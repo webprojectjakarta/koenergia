@@ -22,7 +22,7 @@
                             @endforeach
                             </select>
                             <div class="space-10"></div>
-                            <input type=number name="angka2" class="form-control uang" id='num2'
+                            <input type=number name="angka2" class="form-control uang" id="myInput"
                                 placeholder="Rata-rata Tagihan Listrik Perbulan (Rp)" required
                                 oninvalid="this.setCustomValidity('Silahkan isi bos')">
                             <div class="space-10"></div>
@@ -33,7 +33,7 @@
                         </div>
                         <div class="space-10"></div>
                         <div class="kolom3">
-                            <button type=button name=submit onclick="tambah()" class="bttn-default">COUNT</button>
+                            <button type=button name=submit onclick="tambah()" class="btn btn-info" id="myBtn">COUNT</button>
                         </div>
                         <div class="space-10"></div>
                         <div class="row kolom">
@@ -100,58 +100,95 @@
         </div>
         <div class="space-30"></div>
         <div>
-            <div class="row" style="margin-left: 150px">
+            <style>
+                    .hs {
+                        display: grid;
+                        grid-gap: calc(var(--gutter) / 2);
+                        grid-template-columns: 10px;
+                        grid-template-rows: minmax(150px, 1fr);
+                        grid-auto-flow: column;
+                        overflow-x: scroll;
+                        scroll-snap-type: x proximity;
+                        padding-bottom: calc(.75 * var(--gutter));
+                        margin-bottom: calc(-.25 * var(--gutter));
+                    }
+
+                    .hs:before,
+                    .hs:after {
+                    content: '';
+                    width: 5px;
+                    }
+
+                    .hs > li,
+                    .item {
+                    scroll-snap-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    }
+                    .no-scrollbar {
+                    scrollbar-width: none;
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                    }
+                    .no-scrollbar::-webkit-scrollbar {
+                    display: none;
+                    }
+            </style>
+            <div class="row">
                 @foreach ($data as $datas)
-                <div class="col-md-2">
-                    <div class="service-box wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="box-icon">
-                            <i><img src="asset/images/sprout.png" width="35px" height="35px"></i>
+                    <ul class="hs full no-scrollbar">
+                        <div class="col-md-2">
+                            <div class="service-box wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="box-icon">
+                                    <i><img src="asset/images/sprout.png" width="35px" height="35px"></i>
+                                </div>
+                                <h4 style="color: #000">{{$datas->pohon}}</h4>
+                                <p><b>Pohon</b></p>
+                                <p>Tertanam</p>
+                            </div>
                         </div>
-                        <h4 style="color: #000">{{$datas->pohon}}</h4>
-                        <p><b>Pohon</b></p>
-                        <p>Tertanam</p>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="service-box wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="box-icon">
-                            <i><img src="asset/images/no.png" width="35px" height="35px"></i>
+                        <div class="col-md-2">
+                            <div class="service-box wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="box-icon">
+                                    <i><img src="asset/images/no.png" width="35px" height="35px"></i>
+                                </div>
+                                <h4 style="color: #000">{{$datas->kg}}</h4>
+                                <p><b>Kg</b></p>
+                                <p>Co<sub>2</sub> Terhindar</p>
+                            </div>
                         </div>
-                        <h4 style="color: #000">{{$datas->kg}}</h4>
-                        <p><b>Kg</b></p>
-                        <p>Co<sub>2</sub> Terhindar</p>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="service-box wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="box-icon">
-                            <i><img src="asset/images/eco-battery.png" width="35px" height="35px"></i>
+                        <div class="col-md-2">
+                            <div class="service-box wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="box-icon">
+                                    <i><img src="asset/images/eco-battery.png" width="35px" height="35px"></i>
+                                </div>
+                                <h4 style="color: #000">{{$datas->kwh}}</h4>
+                                <p><b>kWh</b></p>
+                                <p>Energi Hijau</p>
+                            </div>
                         </div>
-                        <h4 style="color: #000">{{$datas->kwh}}</h4>
-                        <p><b>kWh</b></p>
-                        <p>Energi Hijau</p>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="service-box wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="box-icon">
-                            <i><img src="asset/images/solar-house.png" width="35px" height="35px"></i>
+                        <div class="col-md-2">
+                            <div class="service-box wow fadeInUp" data-wow-delay="0.7s">
+                                <div class="box-icon">
+                                    <i><img src="asset/images/solar-house.png" width="35px" height="35px"></i>
+                                </div>
+                                <h4 style="color: #000">{{$datas->rumah}}</h4>
+                                <p><b>Rumah</b></p>
+                                <p>Diterangi</p>
+                            </div>
                         </div>
-                        <h4 style="color: #000">{{$datas->rumah}}</h4>
-                        <p><b>Rumah</b></p>
-                        <p>Diterangi</p>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="service-box wow fadeInUp" data-wow-delay="0.9s">
-                        <div class="box-icon">
-                            <i><img src="asset/images/gas-station.png" width="35px" height="35px"></i>
+                        <div class="col-md-2">
+                            <div class="service-box wow fadeInUp" data-wow-delay="0.9s">
+                                <div class="box-icon">
+                                    <i><img src="asset/images/gas-station.png" width="35px" height="35px"></i>
+                                </div>
+                                <h4 style="color: #000">{{$datas->ltr}}</h4>
+                                <p><b>ltr</b></p>
+                                <p>BBM</p>
+                            </div>
                         </div>
-                        <h4 style="color: #000">{{$datas->ltr}}</h4>
-                        <p><b>ltr</b></p>
-                        <p>BBM</p>
-                    </div>
-                </div>
+                    </ul>
                 @endforeach
             </div>
         </div>
@@ -206,8 +243,6 @@
         </div>
     </div>
 </section>
-
-<<<<<<< HEAD
 <!-- <section id="questions_page" class="questions-area section-padding">
 
     <a href="{{url('project')}}">
@@ -224,7 +259,6 @@
 </div>
 </a>
 </section> -->
-=======
 <script>
     function tambah() {
         var psh=4;
@@ -242,7 +276,7 @@
         var c=(((a*psh*eff/1000)*30)*listrik);
         // c=a+b;
         d=Math.round(c/1000)*1000+1000;
-        form.total.value = d; 
+        form.total.value = 'Rp. '+d; 
         form.hasil.value = Math.round((d/b)*100) +'%';
         var ac = Math.ceil(pday/ac*0.3) +' Unit';
         document.getElementById("ac").innerHTML=ac;
@@ -257,13 +291,13 @@
  }
 </script>
 
-<script type="text/javascript">
-    $(document).ready(function(){
-
-        // Format mata uang.
-        $( '.uang' ).mask('000.000.000', {reverse: true});
-
-    })
-</script>
->>>>>>> 1dfcdf3525e14abdb64dcb9cff4885bfddf11da4
+<script>
+    var input = document.getElementById("myInput");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+       event.preventDefault();
+       document.getElementById("myBtn").click();
+      }
+    });
+    </script>
 <!-- Home-Area-End -->

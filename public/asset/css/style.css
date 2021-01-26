@@ -592,7 +592,6 @@ input:-webkit-autofill:focus {
     overflow: hidden;
     z-index: 0;
     color: #ffffff;
-    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
 }
 
 .team-slide .owl-controls .owl-nav>div:hover,

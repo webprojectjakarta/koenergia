@@ -14,10 +14,9 @@
     }
     
     .flip-box {
-      background-color: transparent;
       width: 100%;
       height: 200px;
-      border: 1px solid #f1f1f1;
+      border: 1px solid;
       perspective: 1000px;
     }
     
@@ -48,7 +47,7 @@
     }
     
     .flip-box-back {
-      background-color: white;
+      background-color:transparent;
       color: black;
       transform: rotateY(180deg);
     }
@@ -59,7 +58,7 @@
         <div class="row">        
           @foreach($datas as $data)
             <div class="col-xs-12 col-sm-6 col-md-4">
-                <article class="post-single">
+                <article class="">
                     <div class="flip-box">
                         <div class="flip-box-inner">
                           <div class="flip-box-front">
@@ -67,15 +66,19 @@
                           </div>
                           <div class="flip-box-back">
                               <div class="space-10"></div>
-                            <h5>{{$data->title}}</h5>
-                            <p>{{$data->content}}</p>
+                            <h4><b>{{$data->title}}</b></h4>
+                            <p>Capacity: {{$data->subtitle}} kWp</p>
+                            <p>COD: {{$data->content}}</p>
                           </div>
                         </div>
                       </div>
+                      <div class="space-20"></div>
                 </article>
+                
             </div>
           @endforeach
         </div>
          {{ $datas->links() }}
     </div>
+    <div class="space-60"></div>
 

@@ -16,7 +16,7 @@ class ProjectController extends Controller
 {
     public function index()
     {
-        $datas = DB::table('project')->paginate(3);
+        $datas = DB::table('project')->paginate(6);
         return view('project.app', compact('datas'));
     }
     public function detail ($id){

@@ -79,20 +79,33 @@
                                     @endif
                                 </div>
                             </div>
-
-
+                            <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+                                <label for="name" class="col-md-4 control-label">Capacity</label>
+                                <div class="col-md-12">
+                                    <input id="name" type="text" class="form-control" name="subtitle" value="{{ old('subtitle') }}" required>
+                                    @if ($errors->has('name'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('name') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+                            <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+                                <label for="name" class="col-md-4 control-label">COD</label>
+                                <div class="col-md-12">
+                                    <input id="name" type="text" class="form-control" name="content" value="{{ old('content') }}" required>
+                                    @if ($errors->has('name'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('name') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
                             <div class="form-group">
                                 <label for="email" class="col-md-4 control-label">Image</label>
                                 <div class="col-md-12">
                                     <img class="product" width="200" height="200" />
                                     <input type="file" class="uploads form-control" style="margin-top: 20px;" name="image">
-                                </div>
-                            </div>
-
-                            <div class="form-group{{ $errors->has('username') ? ' has-error' : '' }}">
-                                <label for="username" class="col-md-4 control-label">Content</label>
-                                <div class="col-md-12">
-                                    <textarea type="content" name="content" data-bv-notEmpty="true"></textarea>
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-primary" id="submit">
