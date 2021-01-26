@@ -217,22 +217,34 @@
                           </b>
                       </p>
                       <p>
-                          <li class="li">{{$data->requirement1}}</li>
+                        @if (!$data->requirement1 == NULL || !$data->requirement1 == '')
+                        <li class="li">{{$data->requirement1}}</li>
+                        @endif
                       </p>
                       <p>
+                        @if (!$data->requirement2 == NULL || !$data->requirement2 == '')
                         <li class="li">{{$data->requirement2}}</li>
+                        @endif
                       </p>
                       <p>
+                        @if (!$data->requirement3 == NULL || !$data->requirement3 == '')
                         <li class="li">{{$data->requirement3}}</li>
+                        @endif
                     </p>
                     <p>
+                        @if (!$data->requirement4 == NULL || !$data->requirement4 == '')
                         <li class="li">{{$data->requirement4}}</li>
+                        @endif
                     </p>
                     <p>
+                        @if (!$data->requirement5 == NULL || !$data->requirement5 == '')
                         <li class="li">{{$data->requirement5}}</li>
+                        @endif
                     </p>
                     <p>
+                        @if (!$data->requirement6 == NULL || !$data->requirement6 == '')
                         <li class="li">{{$data->requirement6}}</li>
+                        @endif
                     </p>
                     <p>
                         @if (!$data->requirement7 == NULL || !$data->requirement7 == '')
