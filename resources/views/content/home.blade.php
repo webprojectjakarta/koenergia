@@ -21,40 +21,52 @@
                                 <option class="form-control" id="num1" value="{{$kwh}}">{{$kwh}}</option>
                             @endforeach
                             </select>
-                            <div class="space-30"></div>
+                            <div class="space-10"></div>
                             <input type=number name="angka2" class="form-control uang" id='num2'
-                                placeholder="Daya Listrik (Watt)" required
+                                placeholder="Rata-rata Tagihan Listrik Perbulan (Rp)" required
                                 oninvalid="this.setCustomValidity('Silahkan isi bos')">
-                            <div class="space-30"></div>
+                            <div class="space-10"></div>
                         </div>
-                        <input type="text" value=""  name="total" class="form-control uang" readonly placeholder="Result" id='demo'>
-                        <input type="text" value="" name="hasil" class="form-control" readonly placeholder="Hasil" id='demo'>
-                        <div class="row">
-                            <div class="col-md-3 text-left">
-                                <img src="{{'asset/images/ac.png'}}" alt="" width="40px" height="30px">
-                                <img src="{{'asset/images/kulkas.png'}}" alt="" width="50px" height="30px">
-                                <img src="{{'asset/images/led.png'}}" alt="" width="40px" height="25px">
-                            </div>
-                            <div class="col-md-3 text-left">
-                                <p style="font-size: 11px;" id="ac">:</p>
-                                <p style="font-size: 11px;" id="kulkas">:</p>
-                                <p style="font-size: 11px;" id="led">:</p>
-                            </div>
-                            <div class="col-md-3 text-left">
-                                <img src="{{'asset/images/sprout.png'}}" alt="" width="40px" height="25px">
-                                <img src="{{'asset/images/no.png'}}" alt="" width="40px" height="25px">
-                            </div>
-                            <div class="col-md-3 text-left">
-                                <p style="font-size: 11px;" id="karbon">:</p>
-                                <p style="font-size: 11px;" id="pohon">:</p>
-                            </div>
+                        <div class="kolom2">
+                            <input type="text" value=""  name="total" class="form-control uang" readonly placeholder="Rp" id='demo'>
+                            <input type="text" value="" name="hasil" class="form-control" readonly placeholder="%" id='demo'>
+                        </div>
+                        <div class="space-10"></div>
+                        <div class="kolom3">
+                            <button type=button name=submit onclick="tambah()" class="bttn-default">COUNT</button>
+                        </div>
+                        <div class="space-10"></div>
+                        <div class="row kolom">
+                                <img src="{{'asset/images/ac.png'}}" alt="" width="35px" height="35px">
+                                <p style="font-size: 11px; text-align: left" id="ac"></p>
+                                <p style="font-size: 11px; text-align: left"> </p>
+                                <p style="font-size: 11px; text-align: left"> </p>
+                                <img src="{{'asset/images/tree.png'}}" alt="" width="35px" height="35px" style="justify-self: right">
+                                <p style="font-size: 11px; text-align: right" id="pohon"></p>
+                        </div>
+                        <div class="space-10"></div>
+                        <div class="row kolom">
+                                <img src="{{'asset/images/kulkas.png'}}" alt="" width="35px" height="35px">
+                                <p style="font-size: 11px; text-align: left" id="kulkas"></p>
+                                <p style="font-size: 11px; text-align: left"> </p>
+                                <p style="font-size: 11px; text-align: left"> </p>
+                                <img src="{{'asset/images/carbon.png'}}" alt="" width="35px" height="35px" style="justify-self: right">
+                                <p style="font-size: 11px; text-align: right" id="karbon"></p>
+                        </div>
+                        <div class="space-10"></div>
+                        <div class="row kolom">
+                                <img src="{{'asset/images/led.png'}}" alt="" width="35px" height="35px" style="margin-left: 3px">
+                                <p style="font-size: 11px; text-align: left" id="led"></p>
+                                <img src="{{'asset/images/polos.png'}}" alt="" width="35px" height="35px" style="justify-self: right">
+                                <img src="{{'asset/images/polos.png'}}" alt="" width="35px" height="35px" style="justify-self: right">
+                                <img src="{{'asset/images/polos.png'}}" alt="" width="35px" height="35px" style="justify-self: right">
                         </div>
                         <div class="space-30"></div>
-                        <button type=button name=submit onclick="tambah()" class="bttn-default">COUNT</button>
-                        <a href="{{url('/')}}" class="bttn-default">RESET</a>
-                        <div class="space-20"></div>
-                        <a href="#contact_page" class="bttn-default">Quotation</a>
-                
+                        <div class="kolom1"> 
+                            <a href="{{url('/')}}" class="bttn-default">RESET</a>
+                            <p style="font-size: 11px; text-align: left"> </p>
+                            <a href="#contact_page" class="bttn-default">Quotation</a> 
+                        </div>
                     </form>
                 </div>
             </div>
