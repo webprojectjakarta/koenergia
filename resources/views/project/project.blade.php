@@ -9,9 +9,6 @@
   </script> -->
 
 <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-    }
     
     .flip-box {
       width: 100%;

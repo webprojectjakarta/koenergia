@@ -22,14 +22,15 @@
                             @endforeach
                             </select>
                             <div class="space-10"></div>
-                            <input type=number name="angka2" class="form-control uang" id="myInput"
-                                placeholder="Rata-rata Tagihan Listrik Perbulan (Rp)" required
-                                oninvalid="this.setCustomValidity('Silahkan isi bos')">
+                            <input type=text name="angka2" class="form-control uang" id="rupiah"
+                                placeholder="Rata-rata Tagihan Listrik Perbulan (Rp)" required>
                             <div class="space-10"></div>
                         </div>
+                        <label style="color: black; font-size:12px;">Dapat Menghemat tagihan perbulan Sebesar 								
+                        </label>
                         <div class="kolom2">
-                            <input type="text" value=""  name="total" class="form-control uang" readonly placeholder="Rp" id='demo'>
-                            <input type="text" value="" name="hasil" class="form-control" readonly placeholder="%" id='demo'>
+                            <input type="text" value="Rp. "  name="total" class="form-control" readonly placeholder="Rp" id='total'>
+                            <input type="text" value="" name="hasil" class="form-control" readonly placeholder="%" id='hasil'>
                         </div>
                         <div class="space-10"></div>
                         <div class="kolom3">
@@ -61,12 +62,11 @@
                                 <img src="{{'asset/images/polos.png'}}" alt="" width="35px" height="35px" style="justify-self: right">
                                 <img src="{{'asset/images/polos.png'}}" alt="" width="35px" height="35px" style="justify-self: right">
                         </div>
-                        <div class="space-30"></div>
-                        <div class="kolom1"> 
-                            <a href="{{url('/')}}" class="bttn-default">RESET</a>
-                            <p style="font-size: 11px; text-align: left"> </p>
-                            <a href="#contact_page" class="bttn-default">Quotation</a> 
-                        </div>
+                        <div class="space-10"></div>
+                        <div class="tombol">
+                            <a href="{{url('/')}}" class="button button2">RESET</a>
+                            <a href="#contact_page" class="button button2">QUOTATION</a>
+                        </div> 
                     </form>
                 </div>
             </div>
@@ -94,7 +94,7 @@
             <div class="col-xs-12 col-md-10 col-md-offset-1">
                 <div class="page-title text-center">
                     <div class="space-10"></div>
-                    <h5 class="title">Our Contribution</h5>
+                    <h6 style="font-size: 10px;" class="title">Our Contribution</h6>
                 </div>
             </div>
         </div>
@@ -236,24 +236,56 @@
         var pohon=0.0009;
         var pday=14.08;
 
+        var res = form.angka2.value.substring(4, form.angka2.value.length);
+        var punctuationless = res.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+        var finalString = punctuationless.replace(/\s{2,}/g," ");
+
+        console.log("final string "+ finalString);
+
+        console.log("res "+res);
+
         a=eval(form.angka1.value);
-        b=eval(form.angka2.value); 
+        b=eval(finalString); 
+        console.log("b "+b);
         var c=(((a*psh*eff/1000)*30)*listrik);
         // c=a+b;
-        d=Math.round(c/1000)*1000+1000;
-        form.total.value = 'Rp. '+d; 
-        form.hasil.value = Math.round((d/b)*100) +'%';
-        var ac = Math.ceil(pday/ac*0.3) +' Unit';
+        rupiah=(Math.round(c/1000)*1000+1000);
+        form.total.value = 'Rp. '+formatRupiah(rupiah+"");
+        form.hasil.value = Math.round((rupiah/b)*100) +'%';
+        var ac = Math.ceil(pday/ac*0.3) +' Unit (1 PK)';
         document.getElementById("ac").innerHTML=ac;
-        var kulkas = Math.ceil(pday/kulkas*0.65)+' Unit';
+        var kulkas = Math.ceil(pday/kulkas*0.65)+' Unit (Kulkas)';
         document.getElementById("kulkas").innerHTML=kulkas;
-        var led = Math.ceil(pday/led*0.05)+' Unit';
+        var led = Math.ceil(pday/led*0.05)+' Unit (LED 10 w)';
         document.getElementById("led").innerHTML=led;
-        var karbon= Math.round(d/listrik*toco2*12)+' Co2 /thn';
+        var karbon= Math.round(rupiah/listrik*toco2*12)+' Co2 /thn';
         document.getElementById("karbon").innerHTML=karbon;
-        var pohon = Math.round(d/listrik*pohon*12)+' Pohon /thn';
+        var pohon = Math.round(rupiah/listrik*pohon*12)+' Pohon /thn';
         document.getElementById("pohon").innerHTML=pohon;
+
  }
+
+ var rupiah = document.getElementById("rupiah");
+    rupiah.addEventListener("keyup", function(e) {
+    rupiah.value = formatRupiah(this.value, "Rp. ");
+});
+ 
+ function formatRupiah(angka, prefix) {
+    var number_string = angka.replace(/[^,\d]/g, "").toString(),
+    split = number_string.split(","),
+    sisa = split[0].length % 3,
+    rupiah = split[0].substr(0, sisa),
+    ribuan = split[0].substr(sisa).match(/\d{3}/gi);
+
+  // tambahkan titik jika yang di input sudah menjadi angka ribuan
+  if (ribuan) {
+    separator = sisa ? "." : "";
+    rupiah += separator + ribuan.join(".");
+  }
+
+  rupiah = split[1] != undefined ? rupiah + "," + split[1] : rupiah;
+  return prefix == undefined ? rupiah : rupiah ? "Rp. " + rupiah : "";
+}
 </script>
 
 <script>
