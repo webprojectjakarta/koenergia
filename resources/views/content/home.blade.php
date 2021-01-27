@@ -289,7 +289,7 @@
 </script>
 
 <script>
-    var input = document.getElementById("myInput");
+    var input = document.getElementById("rupiah");
     input.addEventListener("keyup", function(event) {
       if (event.keyCode === 13) {
        event.preventDefault();
