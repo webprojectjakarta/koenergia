@@ -5,8 +5,7 @@
             <div class="col-xs-12 hidden-sm col-md-5">
                 <div class="subscribe-form text-center">
                     <!-- My Calculator -->
-                    <img src="{{'asset/images/logo.png'}}" alt="Logo">
-                    <div class="space-40"></div>
+                    <img src="{{'asset/images/logo-calcu.png'}}" alt="Logo">
                     <form name="form" onSubmit="validasi()">
                         <div class="form-double">
                             
@@ -29,7 +28,7 @@
                         <label style="color: black; font-size:12px;">Dapat Menghemat tagihan perbulan Sebesar 								
                         </label>
                         <div class="kolom2">
-                            <input type="text" value="Rp. "  name="total" class="form-control" readonly placeholder="Rp" id='total'>
+                            <input type="text" value=""  name="total" class="form-control" readonly placeholder="Rp." id='total'>
                             <input type="text" value="" name="hasil" class="form-control" readonly placeholder="%" id='hasil'>
                         </div>
                         <div class="space-10"></div>
@@ -260,7 +259,7 @@
         rupiah=(Math.round(c/1000)*1000+1000);
         form.total.value = 'Rp. '+formatRupiah(rupiah+"");
         form.hasil.value = Math.round((rupiah/b)*100) +'%';
-        var ac = Math.ceil(pday/ac*0.3) +' Unit (1 PK)';
+        var ac = Math.ceil(pday/ac*0.3) +' Unit (AC 1 PK)';
         document.getElementById("ac").innerHTML=ac;
         var kulkas = Math.ceil(pday/kulkas*0.65)+' Unit (Kulkas)';
         document.getElementById("kulkas").innerHTML=kulkas;
