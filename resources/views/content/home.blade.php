@@ -7,7 +7,7 @@
                     <!-- My Calculator -->
                     <img src="{{'asset/images/logo.png'}}" alt="Logo">
                     <div class="space-40"></div>
-                    <form name="form" >
+                    <form name="form" onSubmit="validasi()">
                         <div class="form-double">
                             
                             <select class="form-control" name="angka1" required="">
@@ -226,6 +226,12 @@
 </section> -->
 <script>
     function tambah() {
+        if (form.angka1.value != "" && form.angka2.value!="") {
+			return true;
+		}else{
+			alert('Anda harus mengisi data dengan lengkap !');
+		}
+        
         var psh=4;
         var eff=0.8;
         var listrik=1444.7;
@@ -235,7 +241,6 @@
         var toco2=0.68;
         var pohon=0.0009;
         var pday=14.08;
-
         var res = form.angka2.value.substring(4, form.angka2.value.length);
         var punctuationless = res.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
         var finalString = punctuationless.replace(/\s{2,}/g," ");
