@@ -226,11 +226,17 @@
 </section> -->
 <script>
     function tambah() {
-        if (form.angka1.value != "" && form.angka2.value!="") {
-			return true;
-		}else{
-			alert('Anda harus mengisi data dengan lengkap !');
-		}
+        var res = form.angka2.value.substring(4, form.angka2.value.length);
+        var punctuationless = res.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+        var finalString = punctuationless.replace(/\s{2,}/g," ");
+
+        console.log("form 1 "+ form.angka1.value);
+        console.log("form 2 "+ finalString);
+        if ((finalString == "") || form.angka1.value == "Daya Listrik PLN Terpasang (VA)") {
+            console.log("Masuk Ke if");
+            alert("Anda harus mengisi data dengan lengkap !");
+            throw("Anda harus mengisi data dengan lengkap !");
+        }
         
         var psh=4;
         var eff=0.8;
@@ -241,9 +247,6 @@
         var toco2=0.68;
         var pohon=0.0009;
         var pday=14.08;
-        var res = form.angka2.value.substring(4, form.angka2.value.length);
-        var punctuationless = res.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
-        var finalString = punctuationless.replace(/\s{2,}/g," ");
 
         console.log("final string "+ finalString);
 
