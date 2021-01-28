@@ -36,6 +36,10 @@
                             <button type=button name=submit onclick="tambah()" class="button button2" id="myBtn">COUNT</button>
                         </div>
                         <div class="space-10"></div>
+                        <div class="kolom2" style="line-height: 20px">
+                            <p style="font-size: 11px; text-align: left; margin-left: 10px;">4 jam efektif matahari, anda dapat menghidupkan:</p>
+                            <p style="font-size: 11px; text-align: right; margin-right: 10px">Menggunakan Solar Panel, anda berperan menyelamatkan bumi:</p>
+                        </div>
                         <div class="row kolom">
                                 <img src="{{'asset/images/ac.png'}}" alt="" width="35px" height="35px">
                                 <p style="font-size: 11px; text-align: left" id="ac"></p>

@@ -62,7 +62,7 @@
                           <img src="{{url('images/user', $data->image)}}" alt="Paris" style="width:300px;height:200px">
                           </div>
                           <div class="flip-box-back">
-                              <div class="space-10"></div>
+                              <div class="space-50"></div>
                             <h4><b>{{$data->title}}</b></h4>
                             <p>Capacity: {{$data->subtitle}} kWp</p>
                             <p>COD: {{$data->content}}</p>
@@ -77,5 +77,5 @@
         </div>
          {{ $datas->links() }}
     </div>
-    <div class="space-60"></div>
+    <div class="space-20"></div>
 
