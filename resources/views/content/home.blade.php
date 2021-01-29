@@ -26,15 +26,16 @@
                                 placeholder="Rata-rata Tagihan Listrik Perbulan (Rp)" required>
                             <div class="space-10"></div>
                         </div>
+                        
+                        <div class="space-10"></div>
+                        <div class="kolom3">
+                            <button type=button name=submit onclick="tambah()" class="button button2" id="myBtn">COUNT</button>
+                        </div>
                         <label style="color: black; font-size:12px;">Dapat Menghemat tagihan perbulan Sebesar 								
                         </label>
                         <div class="kolom2">
                             <input type="text" value="Rp. "  name="total" class="form-control" readonly placeholder="Rp" id='total'>
                             <input type="text" value="" name="hasil" class="form-control" readonly placeholder="%" id='hasil'>
-                        </div>
-                        <div class="space-10"></div>
-                        <div class="kolom3">
-                            <button type=button name=submit onclick="tambah()" class="button button2" id="myBtn">COUNT</button>
                         </div>
                         <div class="space-10"></div>
                         <div class="row kolom">
