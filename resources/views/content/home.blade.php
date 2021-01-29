@@ -25,6 +25,8 @@
                                 placeholder="Rata-rata Tagihan Listrik Perbulan (Rp)" required>
                             <div class="space-10"></div>
                         </div>
+                        
+                        <div class="space-10"></div>
                         <label style="color: black; font-size:12px;">Dapat Menghemat tagihan perbulan Sebesar 								
                         </label>
                         <div class="kolom2">
