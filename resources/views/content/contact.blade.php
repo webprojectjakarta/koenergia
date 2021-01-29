@@ -77,13 +77,14 @@
                     <div class="comment-respond">
                         <form action="{{ url('/email') }}" class="comment-form">
                             @csrf
-                            <input type="text" name="nama" class="form-control" placeholder="Name">
-                            <div class="space-30"></div>
-                            <input type="email" name="penerima" class="form-control" placeholder="Email">
-                            <div class="space-30"></div>
-                            <textarea name="pesan" id="comment" rows="5" class="form-control"
-                                placeholder="Type Your Mesage..."></textarea>
-                            <div class="space-30"></div>
+                                <h6 style="color: #8790af; float: left; margin: 5px 0 7px 0">Name :</h6>
+                                <input type="text" name="nama" class="form-control" placeholder="">
+                                <h6 style="color: #8790af; float: left; margin: 7px 0 7px 0">E-mail :</h6>
+                                <input type="email" name="penerima" class="form-control" placeholder="">
+                                <h6 style="color: #8790af; float: left; margin: 7px 0 7px 0">Messages :</h6>
+                                <textarea name="pesan" id="comment" rows="5" class="form-control"
+                                placeholder=""></textarea>
+                                <div class="space-30"></div>
                             <button type="submit" value="Kirim" class="bttn-default">Send</button>
                         </form>
                     </div>

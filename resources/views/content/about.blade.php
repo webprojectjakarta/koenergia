@@ -27,7 +27,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                     <div class="page-title text-center">
-                        <h6 style="font-size: 12px;" class="title">Our 4-step Process</h6>
+                        <h6 style="font-size: 13px;" class="title">Our 4-step Process</h6>
                         <div class="space-30"></div>
                     </div>
                 </div>

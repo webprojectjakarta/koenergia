@@ -97,7 +97,7 @@
             <div class="col-xs-12 col-md-10 col-md-offset-1">
                 <div class="page-title text-center">
                     <div class="space-10"></div>
-                    <h6 style="font-size: 10px;" class="title">Our Contribution</h6>
+                    <h6 style="font-size: 14px;" class="title">Our Contribution</h6>
                 </div>
             </div>
         </div>
@@ -106,54 +106,54 @@
             <div class="row">
                 @foreach ($data as $datas)
                     <ul class="hs full no-scrollbar">
-                        <div class="col-md-2">
+                        <div class="col">
                             <div class="service-box wow fadeInUp" data-wow-delay="0.1s">
                                 <div class="box-icon">
                                     <i><img src="asset/images/sprout.png" width="35px" height="35px"></i>
                                 </div>
                                 <h4 style="color: #000">{{$datas->pohon}}</h4>
-                                <p><b>Pohon</b></p>
-                                <p>Tertanam</p>
+                                <p style="font-size: 12px"><b>Pohon</b></p>
+                                <p style="font-size: 12px">Tertanam</p>
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col">
                             <div class="service-box wow fadeInUp" data-wow-delay="0.3s">
                                 <div class="box-icon">
                                     <i><img src="asset/images/no.png" width="35px" height="35px"></i>
                                 </div>
                                 <h4 style="color: #000">{{$datas->kg}}</h4>
-                                <p><b>Kg</b></p>
-                                <p>Co<sub>2</sub> Terhindar</p>
+                                <p style="font-size: 12px"><b>Kg</b></p>
+                                <p style="font-size: 12px">CO<sub>2</sub> Terhindar</p>
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col">
                             <div class="service-box wow fadeInUp" data-wow-delay="0.5s">
                                 <div class="box-icon">
                                     <i><img src="asset/images/eco-battery.png" width="35px" height="35px"></i>
                                 </div>
                                 <h4 style="color: #000">{{$datas->kwh}}</h4>
-                                <p><b>kWh</b></p>
-                                <p>Energi Hijau</p>
+                                <p style="font-size: 12px"><b>kWh</b></p>
+                                <p style="font-size: 12px">Energi Hijau</p>
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col">
                             <div class="service-box wow fadeInUp" data-wow-delay="0.7s">
                                 <div class="box-icon">
                                     <i><img src="asset/images/solar-house.png" width="35px" height="35px"></i>
                                 </div>
                                 <h4 style="color: #000">{{$datas->rumah}}</h4>
-                                <p><b>Rumah</b></p>
-                                <p>Diterangi</p>
+                                <p style="font-size: 12px"><b>Rumah</b></p>
+                                <p style="font-size: 12px">Diterangi</p>
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col">
                             <div class="service-box wow fadeInUp" data-wow-delay="0.9s">
                                 <div class="box-icon">
                                     <i><img src="asset/images/gas-station.png" width="35px" height="35px"></i>
                                 </div>
                                 <h4 style="color: #000">{{$datas->ltr}}</h4>
-                                <p><b>ltr</b></p>
-                                <p>BBM</p>
+                                <p style="font-size: 12px"><b>ltr</b></p>
+                                <p style="font-size: 12px">BBM</p>
                             </div>
                         </div>
                     </ul>
@@ -179,31 +179,43 @@
         <div class="page-title text-center">
             <h5 class="title">Our Solutions</h5>
         </div>
-        <div class="space-40"></div>
         <div class="row">
             <div class="col-sm-6">
+                <div class="space-60"></div>
                 <div class="solutions-box wow fadeInUp" data-wow-delay="0.2s">
+                    <div>
                         <i><img src="asset/images/on-grid.png" width="150px" height="150px" style="float:left"/></i>
+                    </div>
                     <h4 class="dark-color">On-Grid PV System</h4>
                     <p>Tidak ada baterai yang diperlukan, terhubung langsung dengan jaringan listrik PLN, hemat tagihan listrik tiap bulannya</p>
                 </div>
-                <div class="space-80"></div>
+            </div>
+            <div class="col-sm-6">
+                <div class="space-60"></div>
                 <div class="solutions-box wow fadeInUp" data-wow-delay="0.6s">
+                    <div>
                         <i><img src="asset/images/off-grid.png" width="150px" height="150px" style="float:left"/></i>
+                    </div>
                     <h4 class="dark-color">Off-Grid PV System</h4>
                     <p>Tidak ada lagi kegelapan, 24/7 energi listrik tersedia, tidak ada emisi CO2</p>
                 </div>
-                <div class="space-80"></div>
             </div>
             <div class="col-sm-6">
+                <div class="space-60"></div>
                 <div class="solutions-box wow fadeInUp" data-wow-delay="0.4s">
+                    <div>
                         <i><img src="asset/images/hybrid.png" width="150px" height="150px" style="float:left"/></i>
+                    </div>
                     <h4 class="dark-color">Hybrid PV System</h4>
                     <p>Kombinasi tenaga surya dengan sumber lainnya, 24/7 energi listrik tersedia</p>
                 </div>
-                <div class="space-80"></div>
+            </div>
+            <div class="col-sm-6">
+                <div class="space-60"></div>
                 <div class="solutions-box wow fadeInUp" data-wow-delay="0.8s">
+                    <div>
                         <i><img src="asset/images/pump.png" width="150px" height="150px" style="float:left"/></i>
+                    </div>
                     <h4 class="dark-color">Solar Water Pump</h4>
                     <p>Tidak ada lagi kekeringan, menghisap air dari sumbernya dan salurkan kepada masyarakat</p>
                 </div>
