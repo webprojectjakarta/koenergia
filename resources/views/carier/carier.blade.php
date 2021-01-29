@@ -1,4 +1,4 @@
-<section id="questions_page" class="questions-area section-padding-3">
+<section id="questions_page" class="questions-area section-padding-3" style="background-color: white">
     <div class="container">
         <div class="col-xs-12 col-sm-12">
                 <div class="row">
@@ -125,7 +125,7 @@
 
                     for (i = 0; i < acc.length; i++) {
                       acc[i].addEventListener("click", function() {
-                        this.classList.toggle("active");
+                        this.classList.toggle("active1");
                         var panel = this.nextElementSibling;
                         if (panel.style.maxHeight) {
                           panel.style.maxHeight = null;

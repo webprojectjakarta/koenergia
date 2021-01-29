@@ -5,8 +5,7 @@
             <div class="col-xs-12 hidden-sm col-md-5">
                 <div class="subscribe-form text-center">
                     <!-- My Calculator -->
-                    <img src="{{'asset/images/logo.png'}}" alt="Logo">
-                    <div class="space-40"></div>
+                    <img src="{{'asset/images/logo-calcu.png'}}" alt="Logo">
                     <form name="form" onSubmit="validasi()">
                         <div class="form-double">
                             
@@ -28,16 +27,21 @@
                         </div>
                         
                         <div class="space-10"></div>
-                        <div class="kolom3">
-                            <button type=button name=submit onclick="tambah()" class="button button2" id="myBtn">COUNT</button>
-                        </div>
                         <label style="color: black; font-size:12px;">Dapat Menghemat tagihan perbulan Sebesar 								
                         </label>
                         <div class="kolom2">
-                            <input type="text" value="Rp. "  name="total" class="form-control" readonly placeholder="Rp" id='total'>
+                            <input type="text" value=""  name="total" class="form-control" readonly placeholder="Rp." id='total'>
                             <input type="text" value="" name="hasil" class="form-control" readonly placeholder="%" id='hasil'>
                         </div>
                         <div class="space-10"></div>
+                        <div class="kolom3">
+                            <button type=button name=submit onclick="tambah()" class="button button2" id="myBtn">COUNT</button>
+                        </div>
+                        <div class="space-10"></div>
+                        <div class="kolom2" style="line-height: 20px">
+                            <p style="font-size: 11px; text-align: left; margin-left: 10px;">4 jam efektif matahari, anda dapat menghidupkan:</p>
+                            <p style="font-size: 11px; text-align: right; margin-right: 10px">Menggunakan Solar Panel, anda berperan menyelamatkan bumi:</p>
+                        </div>
                         <div class="row kolom">
                                 <img src="{{'asset/images/ac.png'}}" alt="" width="35px" height="35px">
                                 <p style="font-size: 11px; text-align: left" id="ac"></p>
@@ -261,7 +265,7 @@
         rupiah=(Math.round(c/1000)*1000+1000);
         form.total.value = 'Rp. '+formatRupiah(rupiah+"");
         form.hasil.value = Math.round((rupiah/b)*100) +'%';
-        var ac = Math.ceil(pday/ac*0.3) +' Unit (1 PK)';
+        var ac = Math.ceil(pday/ac*0.3) +' Unit (AC 1 PK)';
         document.getElementById("ac").innerHTML=ac;
         var kulkas = Math.ceil(pday/kulkas*0.65)+' Unit (Kulkas)';
         document.getElementById("kulkas").innerHTML=kulkas;
