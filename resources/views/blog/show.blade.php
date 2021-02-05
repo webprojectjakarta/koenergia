@@ -101,8 +101,11 @@
                                 <h2 class="dark-color">{{$data->title}}</h2>
                             </div>
                             <div class="space-20"></div>
-                            <p style="text-align:justify; text-indent: 50px; text-color: #00000; margin: 0 60px 0 60px">{!! nl2br(e($data->content, false)) !!}</p>
+                            
+                            <p style="text-align:justify; text-indent: 50px; text-color: #00000; margin: 0 60px 0 60px">{!!nl2br(str_replace("<br>", " &nbsp;", $data->content))!!}</p>;
+
                         </div>
+                        
                 </div>
             </div>
         </div>

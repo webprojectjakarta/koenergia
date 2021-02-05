@@ -49,6 +49,10 @@ class AdminBlogController extends Controller
             $image = $fileName;
         }
 
+        $datas = strip_tags($request->input('content'));
+        $result = trim(preg_replace("'\n\r'","", $datas));
+
+        
 
         Blog::create([
             'title' => $request->input('title'),

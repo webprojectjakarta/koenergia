@@ -2,7 +2,7 @@
 <header class="home-area overlay" id="home_page">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 hidden-sm col-md-5">
+             <div class="col-xs-12 hidden-sm col-md-5">
                 <div class="subscribe-form text-center">
                     <!-- My Calculator -->
                     <img src="{{'asset/images/logo-calcu.png'}}" alt="Logo">
@@ -109,8 +109,8 @@
                                 <div class="box-icon">
                                     <i><img src="asset/images/sprout.png" width="35px" height="35px"></i>
                                 </div>
-                                <h4 style="color: #000">{{$datas->pohon}}</h4>
-                                <p style="font-size: 12px; margin-bottom: -10px"><b>Pohon</b></p>
+                        <h4 style="color: #000">@currency($datas->pohon)</h4>
+                                <p style="font-size: 12px"><b>Pohon</b></p>
                                 <p style="font-size: 12px">Tertanam</p>
                             </div>
                         </div>
@@ -119,8 +119,8 @@
                                 <div class="box-icon">
                                     <i><img src="asset/images/no.png" width="35px" height="35px"></i>
                                 </div>
-                                <h4 style="color: #000">{{$datas->kg}}</h4>
-                                <p style="font-size: 12px; margin-bottom: -10px"><b>Kg</b></p>
+                            <h4 style="color: #000">@currency($datas->kg)</h4>
+                                <p style="font-size: 12px"><b>Kg</b></p>
                                 <p style="font-size: 12px">CO<sub>2</sub> Terhindar</p>
                             </div>
                         </div>
@@ -129,8 +129,8 @@
                                 <div class="box-icon">
                                     <i><img src="asset/images/eco-battery.png" width="35px" height="35px"></i>
                                 </div>
-                                <h4 style="color: #000">{{$datas->kwh}}</h4>
-                                <p style="font-size: 12px; margin-bottom: -10px"><b>kWh</b></p>
+                        <h4 style="color: #000">@currency($datas->kwh)</h4>
+                                <p style="font-size: 12px"><b>kWh</b></p>
                                 <p style="font-size: 12px">Energi Hijau</p>
                             </div>
                         </div>
@@ -139,8 +139,8 @@
                                 <div class="box-icon">
                                     <i><img src="asset/images/solar-house.png" width="35px" height="35px"></i>
                                 </div>
-                                <h4 style="color: #000">{{$datas->rumah}}</h4>
-                                <p style="font-size: 12px; margin-bottom: -10px"><b>Rumah</b></p>
+                        <h4 style="color: #000">@currency($datas->rumah)</h4>
+                                <p style="font-size: 12px"><b>Rumah</b></p>
                                 <p style="font-size: 12px">Diterangi</p>
                             </div>
                         </div>
@@ -149,8 +149,8 @@
                                 <div class="box-icon">
                                     <i><img src="asset/images/gas-station.png" width="35px" height="35px"></i>
                                 </div>
-                                <h4 style="color: #000">{{$datas->ltr}}</h4>
-                                <p style="font-size: 12px; margin-bottom: -10px"><b>ltr</b></p>
+                            <h4 style="color: #000">@currency($datas->ltr)</h4>
+                                <p style="font-size: 12px"><b>ltr</b></p>
                                 <p style="font-size: 12px">BBM</p>
                             </div>
                         </div>
