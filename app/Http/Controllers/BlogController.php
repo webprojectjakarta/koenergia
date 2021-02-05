@@ -19,7 +19,6 @@ class BlogController extends Controller
     {
         $datas = DB::table('blog')->orderBy('created_at','ASC')->paginate(3);
 
-        dd($datas);
         return view('blog.app', compact('datas'));
     }
     public function detail ($id){
