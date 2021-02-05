@@ -1,6 +1,7 @@
 <section id="questions_page" class="questions-area section-padding-3" style="background-color: white">
     <div class="container">
         <div class="col-xs-12 col-sm-12">
+                @if(!$datas->isEmpty())
                 <div class="row">
                     <div class="page-title text-center">
                         <h3 class="dark-color"><b>FULFILLING CAREERS WITH KOENERGIA</b></h3>
@@ -9,6 +10,7 @@
                         Take a look to see our current available positions.</p>
                     </div>
                 </div>
+                @endif
             <div class="space-100"></div>
             <div class="row">
               @if(!$datas->isEmpty())
@@ -17,7 +19,7 @@
               </div>
               @else
               <div class="page-title text-center">
-                <h3 class="dark-color"><b>There are no job vacancies</b></h3>
+                <h3 class="dark-color"><b>THERE ARE NO JOB VACANCIES</b></h3>
               </div>
               @endif
                         
@@ -144,7 +146,7 @@
                     </script>
             </div>
         </div>
-            @if(!$datas->isEmpty())
+              @if(!$datas->isEmpty())
               <div class="kolom4">
                 <div class="space-30"></div>
                 <a href="mailto:info@koenergia.com" class="buttonBtn button2">APPLY FOR INTERNSHIP</a>
