@@ -10,10 +10,17 @@
                     </div>
                 </div>
             <div class="space-100"></div>
-            <div class="row"> 
-                        <div class="page-title text-center">
-                            <h3 class="dark-color"><b>CURRENT OPENINGS</b></h3>
-                        </div>
+            <div class="row">
+              @if(!$datas->isEmpty())
+              <div class="page-title text-center">
+                <h3 class="dark-color"><b>CURRENT OPENINGS</b></h3>
+              </div>
+              @else
+              <div class="page-title text-center">
+                <h3 class="dark-color"><b>There are no job vacancies</b></h3>
+              </div>
+              @endif
+                        
                     <style>
                     .accordion {
                       background-color: #eee;
@@ -137,9 +144,12 @@
                     </script>
             </div>
         </div>
-        <div class="kolom4">
-            <div class="space-30"></div>
-            <a href="mailto:info@koenergia.com" class="buttonBtn button2">APPLY FOR INTERNSHIP</a>
-        </div>
+            @if(!$datas->isEmpty())
+              <div class="kolom4">
+                <div class="space-30"></div>
+                <a href="mailto:info@koenergia.com" class="buttonBtn button2">APPLY FOR INTERNSHIP</a>
+              </div>
+              @endif
+        
     </div>
 </section>

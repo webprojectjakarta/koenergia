@@ -113,7 +113,7 @@
                                 <div class="box-icon">
                                     <i><img src="asset/images/sprout.png" width="35px" height="35px"></i>
                                 </div>
-                                <h4 style="color: #000">{{$datas->pohon}}</h4>
+                                <h4 style="color: #000">@currency($datas->pohon)</h4>
                                 <p style="font-size: 12px"><b>Pohon</b></p>
                                 <p style="font-size: 12px">Tertanam</p>
                             </div>
@@ -123,7 +123,7 @@
                                 <div class="box-icon">
                                     <i><img src="asset/images/no.png" width="35px" height="35px"></i>
                                 </div>
-                                <h4 style="color: #000">{{$datas->kg}}</h4>
+                                <h4 style="color: #000">@currency($datas->kg)</h4>
                                 <p style="font-size: 12px"><b>Kg</b></p>
                                 <p style="font-size: 12px">CO<sub>2</sub> Terhindar</p>
                             </div>
@@ -133,7 +133,7 @@
                                 <div class="box-icon">
                                     <i><img src="asset/images/eco-battery.png" width="35px" height="35px"></i>
                                 </div>
-                                <h4 style="color: #000">{{$datas->kwh}}</h4>
+                                <h4 style="color: #000">@currency($datas->kwh)</h4>
                                 <p style="font-size: 12px"><b>kWh</b></p>
                                 <p style="font-size: 12px">Energi Hijau</p>
                             </div>
@@ -143,7 +143,7 @@
                                 <div class="box-icon">
                                     <i><img src="asset/images/solar-house.png" width="35px" height="35px"></i>
                                 </div>
-                                <h4 style="color: #000">{{$datas->rumah}}</h4>
+                                <h4 style="color: #000">@currency($datas->rumah)</h4>
                                 <p style="font-size: 12px"><b>Rumah</b></p>
                                 <p style="font-size: 12px">Diterangi</p>
                             </div>
@@ -153,7 +153,7 @@
                                 <div class="box-icon">
                                     <i><img src="asset/images/gas-station.png" width="35px" height="35px"></i>
                                 </div>
-                                <h4 style="color: #000">{{$datas->ltr}}</h4>
+                                <h4 style="color: #000">@currency($datas->ltr)</h4>
                                 <p style="font-size: 12px"><b>ltr</b></p>
                                 <p style="font-size: 12px">BBM</p>
                             </div>

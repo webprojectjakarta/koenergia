@@ -17,14 +17,23 @@ class BlogController extends Controller
 {
     public function index()
     {
-        $datas = DB::table('blog')->paginate(3);
+        $datas = DB::table('blog')->orderBy('created_at','ASC')->paginate(3);
+
+        dd($datas);
         return view('blog.app', compact('datas'));
     }
     public function detail ($id){
         $data = Blog::findOrFail($id);
-        // $pdf = PDF::loadview('blog.test',['data'=>$data]);
-	    // return $pdf->stream('laporan-pegawai-pdf');
 
+        $result = nl2br($data);
+
+
+
+        // $data = str_replace('\r\n\r\n\r\n\r\n\r\n',"", $datas->content);
+
+        // dd($data);
+        
         return view('blog.show', compact('data'));
     }
+    
 }
