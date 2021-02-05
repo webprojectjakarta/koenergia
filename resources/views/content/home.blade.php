@@ -23,19 +23,15 @@
                             <div class="space-10"></div>
                             <input type=text name="angka2" class="form-control uang" id="rupiah"
                                 placeholder="Rata-rata Tagihan Listrik Perbulan (Rp)" required>
-                            <div class="space-10"></div>
-                        </div>
-                        
-                        <div class="space-10"></div>
-                        <label style="color: black; font-size:12px;">Dapat Menghemat tagihan perbulan Sebesar 								
-                        </label>
-                        <div class="kolom2">
-                            <input type="text" value=""  name="total" class="form-control" readonly placeholder="Rp." id='total'>
-                            <input type="text" value="" name="hasil" class="form-control" readonly placeholder="%" id='hasil'>
                         </div>
                         <div class="space-10"></div>
                         <div class="kolom3">
-                            <button type=button name=submit onclick="tambah()" class="button button2" id="myBtn">COUNT</button>
+                            <button type=button name=submit onclick="tambah()" class="button button2" id="myBtn" style="margin-top: 0">COUNT</button>
+                        </div>
+                        <h6 style="color: black; font-size: 11px; margin: 5px 0 10px 0">Dapat Menghemat tagihan perbulan Sebesar</h6>
+                        <div class="kolom2">
+                            <input type="text" value=""  name="total" class="form-control" readonly placeholder="Rp." id='total'>
+                            <input type="text" value="" name="hasil" class="form-control" readonly placeholder="%" id='hasil'>
                         </div>
                         <div class="space-10"></div>
                         <div class="kolom2" style="line-height: 20px">
@@ -44,28 +40,28 @@
                         </div>
                         <div class="row kolom">
                                 <img src="{{'asset/images/ac.png'}}" alt="" width="35px" height="35px">
-                                <p style="font-size: 11px; text-align: left" id="ac"></p>
+                                <p style="font-size: 11px; text-align: left; line-height: 20px" id="ac"></p>
                                 <p style="font-size: 11px; text-align: left"> </p>
                                 <p style="font-size: 11px; text-align: left"> </p>
-                                <img src="{{'asset/images/tree.png'}}" alt="" width="35px" height="35px" style="justify-self: right">
-                                <p style="font-size: 11px; text-align: right" id="pohon"></p>
+                                <img src="{{'asset/images/carbon.png'}}" alt="" width="35px" height="35px" style="justify-self: right">
+                                <p style="font-size: 11px; text-align: right; line-height: 20px" id="karbon"></p>
                         </div>
                         <div class="space-10"></div>
                         <div class="row kolom">
                                 <img src="{{'asset/images/kulkas.png'}}" alt="" width="35px" height="35px">
-                                <p style="font-size: 11px; text-align: left" id="kulkas"></p>
+                                <p style="font-size: 11px; text-align: left; line-height: 20px" id="kulkas"></p>
                                 <p style="font-size: 11px; text-align: left"> </p>
                                 <p style="font-size: 11px; text-align: left"> </p>
-                                <img src="{{'asset/images/carbon.png'}}" alt="" width="35px" height="35px" style="justify-self: right">
-                                <p style="font-size: 11px; text-align: right" id="karbon"></p>
+                                <img src="{{'asset/images/tree.png'}}" alt="" width="35px" height="35px" style="justify-self: right">
+                                <p style="font-size: 11px; text-align: right; line-height: 20px" id="pohon"></p>
                         </div>
                         <div class="space-10"></div>
-                        <div class="row kolom">
-                                <img src="{{'asset/images/led.png'}}" alt="" width="35px" height="35px" style="margin-left: 3px">
-                                <p style="font-size: 11px; text-align: left" id="led"></p>
-                                <img src="{{'asset/images/polos.png'}}" alt="" width="35px" height="35px" style="justify-self: right">
-                                <img src="{{'asset/images/polos.png'}}" alt="" width="35px" height="35px" style="justify-self: right">
-                                <img src="{{'asset/images/polos.png'}}" alt="" width="35px" height="35px" style="justify-self: right">
+                        <div class="row kolom5">
+                                <p style="font-size: 11px; text-align: left"> </p>
+                                <img src="{{'asset/images/led.png'}}" alt="" width="35px" height="35px" style="margin: 0 10px">
+                                <p style="font-size: 11px; text-align: left; line-height: 20px" id="led"></p>
+                                <img src="{{'asset/images/polos1.png'}}" alt="" width="140px" height="35px" style="justify-self: right">
+                                <img src="{{'asset/images/polos1.png'}}" alt="" width="140px" height="35px" style="justify-self: right">
                         </div>
                         <div class="space-10"></div>
                         <div class="tombol">
@@ -114,7 +110,7 @@
                                     <i><img src="asset/images/sprout.png" width="35px" height="35px"></i>
                                 </div>
                                 <h4 style="color: #000">{{$datas->pohon}}</h4>
-                                <p style="font-size: 12px"><b>Pohon</b></p>
+                                <p style="font-size: 12px; margin-bottom: -10px"><b>Pohon</b></p>
                                 <p style="font-size: 12px">Tertanam</p>
                             </div>
                         </div>
@@ -124,7 +120,7 @@
                                     <i><img src="asset/images/no.png" width="35px" height="35px"></i>
                                 </div>
                                 <h4 style="color: #000">{{$datas->kg}}</h4>
-                                <p style="font-size: 12px"><b>Kg</b></p>
+                                <p style="font-size: 12px; margin-bottom: -10px"><b>Kg</b></p>
                                 <p style="font-size: 12px">CO<sub>2</sub> Terhindar</p>
                             </div>
                         </div>
@@ -134,7 +130,7 @@
                                     <i><img src="asset/images/eco-battery.png" width="35px" height="35px"></i>
                                 </div>
                                 <h4 style="color: #000">{{$datas->kwh}}</h4>
-                                <p style="font-size: 12px"><b>kWh</b></p>
+                                <p style="font-size: 12px; margin-bottom: -10px"><b>kWh</b></p>
                                 <p style="font-size: 12px">Energi Hijau</p>
                             </div>
                         </div>
@@ -144,7 +140,7 @@
                                     <i><img src="asset/images/solar-house.png" width="35px" height="35px"></i>
                                 </div>
                                 <h4 style="color: #000">{{$datas->rumah}}</h4>
-                                <p style="font-size: 12px"><b>Rumah</b></p>
+                                <p style="font-size: 12px; margin-bottom: -10px"><b>Rumah</b></p>
                                 <p style="font-size: 12px">Diterangi</p>
                             </div>
                         </div>
@@ -154,7 +150,7 @@
                                     <i><img src="asset/images/gas-station.png" width="35px" height="35px"></i>
                                 </div>
                                 <h4 style="color: #000">{{$datas->ltr}}</h4>
-                                <p style="font-size: 12px"><b>ltr</b></p>
+                                <p style="font-size: 12px; margin-bottom: -10px"><b>ltr</b></p>
                                 <p style="font-size: 12px">BBM</p>
                             </div>
                         </div>
@@ -277,15 +273,15 @@
         rupiah=(Math.round(c/1000)*1000+1000);
         form.total.value = 'Rp. '+formatRupiah(rupiah+"");
         form.hasil.value = Math.round((rupiah/b)*100) +'%';
-        var ac = Math.ceil(pday/ac*0.3) +' Unit (AC 1 PK)';
+        var ac = '<b>'+Math.ceil(pday/ac*0.3)+'</b>'+' Unit'+'<br>'+'AC 1 PK';
         document.getElementById("ac").innerHTML=ac;
-        var kulkas = Math.ceil(pday/kulkas*0.65)+' Unit (Kulkas)';
+        var kulkas = '<b>'+Math.ceil(pday/kulkas*0.65)+'</b>'+' Unit'+'<br>'+'Kulkas';
         document.getElementById("kulkas").innerHTML=kulkas;
-        var led = Math.ceil(pday/led*0.05)+' Unit (LED 10 w)';
+        var led = '<b>'+Math.ceil(pday/led*0.05)+'</b>'+' Unit'+'<br>'+'LED 10 W';
         document.getElementById("led").innerHTML=led;
-        var karbon= Math.round(rupiah/listrik*toco2*12)+' Co2 /thn';
+        var karbon= 'Penurunan Emisi Karbon'+'<br>'+'<b>'+Math.round(rupiah/listrik*toco2*12)+'</b>'+' Co2 pertahun';
         document.getElementById("karbon").innerHTML=karbon;
-        var pohon = Math.round(rupiah/listrik*pohon*12)+' Pohon /thn';
+        var pohon = 'Pohon yang terselamatkan'+'<br>'+'<b>'+Math.round(rupiah/listrik*pohon*12)+'</b>'+' pohon pertahun';
         document.getElementById("pohon").innerHTML=pohon;
 
  }
