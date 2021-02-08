@@ -25,6 +25,9 @@
     <link rel="stylesheet" href="{{ asset('asset/css/responsive.css') }}">
     <script src="{{ asset('asset/js/vendor/modernizr-2.8.3.min.js') }}"></script>
     <script src="https://kit.fontawesome.com/9d10450ac7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     @section('css')
 
     @show
