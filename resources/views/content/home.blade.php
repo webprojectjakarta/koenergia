@@ -12,7 +12,7 @@
                             <select class="form-control" name="angka1" required="">
                                 <option class="form-control">Daya Listrik PLN Terpasang (VA)</option>
                             <?php
-                                $kwh = ["1300","2200","3500","4400","5500","6600","1600",
+                                $kwh = ["1300","2200","3500","4400","5500","6600","10600",
                                 "11000","13200","16500","23000","33000","41500","53000",
                                 "66000","82500","105000","131000","147000","164000","187000","197000"];
                             ?>
@@ -57,11 +57,10 @@
                         </div>
                         <div class="space-10"></div>
                         <div class="row kolom5">
-                                <p style="font-size: 11px; text-align: left"> </p>
-                                <img src="{{'asset/images/led.png'}}" alt="" width="35px" height="35px" style="margin: 0 10px">
-                                <p style="font-size: 11px; text-align: left; line-height: 20px" id="led"></p>
-                                <img src="{{'asset/images/polos1.png'}}" alt="" width="140px" height="35px" style="justify-self: right">
-                                <img src="{{'asset/images/polos1.png'}}" alt="" width="140px" height="35px" style="justify-self: right">
+                                <img src="{{'asset/images/led.png'}}" alt="" width="35px" height="35px" style="margin: 0 -10px 0 10px">
+                                <p style="font-size: 11px; text-align: left; line-height: 20px; margin: 0 0 -20px 0" id="led"></p>
+                                <img src="{{'asset/images/polos1.png'}}" alt="" width="140px" height="35px" style="margin-left: 40px">
+                                <!-- <img src="{{'asset/images/polos1.png'}}" alt="" width="140px" height="35px" style="justify-self: right; margin-left: 35px"> -->
                         </div>
                         <div class="space-10"></div>
                         <div class="tombol">
@@ -73,7 +72,7 @@
             </div>
             <div class="col-xs-12 col-md-7">
                 <div class="space-80 hidden-xs"></div>
-                <h1 class="wow fadeInUp" data-wow-delay="0.4s">Enlightening Indonesia with Renewable Energy</h1>
+                <h1 class="wow fadeInUp" data-wow-delay="0.4s" style="margin: 25px 0 10px 0">Enlightening Indonesia with Renewable Energy</h1>
                 <div class="space-20"></div>
                 <div class="desc wow fadeInUp" data-wow-delay="0.6s">
                     <p class="p">Koenergia membantu rumah-rumah residensial, bisnis skala besar pada gedung komersial dan industrial untuk menghemat biaya energi dan jejak karbon yang dikeluarkan dengan menyediakan energi bersih dari sistem pembangkit listrik dari energi terbarukan</p>
@@ -81,7 +80,7 @@
                 <div class="space-20"></div>
                 <h5 class="wow fadeInUp" data-wow-delay="0.8s">Download Our Company Profile</h5>
                 <a href="{{'asset/images/Company Profile Koenergia.pdf'}}" download class="bttn-white wow fadeInUp"
-                    data-wow-delay="0.9s"><i class="lnr lnr-download"></i>Download Here</a>
+                data-wow-delay="0.9s"><i class="lnr lnr-download"></i>Download Here</a>
             </div>
             <div class="space-30"> </div>
         </div>
@@ -104,54 +103,54 @@
             <div class="row">
                 @foreach ($data as $datas)
                     <ul class="hs full no-scrollbar">
-                        <div class="col">
+                        <div class="col" style="width: 215px">
                             <div class="service-box wow fadeInUp" data-wow-delay="0.1s">
                                 <div class="box-icon">
                                     <i><img src="asset/images/sprout.png" width="35px" height="35px"></i>
                                 </div>
-                        <h4 style="color: #000">@currency($datas->pohon)</h4>
-                                <p style="font-size: 12px"><b>Pohon</b></p>
-                                <p style="font-size: 12px">Tertanam</p>
+                                <h4 style="color: #000">@currency($datas->pohon)</h4>
+                                <p style="font-size: 12px; margin-bottom: -10px"><b>Pohon</b></p>
+                                <p style="font-size: 15px">Tertanam</p>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col" style="width: 215px">
                             <div class="service-box wow fadeInUp" data-wow-delay="0.3s">
                                 <div class="box-icon">
                                     <i><img src="asset/images/no.png" width="35px" height="35px"></i>
                                 </div>
-                            <h4 style="color: #000">@currency($datas->kg)</h4>
-                                <p style="font-size: 12px"><b>Kg</b></p>
-                                <p style="font-size: 12px">CO<sub>2</sub> Terhindar</p>
+                                <h4 style="color: #000">@currency($datas->kg)</h4>
+                                <p style="font-size: 12px; margin-bottom: -10px"><b>Kg</b></p>
+                                <p style="font-size: 15px">CO<sub>2</sub> Terhindar</p>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col" style="width: 215px">
                             <div class="service-box wow fadeInUp" data-wow-delay="0.5s">
                                 <div class="box-icon">
                                     <i><img src="asset/images/eco-battery.png" width="35px" height="35px"></i>
                                 </div>
-                        <h4 style="color: #000">@currency($datas->kwh)</h4>
-                                <p style="font-size: 12px"><b>kWh</b></p>
-                                <p style="font-size: 12px">Energi Hijau</p>
+                                <h4 style="color: #000">@currency($datas->kwh)</h4>
+                                <p style="font-size: 12px; margin-bottom: -10px"><b>kWh</b></p>
+                                <p style="font-size: 15px">Energi Hijau</p>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col" style="width: 215px">
                             <div class="service-box wow fadeInUp" data-wow-delay="0.7s">
                                 <div class="box-icon">
                                     <i><img src="asset/images/solar-house.png" width="35px" height="35px"></i>
                                 </div>
-                        <h4 style="color: #000">@currency($datas->rumah)</h4>
-                                <p style="font-size: 12px"><b>Rumah</b></p>
-                                <p style="font-size: 12px">Diterangi</p>
+                                <h4 style="color: #000">@currency($datas->rumah)</h4>
+                                <p style="font-size: 12px; margin-bottom: -10px"><b>Rumah</b></p>
+                                <p style="font-size: 15px">Diterangi</p>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col" style="width: 215px">
                             <div class="service-box wow fadeInUp" data-wow-delay="0.9s">
                                 <div class="box-icon">
                                     <i><img src="asset/images/gas-station.png" width="35px" height="35px"></i>
                                 </div>
-                            <h4 style="color: #000">@currency($datas->ltr)</h4>
-                                <p style="font-size: 12px"><b>ltr</b></p>
-                                <p style="font-size: 12px">BBM</p>
+                                <h4 style="color: #000">@currency($datas->ltr)</h4>
+                                <p style="font-size: 12px; margin-bottom: -10px"><b>ltr</b></p>
+                                <p style="font-size: 15px">BBM</p>
                             </div>
                         </div>
                     </ul>
@@ -174,15 +173,19 @@
             </div>
         </div>
         <div class="space-70"></div>
-        <div class="page-title text-center">
-            <h5 class="title">Our Solutions</h5>
+        <div class="row">
+            <div class="col-xs-12 col-md-10 col-md-offset-1">
+                <div class="page-title text-center">
+                    <h5 class="title">Our Solutions</h5>
+                </div>
+            </div>
         </div>
         <div class="row">
             <div class="col-sm-6">
                 <div class="space-60"></div>
                 <div class="solutions-box wow fadeInUp" data-wow-delay="0.2s">
-                    <div>
-                        <i><img src="asset/images/on-grid.png" width="150px" height="150px" style="float:left"/></i>
+                    <div class="iconsol">
+                        <i><img src="asset/images/on-grid.png" width="150px" height="150px"></i>
                     </div>
                     <h4 class="dark-color">On-Grid PV System</h4>
                     <p>Tidak ada baterai yang diperlukan, terhubung langsung dengan jaringan listrik PLN, hemat tagihan listrik tiap bulannya</p>
@@ -191,18 +194,21 @@
             <div class="col-sm-6">
                 <div class="space-60"></div>
                 <div class="solutions-box wow fadeInUp" data-wow-delay="0.6s">
-                    <div>
-                        <i><img src="asset/images/off-grid.png" width="150px" height="150px" style="float:left"/></i>
+                    <div class="iconsol">
+                        <i><img src="asset/images/off-grid.png" width="150px" height="150px"></i>
                     </div>
                     <h4 class="dark-color">Off-Grid PV System</h4>
                     <p>Tidak ada lagi kegelapan, 24/7 energi listrik tersedia, tidak ada emisi CO2</p>
                 </div>
             </div>
+        </div>
+        
+        <div class="row">
             <div class="col-sm-6">
                 <div class="space-60"></div>
                 <div class="solutions-box wow fadeInUp" data-wow-delay="0.4s">
-                    <div>
-                        <i><img src="asset/images/hybrid.png" width="150px" height="150px" style="float:left"/></i>
+                    <div class="iconsol">
+                        <i><img src="asset/images/hybrid.png" width="150px" height="150px"></i>
                     </div>
                     <h4 class="dark-color">Hybrid PV System</h4>
                     <p>Kombinasi tenaga surya dengan sumber lainnya, 24/7 energi listrik tersedia</p>
@@ -211,8 +217,8 @@
             <div class="col-sm-6">
                 <div class="space-60"></div>
                 <div class="solutions-box wow fadeInUp" data-wow-delay="0.8s">
-                    <div>
-                        <i><img src="asset/images/pump.png" width="150px" height="150px" style="float:left"/></i>
+                    <div class="iconsol">
+                        <i><img src="asset/images/pump.png" width="150px" height="150px"></i>
                     </div>
                     <h4 class="dark-color">Solar Water Pump</h4>
                     <p>Tidak ada lagi kekeringan, menghisap air dari sumbernya dan salurkan kepada masyarakat</p>

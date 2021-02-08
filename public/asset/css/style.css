@@ -286,6 +286,7 @@ input:-webkit-autofill:focus {
 
 .section-home {
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .upper {
@@ -571,6 +572,16 @@ input:-webkit-autofill:focus {
 
 .solutions-box {
     position: relative;
+    padding-left: 150px;
+}
+
+.iconsol {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 150px;
+    height: 150px;
+    text-align: center;
 }
 
 .service-box {
@@ -1482,7 +1493,7 @@ p {
     display: grid;
     grid-gap: calc(var(--gutter) / 2);
     /*grid-template-columns: 50px;*/
-    grid-template-rows: minmax(130px, 1fr);
+    grid-template-rows: minmax(120px, 1fr);
     grid-auto-flow: column;
     overflow-x: scroll;
     scroll-snap-type: x proximity;
