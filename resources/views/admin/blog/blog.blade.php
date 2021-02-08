@@ -21,7 +21,7 @@
                     <div class="alert alert-{{ Session::get('message_type') }}" id="waktu2" style="margin-top:10px;">{{ Session::get('message') }}</div>
                     @endif
                     </div>
-  </div>
+      </div>
   <div class="row" style="margin-top: 20px;">
   <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">

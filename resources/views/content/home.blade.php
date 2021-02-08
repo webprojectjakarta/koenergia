@@ -80,7 +80,7 @@
                 </div>
                 <div class="space-20"></div>
                 <h5 class="wow fadeInUp" data-wow-delay="0.8s">Download Our Company Profile</h5>
-                <a href="{{'asset/images/KoenergiA.pdf'}}" download class="bttn-white wow fadeInUp"
+                <a href="{{'asset/images/Company Profile Koenergia.pdf'}}" download class="bttn-white wow fadeInUp"
                     data-wow-delay="0.9s"><i class="lnr lnr-download"></i>Download Here</a>
             </div>
             <div class="space-30"> </div>
