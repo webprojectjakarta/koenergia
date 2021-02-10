@@ -49,7 +49,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="{{asset('asset/images/logo.png')}}" alt="Logo"></a>
+                <a class="navbar-brand" style="width: auto; height: auto" href="#"><img src="{{'asset/images/logo.png'}}" alt="Logo"></a>
             </div>
             <div class="collapse navbar-collapse" id="primary_menu">
                 <ul class="nav navbar-nav mainmenu">
@@ -62,7 +62,7 @@
                     {{-- <li><a href="{{url('partner')}}">Partnership</a></li> --}}
                     <li><a href="{{url('/')}}#contact_page">Contacts</a></li>
                 </ul>
-                <div class="right-button hidden-xs hidden-sm">
+                <div class="right-button">
                     <a href="{{url('login')}}">Sign In</a>
                 </div>
             </div>
