@@ -38,10 +38,10 @@
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <div class="panel-group" id="accordion" style="background: white">
+                <div class="panel-group" id="accordion" style="background: #f5f6ff">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4 class="panel-title">
+                            <h4>
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Apa itu Sistem PLTS Atap?</a>
                             </h4>
                         </div>
@@ -52,7 +52,7 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4 class="panel-title">
+                            <h4>
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Bagaimana cara kerja Sistem PLTS Atap?
                                 </a>
                             </h4>
@@ -64,7 +64,7 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4 class="panel-title">
+                            <h4>
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Bagaimana cara kerja solar inverter?
                                 </a>
                             </h4>
@@ -76,7 +76,7 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4 class="panel-title">
+                            <h4>
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Apa itu net metering atau kWh ekspor dan impor apa itu pembangkit untuk kepentingan sendiri atau Self Consumption?
                                 </a>
                             </h4>
@@ -88,7 +88,7 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4 class="panel-title">
+                            <h4>
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Bagaimana cara perhitungan ekspor impor energi listrik dari Sistem PLTS Atap?
                                 </a>
                             </h4>
@@ -113,7 +113,7 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4 class="panel-title">
+                            <h4>
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Berapa area atap yang dibutuhkan untuk memasang Sistem PLTS Atap?
                                 </a>
                             </h4>
@@ -125,7 +125,7 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4 class="panel-title">
+                            <h4>
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Berapa umur dari Sistem PLTS Atap?
                                 </a>
                             </h4>
@@ -137,7 +137,7 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4 class="panel-title">
+                            <h4>
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">Berapa persenkah penghematan tagihan listrik yang didapat jika memasang Sistem PLTS Atap?
                                 </a>
                             </h4>
@@ -149,7 +149,7 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4 class="panel-title">
+                            <h4>
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">Siapa sajakah yang dapan melakukan pembangunan dan pemasangan Sistem PLTS Atap?
                                 </a>
                             </h4>
@@ -161,7 +161,7 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4 class="panel-title">
+                            <h4>
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">Bagaimana cara konsultasi untuk mengetahui ukuran yang sesuai untuk bangunan, tahapan atau persyaratan dan harga dari Sistem PLTS Atap?
                                 </a>
                             </h4>

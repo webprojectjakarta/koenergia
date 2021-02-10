@@ -10,8 +10,8 @@
                         Take a look to see our current available positions.</p>
                     </div>
                 </div>
+                <div class="space-100"></div>
                 @endif
-            <div class="space-100"></div>
             <div class="row">
               @if(!$datas->isEmpty())
               <div class="page-title text-center">
