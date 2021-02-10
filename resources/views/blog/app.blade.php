@@ -75,15 +75,7 @@
     <!-- Home Area -->
     <header class="site-area overlay">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    <h1 class="white-color">Blogs</h1>
-                    {{-- <ul class="breadcrumb">
-                        <li><a href="{{'/'}}"></a></li>
-                        <li>Blog</li>
-                    </ul> --}}
-                </div>
-            </div>
+                <h1 class="color-white text-center">Blogs</h1>
         </div>
     </header>
     @include('blog.blog')
