@@ -57,7 +57,7 @@
                     <li><a href="{{url('/')}}#solution_page">Solution</a></li>
                     <li><a href="{{url('blog')}}">Blog</a></li>
                     <li ><a href="{{url('project')}}">Project</a></li>
-                    <li><a href="{{url('carier')}}">Carier</a></li>
+                    <li><a href="{{url('career')}}">Carier</a></li>
                     {{-- <li class="active"><a href="{{url('partner')}}">Partnership</a></li> --}}
                     <li><a href="{{url('/')}}#contact_page">Contacts</a></li>
                 </ul>

@@ -360,7 +360,7 @@ input:-webkit-autofill:focus {
     top: 0;
     width: 100%;
     z-index: 9999;
-    padding: 20px 140px 15px 0;
+    padding: 20px 100px 15px 0;
     background: transparent;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -403,7 +403,7 @@ input:-webkit-autofill:focus {
 
 .mainmenu-area .right-button a {
     color: #ffffff;
-    padding: 10px 40px;
+    padding: 10px 30px;
     border-radius: 50px;
     background-color: rgba(255, 255, 255, 0.3);
     display: inline-block;
@@ -980,10 +980,12 @@ p {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 5px;
+    height: 100%;
 }
 
 .subscribe-form form {
     position: relative;
+    height: 100%;
 }
 
 .subscribe-form form .control {

@@ -2,7 +2,8 @@
 <header class="home-area overlay" id="home_page">
     <div class="container">
         <div class="row">
-             <div class="col-xs-12 hidden-sm col-md-5">
+             <div class="col-xs-12 col-md-5">
+                <div class="space-30"></div>
                 <div class="subscribe-form text-center">
                     <!-- My Calculator -->
                     <img src="{{'asset/images/logo-calcu.png'}}" alt="Logo">

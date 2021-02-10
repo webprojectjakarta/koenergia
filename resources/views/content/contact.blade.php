@@ -19,7 +19,7 @@
 
 </style>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<a href="https://api.whatsapp.com/send?phone=6281282528654&text=Hello Koenergia" class="float" target="_blank">
+<a href="https://api.whatsapp.com/send?phone=6281282528654&text=Hi! Got any questions? i'm happy to help " class="float" target="_blank">
     <i class="fa fa-whatsapp my-float"></i>
 </a>
 <footer class="footer-area" id="contact_page">

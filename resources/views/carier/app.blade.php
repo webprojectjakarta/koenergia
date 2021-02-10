@@ -58,11 +58,11 @@
                     <li><a href="{{url('/')}}#solution_page">Solutions</a></li>
                     <li ><a href="{{url('blog')}}">Blogs</a></li>
                     <li><a href="{{url('project')}}">Projects</a></li>
-                    <li class="active"><a href="{{url('carier')}}">Careers</a></li>
+                    <li class="active"><a href="{{url('career')}}">Careers</a></li>
                     {{-- <li><a href="{{url('partner')}}">Partnership</a></li> --}}
                     <li><a href="{{url('/')}}#contact_page">Contacts</a></li>
                 </ul>
-                <div class="right-button hidden-xs">
+                <div class="right-button hidden-xs hidden-sm">
                     <a href="{{url('login')}}">Sign In</a>
                 </div>
             </div>
