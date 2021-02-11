@@ -36,6 +36,15 @@
                 </div>
             </div>
         </div>
+
+        <!-- <style>
+            .panel-heading {
+                width: 100px;
+                height: 100px;
+                
+            }
+        </style> -->
+
         <div class="row">
             <div class="col-xs-12">
                 <div class="panel-group" id="accordion" style="background: #f5f6ff">
