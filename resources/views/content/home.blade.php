@@ -1,77 +1,80 @@
 <!-- Home-Area -->
 <header class="home-area overlay" id="home_page">
-    <div class="container">
+    <div class="container home-grid">
         <div class="row">
-             <div class="col-xs-12 col-md-5">
-                <div class="space-30"></div>
-                <div class="subscribe-form text-center">
-                    <!-- My Calculator -->
-                    <img src="{{'asset/images/logo-calcu.png'}}" alt="Logo">
-                    <form name="form" onSubmit="validasi()">
-                        <div class="form-double">
-                            
-                            <select class="form-control" name="angka1" required="">
-                                <option class="form-control">Daya Listrik PLN Terpasang (VA)</option>
-                            <?php
-                                $kwh = ["1300","2200","3500","4400","5500","6600","10600",
-                                "11000","13200","16500","23000","33000","41500","53000",
-                                "66000","82500","105000","131000","147000","164000","187000","197000"];
-                            ?>
-                            @foreach ($kwh as $kwh)
-                                <option class="form-control" id="num1" value="{{$kwh}}">{{$kwh}}</option>
-                            @endforeach
-                            </select>
+            <div class="calculator">
+                <div class="col-xs-12 col-md-5">
+                    <div class="subscribe-form text-center">
+                        <!-- My Calculator -->
+                        <img src="{{'asset/images/logo-calcu.png'}}" alt="Logo">
+                        <form name="form" onSubmit="validasi()">
+                            <div class="form-double">
+                                
+                                <select class="form-control" name="angka1" required="">
+                                    <option class="form-control">Daya Listrik PLN Terpasang (VA)</option>
+                                <?php
+                                    $kwh = ["1300","2200","3500","4400","5500","6600","10600",
+                                    "11000","13200","16500","23000","33000","41500","53000",
+                                    "66000","82500","105000","131000","147000","164000","187000","197000"];
+                                ?>
+                                @foreach ($kwh as $kwh)
+                                    <option class="form-control" id="num1" value="{{$kwh}}">{{$kwh}}</option>
+                                @endforeach
+                                </select>
+                                <div class="space-10"></div>
+                                <input type=text name="angka2" class="form-control uang" id="rupiah"
+                                    placeholder="Rata-rata Tagihan Listrik Perbulan (Rp)" required>
+                            </div>
                             <div class="space-10"></div>
-                            <input type=text name="angka2" class="form-control uang" id="rupiah"
-                                placeholder="Rata-rata Tagihan Listrik Perbulan (Rp)" required>
-                        </div>
-                        <div class="space-10"></div>
-                        <div class="kolom3">
-                            <button type=button name=submit onclick="tambah()" class="button button2" id="myBtn" style="margin-top: 0">COUNT</button>
-                        </div>
-                        <h6 style="color: black; font-size: 11px; margin: 5px 0 10px 0">Dapat Menghemat tagihan perbulan Sebesar</h6>
-                        <div class="kolom2">
-                            <input type="text" value=""  name="total" class="form-control" readonly placeholder="Rp." id='total'>
-                            <input type="text" value="" name="hasil" class="form-control" readonly placeholder="%" id='hasil'>
-                        </div>
-                        <div class="space-10"></div>
-                        <div class="kolom2" style="line-height: 20px">
-                            <p style="font-size: 11px; text-align: left; margin-left: 10px;">4 jam efektif matahari, anda dapat menghidupkan:</p>
-                            <p style="font-size: 11px; text-align: right; margin-right: 10px">Menggunakan Solar Panel, anda berperan menyelamatkan bumi:</p>
-                        </div>
-                        <div class="row kolom">
-                                <img src="{{'asset/images/ac.png'}}" alt="" width="35px" height="35px">
-                                <p style="font-size: 11px; text-align: left; line-height: 20px" id="ac"></p>
-                                <p style="font-size: 11px; text-align: left"> </p>
-                                <p style="font-size: 11px; text-align: left"> </p>
-                                <img src="{{'asset/images/carbon.png'}}" alt="" width="35px" height="35px" style="justify-self: right">
-                                <p style="font-size: 11px; text-align: right; line-height: 20px" id="karbon"></p>
-                        </div>
-                        <div class="space-10"></div>
-                        <div class="row kolom">
-                                <img src="{{'asset/images/kulkas.png'}}" alt="" width="35px" height="35px">
-                                <p style="font-size: 11px; text-align: left; line-height: 20px" id="kulkas"></p>
-                                <p style="font-size: 11px; text-align: left"> </p>
-                                <p style="font-size: 11px; text-align: left"> </p>
-                                <img src="{{'asset/images/tree.png'}}" alt="" width="35px" height="35px" style="justify-self: right">
-                                <p style="font-size: 11px; text-align: right; line-height: 20px" id="pohon"></p>
-                        </div>
-                        <div class="space-10"></div>
-                        <div class="row kolom5">
-                                <img src="{{'asset/images/led.png'}}" alt="" width="35px" height="35px" style="margin: 0 -10px 0 10px">
-                                <p style="font-size: 11px; text-align: left; line-height: 20px; margin: 0 0 -20px 0" id="led"></p>
-                                <img src="{{'asset/images/polos1.png'}}" alt="" width="140px" height="35px" style="margin-left: 40px">
-                                <!-- <img src="{{'asset/images/polos1.png'}}" alt="" width="140px" height="35px" style="justify-self: right; margin-left: 35px"> -->
-                        </div>
-                        <div class="space-10"></div>
-                        <div class="tombol">
-                            <a href="{{url('/')}}" class="button button2">RESET</a>
-                            <a href="#contact_page" class="button button2">QUOTATION</a>
-                        </div> 
-                    </form>
+                            <div class="kolom3">
+                                <button type=button name=submit onclick="tambah()" class="button button2" id="myBtn" style="margin-top: 0">COUNT</button>
+                            </div>
+                            <h6 style="color: black; font-size: 11px; margin: 5px 0 10px 0">Dapat Menghemat tagihan perbulan Sebesar</h6>
+                            <div class="kolom2">
+                                <input type="text" value=""  name="total" class="form-control" readonly placeholder="Rp." id='total'>
+                                <input type="text" value="" name="hasil" class="form-control" readonly placeholder="%" id='hasil'>
+                            </div>
+                            <div class="space-10"></div>
+                            <div class="kolom2" style="line-height: 20px">
+                                <p style="font-size: 11px; text-align: left; margin-left: 10px;">4 jam efektif matahari, anda dapat menghidupkan:</p>
+                                <p style="font-size: 11px; text-align: right; margin-right: 10px">Menggunakan Solar Panel, anda berperan menyelamatkan bumi:</p>
+                            </div>
+                            <div class="row kolom">
+                                    <img src="{{'asset/images/ac.png'}}" alt="" width="35px" height="35px">
+                                    <p style="font-size: 11px; text-align: left; line-height: 20px" id="ac"></p>
+                                    <p style="font-size: 11px; text-align: left"> </p>
+                                    <p style="font-size: 11px; text-align: left"> </p>
+                                    <img src="{{'asset/images/carbon.png'}}" alt="" width="35px" height="35px" style="justify-self: right">
+                                    <p style="font-size: 11px; text-align: right; line-height: 20px" id="karbon"></p>
+                            </div>
+                            <div class="space-10"></div>
+                            <div class="row kolom">
+                                    <img src="{{'asset/images/kulkas.png'}}" alt="" width="35px" height="35px">
+                                    <p style="font-size: 11px; text-align: left; line-height: 20px" id="kulkas"></p>
+                                    <p style="font-size: 11px; text-align: left"> </p>
+                                    <p style="font-size: 11px; text-align: left"> </p>
+                                    <img src="{{'asset/images/tree.png'}}" alt="" width="35px" height="35px" style="justify-self: right">
+                                    <p style="font-size: 11px; text-align: right; line-height: 20px" id="pohon"></p>
+                            </div>
+                            <div class="space-10"></div>
+                            <div class="row kolom5">
+                                    <img src="{{'asset/images/led.png'}}" alt="" width="35px" height="35px" style="margin: 0 -10px 0 10px">
+                                    <p style="font-size: 11px; text-align: left; line-height: 20px; margin: 0 0 -20px 0" id="led"></p>
+                                    <img src="{{'asset/images/polos1.png'}}" alt="" width="140px" height="35px" style="margin-left: 40px">
+                                    <!-- <img src="{{'asset/images/polos1.png'}}" alt="" width="140px" height="35px" style="justify-self: right; margin-left: 35px"> -->
+                            </div>
+                            <div class="space-10"></div>
+                            <div class="tombol">
+                                <a href="{{url('/')}}" class="button button2">RESET</a>
+                                <a href="#contact_page" class="button button2">QUOTATION</a>
+                            </div> 
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-md-7">
+            
+            <div class="company">
+                <div class="col-xs-12 col-md-7">
                 <div class="space-80 hidden-xs"></div>
                 <h1 class="wow fadeInUp text-center" data-wow-delay="0.4s" style="margin: 25px 0 10px 0">Enlightening Indonesia with Renewable Energy</h1>
                 <div class="space-20"></div>
@@ -80,6 +83,7 @@
                 </div>
                 <div class="space-20"></div>
                 <h5 class="wow fadeInUp" data-wow-delay="0.8s">Download Our Company Profile</h5>
+                
                 <a href="{{'asset/images/Company Profile Koenergia.pdf'}}" download class="bttn-white wow fadeInUp"
                 data-wow-delay="0.9s"><i class="lnr lnr-download"></i>Download Here</a>
             </div>
