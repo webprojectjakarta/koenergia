@@ -73,10 +73,10 @@
             </div>
             <div class="col-xs-12 col-md-7">
                 <div class="space-80 hidden-xs"></div>
-                <h1 class="wow fadeInUp" data-wow-delay="0.4s" style="margin: 25px 0 10px 0">Enlightening Indonesia with Renewable Energy</h1>
+                <h1 class="wow fadeInUp text-center" data-wow-delay="0.4s" style="margin: 25px 0 10px 0">Enlightening Indonesia with Renewable Energy</h1>
                 <div class="space-20"></div>
                 <div class="desc wow fadeInUp" data-wow-delay="0.6s">
-                    <p class="p">Koenergia membantu rumah-rumah residensial, bisnis skala besar pada gedung komersial dan industrial untuk menghemat biaya energi dan jejak karbon yang dikeluarkan dengan menyediakan energi bersih dari sistem pembangkit listrik dari energi terbarukan</p>
+                    <p class="p text-center">Koenergia membantu rumah-rumah residensial, bisnis skala besar pada gedung komersial dan industrial untuk menghemat biaya energi dan jejak karbon yang dikeluarkan dengan menyediakan energi bersih dari sistem pembangkit listrik dari energi terbarukan</p>
                 </div>
                 <div class="space-20"></div>
                 <h5 class="wow fadeInUp" data-wow-delay="0.8s">Download Our Company Profile</h5>
