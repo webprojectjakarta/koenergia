@@ -2,6 +2,14 @@
 <html class="no-js" lang="zxx">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-189300368-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-189300368-1');
+    </script>
     <meta charset="utf-8">
     <meta name="author" content="Sumon Rahman">
     <meta name="description" content="">
@@ -25,6 +33,9 @@
     <link rel="stylesheet" href="{{ asset('asset/css/responsive.css') }}">
     <script src="{{ asset('asset/js/vendor/modernizr-2.8.3.min.js') }}"></script>
     <script src="https://kit.fontawesome.com/9d10450ac7.js" crossorigin="anonymous"></script>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
     @section('css')
 
     @show
@@ -72,7 +83,7 @@
     <!-- Home Area -->
     <header class="site-area overlay">
         <div class="container">
-                <h1 class="color-white text-center">Blogs</h1>
+                <h1 class="color-white text-center" style="margin-top: 130px;">Blogs</h1>
         </div>
     </header>
     @include('blog.blog')

@@ -2,6 +2,14 @@
 <html class="no-js" lang="zxx">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-189300368-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-189300368-1');
+    </script>
     <meta charset="utf-8">
     <meta name="author" content="Sumon Rahman">
     <meta name="description" content="">
@@ -70,11 +78,11 @@
     </nav>
     @show
     <!-- Home Area -->
-    <header class="site-area overlay">
+    <header class="site-area-1 overlay">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 text-center">
-                    <h1 class="white-color">Projects</h1>
+                    <h1 class="white-color" style="margin-top: 130px;">Projects</h1>
                 </div>
             </div>
         </div>

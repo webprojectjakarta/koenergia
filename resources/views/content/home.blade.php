@@ -1,6 +1,6 @@
 <!-- Home-Area -->
 <header class="home-area overlay" id="home_page">
-    <div class="container home-grid">
+    <div class="container">
         <div class="row">
             <div class="calculator">
                 <div class="col-xs-12 col-md-5">
@@ -76,10 +76,10 @@
             <div class="company">
                 <div class="col-xs-12 col-md-7">
                 <div class="space-80 hidden-xs"></div>
-                <h1 class="wow fadeInUp text-center" data-wow-delay="0.4s" style="margin: 25px 0 10px 0">Enlightening Indonesia with Renewable Energy</h1>
+                <h1 class="wow fadeInUp" data-wow-delay="0.4s" style="margin: 25px 0 10px 0">Enlightening Indonesia with Renewable Energy</h1>
                 <div class="space-20"></div>
                 <div class="desc wow fadeInUp" data-wow-delay="0.6s">
-                    <p class="p text-center">Koenergia membantu rumah-rumah residensial, bisnis skala besar pada gedung komersial dan industrial untuk menghemat biaya energi dan jejak karbon yang dikeluarkan dengan menyediakan energi bersih dari sistem pembangkit listrik dari energi terbarukan</p>
+                    <p class="p">Koenergia membantu rumah-rumah residensial, bisnis skala besar pada gedung komersial dan industrial untuk menghemat biaya energi dan jejak karbon yang dikeluarkan dengan menyediakan energi bersih dari sistem pembangkit listrik dari energi terbarukan</p>
                 </div>
                 <div class="space-20"></div>
                 <h5 class="wow fadeInUp" data-wow-delay="0.8s">Download Our Company Profile</h5>
@@ -96,10 +96,12 @@
 <section id="questions_page" class="questions-area section-padding-1">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-md-10 col-md-offset-1">
-                <div class="page-title text-center">
-                    <div class="space-10"></div>
-                    <h6 style="font-size: 14px;" class="title">Our Contribution</h6>
+            <div class="ourcontrib">
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+                    <div class="page-title text-center">
+                        <div class="space-10"></div>
+                        <h6 style="font-size: 14px;" class="title">Our Contribution</h6>
+                    </div>
                 </div>
             </div>
         </div>
@@ -108,7 +110,7 @@
             <div class="row">
                 @foreach ($data as $datas)
                     <ul class="hs full no-scrollbar">
-                        <div class="col" style="width: 215px">
+                        <div class="col">
                             <div class="service-box wow fadeInUp" data-wow-delay="0.1s">
                                 <div class="box-icon">
                                     <i><img src="asset/images/sprout.png" width="35px" height="35px"></i>
@@ -118,7 +120,7 @@
                                 <p style="font-size: 15px">Tertanam</p>
                             </div>
                         </div>
-                        <div class="col" style="width: 215px">
+                        <div class="col">
                             <div class="service-box wow fadeInUp" data-wow-delay="0.3s">
                                 <div class="box-icon">
                                     <i><img src="asset/images/no.png" width="35px" height="35px"></i>
@@ -128,7 +130,7 @@
                                 <p style="font-size: 15px">CO<sub>2</sub> Terhindar</p>
                             </div>
                         </div>
-                        <div class="col" style="width: 215px">
+                        <div class="col">
                             <div class="service-box wow fadeInUp" data-wow-delay="0.5s">
                                 <div class="box-icon">
                                     <i><img src="asset/images/eco-battery.png" width="35px" height="35px"></i>
@@ -138,7 +140,7 @@
                                 <p style="font-size: 15px">Energi Hijau</p>
                             </div>
                         </div>
-                        <div class="col" style="width: 215px">
+                        <div class="col">
                             <div class="service-box wow fadeInUp" data-wow-delay="0.7s">
                                 <div class="box-icon">
                                     <i><img src="asset/images/solar-house.png" width="35px" height="35px"></i>
@@ -148,7 +150,7 @@
                                 <p style="font-size: 15px">Diterangi</p>
                             </div>
                         </div>
-                        <div class="col" style="width: 215px">
+                        <div class="col">
                             <div class="service-box wow fadeInUp" data-wow-delay="0.9s">
                                 <div class="box-icon">
                                     <i><img src="asset/images/gas-station.png" width="35px" height="35px"></i>
@@ -190,7 +192,7 @@
                 <div class="space-60"></div>
                 <div class="solutions-box wow fadeInUp" data-wow-delay="0.2s">
                     <div class="iconsol">
-                        <i><img src="asset/images/on-grid.png" width="150px" height="150px"></i>
+                        <i><img src="asset/images/on-grid.png" width="120px" height="120px"></i>
                     </div>
                     <h4 class="dark-color">On-Grid PV System</h4>
                     <p>Tidak ada baterai yang diperlukan, terhubung langsung dengan jaringan listrik PLN, hemat tagihan listrik tiap bulannya</p>

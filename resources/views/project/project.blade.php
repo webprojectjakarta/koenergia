@@ -49,8 +49,8 @@
       transform: rotateY(180deg);
     }
 </style>
-
-
+    
+    @if(!$datas->isEmpty())
     <div class="container">
         <div class="row">        
           @foreach($datas as $data)
@@ -77,5 +77,5 @@
         </div>
          {{ $datas->links() }}
     </div>
+    @endif
     <div class="space-20"></div>
-

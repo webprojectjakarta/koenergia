@@ -1,4 +1,4 @@
-<section id="questions_page" class="questions-area section-padding-3" style="background-color: white">
+<section id="questions_page" class="questions-area-3 section-padding-3">
     <div class="container">
         <div class="col-xs-12 col-sm-12">
                 @if(!$datas->isEmpty())

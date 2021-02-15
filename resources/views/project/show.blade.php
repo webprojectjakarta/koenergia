@@ -1,6 +1,14 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-189300368-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-189300368-1');
+    </script>
     <meta charset="utf-8">
     <meta name="author" content="Sumon Rahman">
     <meta name="description" content="">
@@ -60,7 +68,7 @@
                     <li><a href="{{url('partner')}}">Partnership</a></li>
                     <li><a href="{{url('/')}}#contact_page">Contacts</a></li>
                 </ul>
-                <div class="right-button">
+                <div class="right-button hidden-xs">
                     <a href="{{url('login')}}">Sign In</a>
                 </div>
             </div>
